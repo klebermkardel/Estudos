@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <main>
+        <h1>Formulários</h1>
+        <form action="#"> <!-- Cria formulário -->
+            <div>
+                <label for="texto">Nome: </label> <!--Referência ao campo do formulário -->
+                <input type="text" id="texto" name="nome"> <!-- Campo do formulário, com seus mais diversos tipos -->
+            </div>
+            
+            <div>
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha">
+            </div>
+
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="data">Data de Nascimento: </label>
+                <input type="date" id="data" name="data">
+            </div>
+            
+            <br><br>
+
+            <div>
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            </div>
+
+            <br><br>
+
+            <div>
+                <select name="select" id="select">
+                    <option value="" disabled selected>Seleciona uma das opções...</option>
+                    <option value="receita">Receita</option>
+                    <option value="despesa">Despesa</option>
+                    <option value="transferencia">Transferência</option>
+                </select>
+            </div>
+
+            <br><br>
+
+            <div>
+                <input type="submit" id="qualquer" name="qualquer" value="Enviar">
+            </div>
+
+           
+        </form>
+    </main>
+</body>
+</html>
