@@ -1,19 +1,42 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
     font-size: 62.5%;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+}
+
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+table tr:first-child {
+    background-color: steelblue;
+    color: white;
+}
+
+table tr:nth-child(2n + 3) {
+    background-color: #aaa;
+}
+
+table {
+    font-size: 2.4rem;
+    border-collapse: collapse;
+}
+
 h1 {
     color: #310081;
-    font-size: 9.6rem;
+    font-size: 4.6rem;
     font-weight: 900;
     text-transform: capitalize;
     text-align: center;
@@ -25,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     font-size: 3.2rem;
+    margin: 10px;
 }
 
 .novo-em {
@@ -59,9 +83,40 @@ a:hover {
     height: 100vh;
     width: 100vw;
     background-color: #555;
-    background-image: url('https://images.unsplash.com/photo-1430990480609-2bf7c02a6b1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVzY3JpdCVDMyVCM3Jpb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
+
+ul, ol {
+    padding-left: 5.2rem;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal-leading-zero;
+}
+
+.box {
+    height: 100px;
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+    border: 10px solid red;
+    background-color: blue;
+    color: #fff;
+    display: inline-block;
+    border-radius: 40px 0 40px 0;
+}
+
+img {
+    height: 10rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
