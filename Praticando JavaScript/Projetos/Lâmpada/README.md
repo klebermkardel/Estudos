@@ -1,0 +1,3 @@
+# Lâmpada
+
+Esse projeto foi desenvolvido utilizando HTML, CSS e JavaScript puro, com o objetivo de exibir inicialmente uma imagem de uma lâmpada desligada, que é trocada para a imagem da lâmpada ligada ao clicar no botão "Ligar". Da mesma forma, ao clicar no botão "Desligar", a imagem retorna para a lâmpada desligada. Essas duas ações também podem ser realizadas passando o mouse sobre a imagem ou retirando-o dela. Além disso, é possível alterar a imagem para a de uma lâmpada quebrada ao dar um duplo clique na imagem, mas após essa ação não é possível executar mais nenhuma interação, a menos que a página seja atualizada.
