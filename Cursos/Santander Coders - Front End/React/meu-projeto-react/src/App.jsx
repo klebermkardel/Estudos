@@ -6,10 +6,10 @@ function App() {
       <h1>Olá Mundo, React!</h1>
       <MeuComponente />
       <MeuComponente />
-      <MeuBotao conteudo='me clique' />
+      <MeuBotao conteudo = 'me clique' />
 
-      <MeuBotao conteudo='depois aqui' />
-      <MeuBotao conteudo='e por fim aqui' idade={2} />
+      <MeuBotao conteudo = 'depois aqui' />
+      <MeuBotao conteudo = 'e por fim aqui' idade={2} />
     </div>
   )
 }
