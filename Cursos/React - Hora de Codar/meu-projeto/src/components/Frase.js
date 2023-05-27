@@ -1,7 +1,7 @@
-function Frase() {
+function Frase(props) {
     return (
         <div>
-            <p>Este é um componente com uma frase!</p>
+            <p>{props.frase}</p>
         </div>
     )
 }
