@@ -1,5 +1,3 @@
-Peço desculpas pela mudança para o inglês. Vou continuar respondendo em português daqui em diante. Aqui está a resposta em português:
-
 # README.md
 
 Este é um documento README.md que fornece informações sobre como adicionar imagens a uma página HTML.
