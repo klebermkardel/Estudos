@@ -1,3 +1,5 @@
+// Exercício 1 - Compare as variáveis abaixo e informe se as mesmas possuem o mesmo valor e/ou tipo.
+
 let numeroUm = 1
 let stringUm = '1'
 let numeroTrinta = 30
