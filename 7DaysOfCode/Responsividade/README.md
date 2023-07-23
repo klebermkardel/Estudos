@@ -2,7 +2,7 @@
 
 ## Descrição
 
-A Agenda Médica é um aplicativo web que permite aos profissionais de saúde visualizarem e gerenciarem as consultas agendadas para o dia atual e o próximo dia. O aplicativo foi desenvolvido utilizando tecnologias web, incluindo HTML, CSS e JavaScript, proporcionando uma experiência interativa e amigável para os usuários.
+A Agenda Médica é um aplicativo web desenvolvido a partir do desafio de Responsividade da plataforma #7DaysOfCode. Ela permite aos profissionais de saúde visualizarem e gerenciarem as consultas agendadas para o dia atual e o próximo dia. O aplicativo foi desenvolvido utilizando tecnologias web, incluindo HTML, CSS e JavaScript, proporcionando uma experiência interativa e amigável para os usuários.
 
 ## Funcionalidades
 
