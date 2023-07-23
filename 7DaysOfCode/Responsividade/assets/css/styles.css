@@ -1,0 +1,253 @@
+/* Estilos globais */
+/* Define a fonte padrão e algumas configurações iniciais para todos os elementos */
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #faf8fe;
+}
+
+/* Estilos do cabeçalho */
+/* Define o estilo do cabeçalho, incluindo alinhamento e espaçamento interno */
+header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos da foto do médico */
+/* Define o tamanho e o estilo da imagem do médico no cabeçalho */
+.doctor-photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+/* Estilos das informações do título */
+/* Define o layout e o estilo das informações do título no cabeçalho */
+.title-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilos do título principal */
+/* Define o estilo do título principal no conteúdo principal */
+h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* Estilos do parágrafo */
+/* Define o estilo do parágrafo de texto no conteúdo principal */
+p {
+  color: #a3a3a3;
+  font-size: 14px;
+}
+
+/* Estilos do conteúdo principal */
+/* Define o espaçamento interno do conteúdo principal */
+main {
+  padding: 20px;
+}
+
+/* Estilos do agendamento */
+/* Define o estilo do bloco de agendamento no conteúdo principal */
+.schedule {
+  background-color: #faf7fe;
+  padding: 10px;
+}
+
+/* Estilos do subtítulo */
+/* Define o estilo do subtítulo no conteúdo principal */
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Estilos dos compromissos */
+/* Define o espaçamento superior e inferior dos compromissos no conteúdo principal */
+.appointments {
+  margin: 20px 0;
+}
+
+/* Estilos do compromisso individual */
+/* Define o estilo do bloco de compromisso individual */
+.appointment {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Estilos dos detalhes do compromisso */
+/* Define o estilo do bloco de detalhes do compromisso */
+.appointment-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Estilos do horário do compromisso */
+/* Define o estilo do bloco de horário do compromisso */
+.appointmentTime {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos do texto do horário do compromisso */
+/* Define o estilo do texto do horário do compromisso */
+.appointmentTimeText {
+  font-weight: 500;
+}
+
+/* Estilos do tipo de compromisso */
+/* Define o estilo do bloco de tipo de compromisso */
+.appointmentType {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos dos ícones do tipo de compromisso */
+/* Define o estilo dos ícones do tipo de compromisso */
+.fa-house,
+.fa-video {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+/* Estilos dos ícones e texto do tipo de compromisso */
+/* Define a cor dos ícones e texto do tipo de compromisso */
+.fa-house,
+.fa-video,
+.appointmentTypeText {
+  color: #a3a3a3;
+}
+
+/* Estilos dos detalhes */
+/* Define o estilo dos detalhes do compromisso */
+.details {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Estilos dos elementos do compromisso */
+/* Define a cor de fundo dos elementos do compromisso */
+.appointment,
+.appointment-details,
+.appointmentTime,
+.details,
+.details-content,
+.image,
+.patientName,
+.appointmentType,
+.appointmentTypeText,
+.appointmentTimeText,
+.buttonContainer {
+  background-color: #fff;
+}
+
+/* Estilos da foto do paciente */
+/* Define o tamanho e estilo da foto do paciente */
+.patient-photo {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+/* Estilos do parágrafo nos detalhes */
+/* Define o estilo do parágrafo de texto nos detalhes do compromisso */
+.details p {
+  font-size: 16px;
+  margin-bottom: 1px;
+}
+
+/* Estilos do nome do paciente */
+/* Define a cor e o peso da fonte do nome do paciente */
+.patientName {
+  color: #464646;
+  font-weight: bold;
+}
+
+/* Estilos da mensagem */
+/* Define o estilo do bloco de mensagem */
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+}
+
+/* Estilos dos ícones */
+/* Define o estilo do ícone do botão de mensagem */
+.fa-message {
+  background: none;
+  color: #4e97ff;
+  font-size: 16px;
+}
+
+/* Estilos do container de botões */
+/* Define o estilo do container que agrupa os botões */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+/* Estilos dos botões */
+/* Define o estilo dos botões utilizados */
+button {
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  border-radius: 8px;
+  padding: 14px;
+  border: none;
+}
+
+/* Estilos do botão de consulta no local */
+/* Define o estilo do botão de consulta no local */
+.buttonLocal {
+  font-weight: 500;
+  width: 296px;
+  height: 48px;
+  background: #4894ff;
+  color: #fff;
+}
+
+/* Estilos do botão de consulta remota por vídeo */
+/* Define o estilo do botão de consulta remota por vídeo */
+.buttonRemoteVideo {
+  margin-right: 5px;
+  background-color: #FFB050;
+  color: #fff;
+}
+
+/* Estilos do botão de consulta remota por áudio */
+/* Define o estilo do botão de consulta remota por áudio */
+.buttonRemoteAudio {
+  background-color: #fff;
+  border: 1px solid #dad8d8;
+}
+
+/* Estilos dos botões deconsulta remota por vídeo e áudio */
+/* Define que não haverá quebra de linhas no texto */
+.buttonRemoteVideo,
+.buttonContainer {
+  white-space: nowrap;
+}
