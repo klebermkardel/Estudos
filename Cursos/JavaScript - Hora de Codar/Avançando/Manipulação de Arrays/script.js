@@ -22,7 +22,7 @@ console.log("--------------------------------");
 // map, filter, reduce -> arrow functions
 
 // Array Original:
-const numeros = [1, 2, 3, 4, 5, 6];
+const numeros = [1, 2, 3, 4, 5, 6]
 
 // Método find: retorna o primeiro elemento do critério
 const numeroPar = numeros.find((num) => num % 2 === 0);
