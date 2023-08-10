@@ -1,0 +1,14 @@
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\bin\Debug\net7.0\fatorial.exe
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\bin\Debug\net7.0\fatorial.deps.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\bin\Debug\net7.0\fatorial.runtimeconfig.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\bin\Debug\net7.0\fatorial.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\bin\Debug\net7.0\fatorial.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\obj\Debug\net7.0\fatorial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\obj\Debug\net7.0\fatorial.AssemblyInfoInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\obj\Debug\net7.0\fatorial.AssemblyInfo.cs
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\obj\Debug\net7.0\fatorial.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\obj\Debug\net7.0\fatorial.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\obj\Debug\net7.0\refint\fatorial.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\obj\Debug\net7.0\fatorial.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\obj\Debug\net7.0\fatorial.genruntimeconfig.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\fatorial\obj\Debug\net7.0\ref\fatorial.dll
