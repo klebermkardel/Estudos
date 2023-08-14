@@ -44,3 +44,8 @@ namespace ConsoleAppl
     }
 }
 ```
+
+- Justamente por este motivo, optamos por linguagens de alto nível, por fornecer um acesso à tudo que precisamos a nível de hardware já pronto.
+
+
+
