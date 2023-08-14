@@ -1,0 +1,14 @@
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\bin\Debug\net7.0\numero-primo.exe
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\bin\Debug\net7.0\numero-primo.deps.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\bin\Debug\net7.0\numero-primo.runtimeconfig.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\bin\Debug\net7.0\numero-primo.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\bin\Debug\net7.0\numero-primo.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\obj\Debug\net7.0\numero-primo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\obj\Debug\net7.0\numero-primo.AssemblyInfoInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\obj\Debug\net7.0\numero-primo.AssemblyInfo.cs
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\obj\Debug\net7.0\numero-primo.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\obj\Debug\net7.0\numero-primo.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\obj\Debug\net7.0\refint\numero-primo.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\obj\Debug\net7.0\numero-primo.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\obj\Debug\net7.0\numero-primo.genruntimeconfig.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\numero-primo\obj\Debug\net7.0\ref\numero-primo.dll
