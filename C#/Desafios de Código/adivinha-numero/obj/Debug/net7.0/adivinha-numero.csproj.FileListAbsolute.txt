@@ -1,0 +1,14 @@
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\bin\Debug\net7.0\adivinha-numero.exe
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\bin\Debug\net7.0\adivinha-numero.deps.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\bin\Debug\net7.0\adivinha-numero.runtimeconfig.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\bin\Debug\net7.0\adivinha-numero.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\bin\Debug\net7.0\adivinha-numero.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\obj\Debug\net7.0\adivinha-numero.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\obj\Debug\net7.0\adivinha-numero.AssemblyInfoInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\obj\Debug\net7.0\adivinha-numero.AssemblyInfo.cs
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\obj\Debug\net7.0\adivinha-numero.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\obj\Debug\net7.0\adivinha-numero.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\obj\Debug\net7.0\refint\adivinha-numero.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\obj\Debug\net7.0\adivinha-numero.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\obj\Debug\net7.0\adivinha-numero.genruntimeconfig.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\adivinha-numero\obj\Debug\net7.0\ref\adivinha-numero.dll

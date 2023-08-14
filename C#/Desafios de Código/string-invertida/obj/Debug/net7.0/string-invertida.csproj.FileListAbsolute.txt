@@ -1,0 +1,14 @@
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\bin\Debug\net7.0\string-invertida.exe
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\bin\Debug\net7.0\string-invertida.deps.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\bin\Debug\net7.0\string-invertida.runtimeconfig.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\bin\Debug\net7.0\string-invertida.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\bin\Debug\net7.0\string-invertida.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\obj\Debug\net7.0\string-invertida.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\obj\Debug\net7.0\string-invertida.AssemblyInfoInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\obj\Debug\net7.0\string-invertida.AssemblyInfo.cs
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\obj\Debug\net7.0\string-invertida.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\obj\Debug\net7.0\string-invertida.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\obj\Debug\net7.0\refint\string-invertida.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\obj\Debug\net7.0\string-invertida.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\obj\Debug\net7.0\string-invertida.genruntimeconfig.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\string-invertida\obj\Debug\net7.0\ref\string-invertida.dll

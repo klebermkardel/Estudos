@@ -1,0 +1,14 @@
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\bin\Debug\net7.0\palindromo.exe
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\bin\Debug\net7.0\palindromo.deps.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\bin\Debug\net7.0\palindromo.runtimeconfig.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\bin\Debug\net7.0\palindromo.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\bin\Debug\net7.0\palindromo.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\obj\Debug\net7.0\palindromo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\obj\Debug\net7.0\palindromo.AssemblyInfoInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\obj\Debug\net7.0\palindromo.AssemblyInfo.cs
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\obj\Debug\net7.0\palindromo.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\obj\Debug\net7.0\palindromo.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\obj\Debug\net7.0\refint\palindromo.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\obj\Debug\net7.0\palindromo.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\obj\Debug\net7.0\palindromo.genruntimeconfig.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\palindromo\obj\Debug\net7.0\ref\palindromo.dll

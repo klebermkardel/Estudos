@@ -1,0 +1,14 @@
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\bin\Debug\net7.0\contador-palavras.exe
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\bin\Debug\net7.0\contador-palavras.deps.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\bin\Debug\net7.0\contador-palavras.runtimeconfig.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\bin\Debug\net7.0\contador-palavras.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\bin\Debug\net7.0\contador-palavras.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\obj\Debug\net7.0\contador-palavras.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\obj\Debug\net7.0\contador-palavras.AssemblyInfoInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\obj\Debug\net7.0\contador-palavras.AssemblyInfo.cs
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\obj\Debug\net7.0\contador-palavras.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\obj\Debug\net7.0\contador-palavras.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\obj\Debug\net7.0\refint\contador-palavras.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\obj\Debug\net7.0\contador-palavras.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\obj\Debug\net7.0\contador-palavras.genruntimeconfig.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\contador-palavras\obj\Debug\net7.0\ref\contador-palavras.dll

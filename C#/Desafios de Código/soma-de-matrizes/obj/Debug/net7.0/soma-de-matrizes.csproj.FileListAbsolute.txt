@@ -1,0 +1,14 @@
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\bin\Debug\net7.0\soma-de-matrizes.exe
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\bin\Debug\net7.0\soma-de-matrizes.deps.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\bin\Debug\net7.0\soma-de-matrizes.runtimeconfig.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\bin\Debug\net7.0\soma-de-matrizes.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\bin\Debug\net7.0\soma-de-matrizes.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\obj\Debug\net7.0\soma-de-matrizes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\obj\Debug\net7.0\soma-de-matrizes.AssemblyInfoInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\obj\Debug\net7.0\soma-de-matrizes.AssemblyInfo.cs
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\obj\Debug\net7.0\soma-de-matrizes.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\obj\Debug\net7.0\soma-de-matrizes.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\obj\Debug\net7.0\refint\soma-de-matrizes.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\obj\Debug\net7.0\soma-de-matrizes.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\obj\Debug\net7.0\soma-de-matrizes.genruntimeconfig.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-de-matrizes\obj\Debug\net7.0\ref\soma-de-matrizes.dll

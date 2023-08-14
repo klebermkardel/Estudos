@@ -1,0 +1,14 @@
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\bin\Debug\net7.0\soma-dos-digitos.exe
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\bin\Debug\net7.0\soma-dos-digitos.deps.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\bin\Debug\net7.0\soma-dos-digitos.runtimeconfig.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\bin\Debug\net7.0\soma-dos-digitos.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\bin\Debug\net7.0\soma-dos-digitos.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\obj\Debug\net7.0\soma-dos-digitos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\obj\Debug\net7.0\soma-dos-digitos.AssemblyInfoInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\obj\Debug\net7.0\soma-dos-digitos.AssemblyInfo.cs
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\obj\Debug\net7.0\soma-dos-digitos.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\obj\Debug\net7.0\soma-dos-digitos.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\obj\Debug\net7.0\refint\soma-dos-digitos.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\obj\Debug\net7.0\soma-dos-digitos.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\obj\Debug\net7.0\soma-dos-digitos.genruntimeconfig.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\C#\Desafios de Código\soma-dos-digitos\obj\Debug\net7.0\ref\soma-dos-digitos.dll
