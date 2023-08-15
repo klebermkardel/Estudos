@@ -1,0 +1,12 @@
+# Fundamentos do C#
+
+## Linguagem de Programaçã - C#
+
+### Palavras Reservadas
+
+#### Definições
+
+- Também chamados de keywords
+- São palavras de uso exclusivo do C#
+- Não podemos utilizar como nomes de variáveis ou constantes
+- O Visual Studio Code vai te avisar sobre eles
