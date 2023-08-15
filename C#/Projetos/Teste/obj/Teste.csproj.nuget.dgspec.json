@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\55119\\OneDrive\\Área de Trabalho\\Estudos\\C#\\Projetos\\Teste\\Teste.csproj": {}
+    "c:\\Users\\55119\\OneDrive\\Área de Trabalho\\Estudos\\C#\\Projetos\\Teste\\Teste.csproj": {}
   },
   "projects": {
-    "C:\\Users\\55119\\OneDrive\\Área de Trabalho\\Estudos\\C#\\Projetos\\Teste\\Teste.csproj": {
+    "c:\\Users\\55119\\OneDrive\\Área de Trabalho\\Estudos\\C#\\Projetos\\Teste\\Teste.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\OneDrive\\Área de Trabalho\\Estudos\\C#\\Projetos\\Teste\\Teste.csproj",
+        "projectUniqueName": "c:\\Users\\55119\\OneDrive\\Área de Trabalho\\Estudos\\C#\\Projetos\\Teste\\Teste.csproj",
         "projectName": "Teste",
-        "projectPath": "C:\\Users\\55119\\OneDrive\\Área de Trabalho\\Estudos\\C#\\Projetos\\Teste\\Teste.csproj",
+        "projectPath": "c:\\Users\\55119\\OneDrive\\Área de Trabalho\\Estudos\\C#\\Projetos\\Teste\\Teste.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\OneDrive\\Área de Trabalho\\Estudos\\C#\\Projetos\\Teste\\obj\\",
+        "outputPath": "c:\\Users\\55119\\OneDrive\\Área de Trabalho\\Estudos\\C#\\Projetos\\Teste\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
