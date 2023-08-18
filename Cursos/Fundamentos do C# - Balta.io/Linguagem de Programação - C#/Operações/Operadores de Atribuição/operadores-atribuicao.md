@@ -1,0 +1,23 @@
+# Fundamentos do C#
+
+## Linguagem de Programaçã - C#
+
+### Operações
+
+#### Operadores de Atribuição
+
+##### Definições
+
+- Utilizamos igual (=) para atribuir um valor
+- Porém, podemos utilizar igual junto a um operador aritmético
+- `x += 5` é o mesmo que `x = x + 5`
+
+##### Exemplo
+
+```
+int x = 0; // Atribuição
+x += 5; // x = x + 5;
+x -= 1; // x = x - 1;
+x *= 10; // x = x * 10;
+x /= 2; // x = x / 2;
+```
