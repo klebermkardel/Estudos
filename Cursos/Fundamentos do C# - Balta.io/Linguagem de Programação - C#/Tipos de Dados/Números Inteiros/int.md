@@ -28,3 +28,10 @@
     - -9.223.372.036.854.775.808 até 9.223.372.036.854.775.807
 - ulong
     - 0 até 18.446.744.073.709.554.615
+
+##### Exemplos mais comuns
+
+```
+int idade = 25; // Retorna 25
+uint somenteNumeroPositivo = 100 // Retorna o valor atribuido, mas não pode ser números negativos 
+```

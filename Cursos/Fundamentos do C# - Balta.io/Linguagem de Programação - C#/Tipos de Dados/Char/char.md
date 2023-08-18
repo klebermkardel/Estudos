@@ -14,3 +14,8 @@
 - char (16-bit)
     - Qualquer caracter
     
+##### Exemplo
+
+```
+char primeiraLetra = 'C'; // Retorna C
+```

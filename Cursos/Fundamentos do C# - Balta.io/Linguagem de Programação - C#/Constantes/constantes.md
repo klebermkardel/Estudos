@@ -15,6 +15,8 @@
 - A definição de constante é dada pela palavra reservada `const` antes do tipo
 - Caso não seja informado um valor, o valor padrão será atribuido
 
+#### Exemplo
+
 ```
 const int IDADE_MINIMA; // Correto - Inicia com ZERO
 const int IDADE_MINIMA = 25; // Correto - inicia com 25

@@ -20,3 +20,11 @@
     - -1.797693313486232e308 até 1.797693313486232e308
 - decimal (128-bit)
     - (+ ou -)1.0 x 10e28 até 7.9 x 10e28
+
+##### Exemplos
+
+```
+float velocidade = 125.00f; // Retorna 125.00
+double cincoDivididoPorDois = 2.5;
+decimal milisegundos = 0.1m; // retorna 0.1
+```

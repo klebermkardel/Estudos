@@ -21,3 +21,9 @@
     - -128 até 127
 
 - Note que o **sbyte** permite valores negativos, por isto no nome **sbyte**, que signigica Signed Byte
+
+##### Exemplo 
+
+```
+byte meuByte = 127;
+```

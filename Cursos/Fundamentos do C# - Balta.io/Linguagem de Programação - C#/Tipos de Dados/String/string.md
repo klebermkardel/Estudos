@@ -14,3 +14,9 @@
 - A atribuição de um valor string é dada por aspas duplas
 - string (?)
     - Uma cadeia de caracteres
+
+##### Exemplo
+
+```
+string saudacao = "Olá, como vai?";
+```

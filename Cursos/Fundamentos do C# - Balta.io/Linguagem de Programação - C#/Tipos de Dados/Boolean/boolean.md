@@ -12,3 +12,10 @@
 - Definido pela palavra reservada `bool`
 - bool (8-bit)
     - true ou false
+
+##### Exemplo
+
+```
+bool documentoAssinado = true; // retorna true
+bool eValido = false; // retorna false
+```

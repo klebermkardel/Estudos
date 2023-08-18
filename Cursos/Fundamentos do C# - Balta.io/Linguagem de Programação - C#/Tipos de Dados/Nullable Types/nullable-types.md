@@ -17,6 +17,8 @@
     - Usando ? na frente do tipo
 - Se uma chamada a um valor nulo for feita um erro será apresentado
 
+##### Exemplo
+
 ```
 int? idade = null;
 ```

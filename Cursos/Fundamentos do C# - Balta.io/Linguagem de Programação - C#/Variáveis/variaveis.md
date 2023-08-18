@@ -17,6 +17,8 @@
 - Podemos informar um valor já na criação da variável
 - Se não informado o valor padrão será aplicado
 
+#### Exemplo
+
 ```
 int idade; // Correto - inicia com ZERO
 int idade = 25; // Correto - inicia com 25
