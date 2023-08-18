@@ -3,10 +3,12 @@
 ## Linguagem de Programaçã - C#
 
 ### Tipos de Dados
- 
-#### Conversão Explícita
 
-##### Definições
+#### Conversão de Dados
+ 
+##### Conversão Explícita
+
+###### Definições
 
 - Ocorre quando os tipos não são compatíveis
 - É dado pelo uso do tipo entre parênteses antes da atribuição

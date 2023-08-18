@@ -3,10 +3,12 @@
 ## Linguagem de Programaçã - C#
 
 ### Tipos de Dados
- 
-#### Conversão Implícita
 
-##### Definições
+#### Conversão de Dados
+ 
+##### Conversão Implícita
+
+###### Definições
 
 - É comum precisarmos transforma um dado de tipo X para tipo Y
 - Existem dois tipos de conversão, as implícitas e as explícitas
