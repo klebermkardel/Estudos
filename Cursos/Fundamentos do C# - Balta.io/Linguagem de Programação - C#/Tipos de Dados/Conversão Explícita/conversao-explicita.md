@@ -18,3 +18,4 @@
 int inteiro = 100;
 uint inteiroSemSinal = (uint)inteiro; // Conversão explícita
 ```
+
