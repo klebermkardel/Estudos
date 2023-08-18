@@ -13,3 +13,10 @@
     - double
     - decimal (Notação M)
 - Possuem assimilação negativação e positiva por padrão, dispensando o uso de signed/unsigned em seus tipos
+
+- float (32-bit)
+    - -3.402823e38 até 3.402823e38
+- double (64-bit)
+    - -1.797693313486232e308 até 1.797693313486232e308
+- decimal (128-bit)
+    - (+ ou -)1.0 x 10e28 até 7.9 x 10e28
