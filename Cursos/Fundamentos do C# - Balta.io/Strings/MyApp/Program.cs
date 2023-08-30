@@ -147,6 +147,35 @@ namespace MyApp
             Console.WriteLine("------------------");
 
             Console.WriteLine("");
+
+            // Métodos Adicionais
+            Console.WriteLine("Métodos Adicionais");
+            Console.WriteLine("");
+
+            // ToLower / ToUpper
+            Console.WriteLine("ToLower / ToUpper:");
+            Console.WriteLine("");
+
+            var texto9 = "Este texto é um teste";
+            Console.WriteLine(texto9.ToLower()); // Converte texto todo para minúsculo
+            Console.WriteLine(texto9.ToUpper()); // Converte texto todo para maiúsculo
+
+            Console.WriteLine("");
+
+            // Insert / Remove
+            Console.WriteLine("Insert / Remove:");
+            Console.WriteLine("");
+            
+            Console.WriteLine(texto9.Insert(11, "aqui "));
+            Console.WriteLine(texto9.Remove(11, 5));
+
+            Console.WriteLine("");
+
+            // Length
+            Console.WriteLine("Length:");
+            Console.WriteLine("");
+
+            Console.WriteLine(texto9.Length);
         }
     }
 }
