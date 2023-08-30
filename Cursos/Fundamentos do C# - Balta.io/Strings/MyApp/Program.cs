@@ -74,6 +74,33 @@ namespace MyApp
             Console.WriteLine(texto5.Contains("Teste"));
             Console.WriteLine(texto5.Contains("Teste",StringComparison.OrdinalIgnoreCase));
 
+            Console.WriteLine("");
+
+            Console.WriteLine("------------------");
+
+            Console.WriteLine("");
+
+            // StartsWith / EndsWith / Retorna booleano
+            Console.WriteLine("StartsWith / EndsWith (Retorna um booleano):");
+            Console.WriteLine("");
+
+            var texto6 = "Este texto é um teste";
+
+            Console.WriteLine("StartsWith:");
+            Console.WriteLine("");
+
+            Console.WriteLine(texto6.StartsWith("Este"));
+            Console.WriteLine(texto6.StartsWith("este"));
+            Console.WriteLine(texto6.StartsWith("texto"));
+
+            Console.WriteLine("");
+
+            Console.WriteLine("EndsWith:");
+            Console.WriteLine("");
+
+            Console.WriteLine(texto6.EndsWith("teste"));
+            Console.WriteLine(texto6.EndsWith("Teste"));
+            Console.WriteLine(texto6.EndsWith("xpto"));
         }
     }
 }
