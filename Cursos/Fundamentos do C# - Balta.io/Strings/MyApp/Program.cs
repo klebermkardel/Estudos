@@ -117,6 +117,36 @@ namespace MyApp
             Console.WriteLine(texto7.Equals("este texto é um teste"));
             Console.WriteLine(texto7.Equals("Este texto é um teste", StringComparison.OrdinalIgnoreCase));
 
+            Console.WriteLine("");
+
+            Console.WriteLine("------------------");
+
+            Console.WriteLine("");
+
+            // Índices
+            Console.WriteLine("índices:");
+            Console.WriteLine("");
+
+            var texto8 = "Este texto é um teste";
+
+            // IndexOf
+            Console.WriteLine("IndexOf:");
+            Console.WriteLine("");
+
+            Console.WriteLine(texto8.IndexOf("é")); // Posição 11
+
+            Console.WriteLine("");
+            
+            // LastIndexOf
+            Console.WriteLine("LastIndexOf:");
+            Console.WriteLine("");
+            Console.WriteLine(texto8.LastIndexOf("s")); // Posição 18 - Último index encontrado, caso haja mais de um
+
+            Console.WriteLine("");
+
+            Console.WriteLine("------------------");
+
+            Console.WriteLine("");
         }
     }
 }
