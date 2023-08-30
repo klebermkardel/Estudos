@@ -14,8 +14,12 @@ namespace MyApp
             id.ToString();
             id = new Guid("4bc7ba33-31f1-4dc7-89ef-a67d5e95bec4");
             Console.WriteLine(id.ToString().Substring(0, 8));
-            
+
+            Console.WriteLine("");
+
             Console.WriteLine("------------------");
+
+            Console.WriteLine("");
 
             // Interpolação de Strings
             Console.WriteLine("Interpolação de Strings:");
@@ -44,6 +48,31 @@ namespace MyApp
             do produto é {price} apenas na promoção";
 
             Console.WriteLine(texto3);
+
+            Console.WriteLine("");
+
+            Console.WriteLine("------------------");
+
+            Console.WriteLine("");
+
+            // Comparação de Strings
+            Console.WriteLine("Comparação de Strings:");
+            Console.WriteLine("");
+
+            // 1º método - Retorna inteiro
+            Console.WriteLine("Primeiro método (retorna um inteiro):");
+            var texto4 = "Testando";
+            Console.WriteLine(texto4.CompareTo("Testando"));
+            Console.WriteLine(texto4.CompareTo("testando"));
+
+            Console.WriteLine("");
+
+            // 2º método - Retorna booleano
+            Console.WriteLine("Segundo método (retorna um booleano):");
+            var texto5 = "Esse texto é um teste";
+            Console.WriteLine(texto5.Contains("teste"));
+            Console.WriteLine(texto5.Contains("Teste"));
+            Console.WriteLine(texto5.Contains("Teste",StringComparison.OrdinalIgnoreCase));
 
         }
     }
