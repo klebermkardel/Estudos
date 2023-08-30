@@ -101,6 +101,22 @@ namespace MyApp
             Console.WriteLine(texto6.EndsWith("teste"));
             Console.WriteLine(texto6.EndsWith("Teste"));
             Console.WriteLine(texto6.EndsWith("xpto"));
+
+            Console.WriteLine("");
+
+            Console.WriteLine("------------------");
+
+            Console.WriteLine("");
+
+            // Equal - Retorna booleano
+            Console.WriteLine("Equals (retorna um booleano):");
+            Console.WriteLine("");
+
+            var texto7 = "Este texto é um teste";
+            Console.WriteLine(texto7.Equals("Este texto é um teste"));
+            Console.WriteLine(texto7.Equals("este texto é um teste"));
+            Console.WriteLine(texto7.Equals("Este texto é um teste", StringComparison.OrdinalIgnoreCase));
+
         }
     }
 }
