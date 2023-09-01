@@ -112,7 +112,22 @@ namespace MyApp
             Console.WriteLine($"{data6.AddMonths(2)} - Retorna data atual + número de meses definido"); // Retorna data atual + número de meses definido
             Console.WriteLine($"{data6.AddYears(1)} - Retorna data atual + número de anos definido"); // Retorna data atual + número de anos definido
 
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("");
 
+            // Comparando Datas
+            Console.WriteLine("Comparando Datas:");
+            Console.WriteLine("");
+
+            var data7 = DateTime.Now;
+
+            if (data7.Date == DateTime.Now.Date)
+                Console.WriteLine("É igual");
+
+            Console.WriteLine(data7);
+
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("");
         }
     }
 }
