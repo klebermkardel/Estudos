@@ -54,6 +54,50 @@ namespace MyApp
 
             Console.WriteLine("-----------------------");
             Console.WriteLine("");
+
+            // Padrões de Formatação
+            Console.WriteLine("Padrões de formatação:");
+            Console.WriteLine("");
+
+            var data5 = DateTime.Now;
+
+            var horarioCurto = string.Format("{0:t}", data5);
+            Console.WriteLine($"{horarioCurto} - Retorna a hora atual em hora:minutos"); // Retorna a hora atual em hora:minutos
+
+            Console.WriteLine("");
+
+            var dataCurta = string.Format("{0:d}", data5);
+            Console.WriteLine($"{dataCurta} - Retorna apenas a data em formato curto, sem o horário"); // Retorna apenas a data em formato curto, sem o horário
+
+            Console.WriteLine("");
+
+            var horarioLongo = string.Format("{0:T}", data5);
+            Console.WriteLine($"{horarioLongo} - Retorna a hora atual em hora:minutos:segundos"); // Retorna a hora atual em hora:minutos:segundos
+
+            Console.WriteLine("");
+
+            var dataLonga = string.Format("{0:D}", data5);
+            Console.WriteLine($"{dataLonga} - Retorna apenas a data por extenso"); // Retorna apenas a data por extenso
+
+            Console.WriteLine("");
+
+            var dataLongaHoraCurta = string.Format("{0:f}", data5);
+            Console.WriteLine($"{dataLongaHoraCurta} - Retorna data por extenso e horário em hora:minutos"); // Retorna data por extenso e horário em hora:minutos
+
+            Console.WriteLine("");
+
+            var dataLongaHoraLonga = string.Format("{0:F}", data5);
+            Console.WriteLine($"{dataLongaHoraLonga} - Retorna data por extenso e horário em hora:minutos:segundos"); // Retorna data por extenso e horário em hora:minutos:segundos
+
+            Console.WriteLine("");
+
+            var dataCurtaHoraCurta = string.Format("{0:g}", data5);
+            Console.WriteLine($"{dataCurtaHoraCurta} - Retorna data curta e horário em hora:minutos"); // Retorna data curta e horário em hora:minutos
+
+            Console.WriteLine("");
+
+            var dataPadraoSistemas = string.Format("{0:r}", data5);
+            Console.WriteLine($"{dataPadraoSistemas} - Retorna data e horário por extenso no formato padrão da maioria dos sistemas"); // Retorna data e horário por extenso no formato padrão da maioria dos sistemas
         }
     }
 }
