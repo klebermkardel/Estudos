@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace MyApp
 {
@@ -128,6 +129,19 @@ namespace MyApp
 
             Console.WriteLine("-----------------------");
             Console.WriteLine("");
+
+            // CultureInfo
+            Console.WriteLine("CultureInfo:");
+            Console.WriteLine("");
+            
+            var pt = new CultureInfo("pt-PT");
+            var br = new CultureInfo("pt-BR");
+            var enUs = new CultureInfo("en-US");
+            var enUk = new CultureInfo("en-UK");
+            var de = new CultureInfo("de-DE");
+            var atual = CultureInfo.CurrentCulture;
+
+            Console.WriteLine(DateTime.Now.ToString("D", atual));
         }
     }
 }
