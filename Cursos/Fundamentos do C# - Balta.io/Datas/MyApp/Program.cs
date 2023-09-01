@@ -39,6 +39,21 @@ namespace MyApp
             Console.WriteLine($"{data3.Minute} - Retorna minutos definido"); // Retorna minutos definido
             Console.WriteLine($"{data3.Second} - Retorna segundos definido"); // Retorna segundos definido
             Console.WriteLine($"{data3.DayOfWeek} - Retorna dia da semana da data que foi defininida em inglês"); // Retorna dia da semana da data que foi defininida em inglês
+
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("");
+
+            // Formatando datas
+            Console.WriteLine("Formatando datas:");
+            Console.WriteLine("");
+
+            var data4 = DateTime.Now;
+
+            var dataFormatada = string.Format("{0:dd/MM/yyyy}", data4);
+            Console.WriteLine($"{dataFormatada} - Retorna a data formatada da forma como você definir"); // Retorna a data formatada da forma como você definir"
+
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("");
         }
     }
 }
