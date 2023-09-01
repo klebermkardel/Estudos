@@ -98,6 +98,21 @@ namespace MyApp
 
             var dataPadraoSistemas = string.Format("{0:r}", data5);
             Console.WriteLine($"{dataPadraoSistemas} - Retorna data e horário por extenso no formato padrão da maioria dos sistemas"); // Retorna data e horário por extenso no formato padrão da maioria dos sistemas
+
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("");
+
+            // Adicionando Valores
+            Console.WriteLine("Adicionando valores:");
+            Console.WriteLine("");
+
+            var data6 = DateTime.Now;
+            Console.WriteLine($"{data6} - Retorna data atual"); // Retorna data atual
+            Console.WriteLine($"{data6.AddDays(30)} - Retorna data atual + número de dias definido"); // Retorna data atual + número de dias definido
+            Console.WriteLine($"{data6.AddMonths(2)} - Retorna data atual + número de meses definido"); // Retorna data atual + número de meses definido
+            Console.WriteLine($"{data6.AddYears(1)} - Retorna data atual + número de anos definido"); // Retorna data atual + número de anos definido
+
+
         }
     }
 }
