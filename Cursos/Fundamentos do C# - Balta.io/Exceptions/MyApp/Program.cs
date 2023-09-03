@@ -11,7 +11,7 @@ namespace MyApp
 
             var arr = new int[3]{1, 2, 3};
 
-            // Try/Catch
+            // Try/Catch (sempre tratar os erros do mais espefícico para o mais genérico)
 
             try {
                 for(var i = 0; i < 10; i++)
@@ -19,7 +19,12 @@ namespace MyApp
                     // System.IndexOutOfRangeException
                     Console.WriteLine(arr[i]);
                 }
-            } catch(Exception ex) {
+            } catch(IndexOutOfRangeException ex) {
+                Console.WriteLine(ex.InnerException);
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Não encontrei o próximo índice na lista"); // vai rodar esse
+            }
+            catch(Exception ex) {
                 Console.WriteLine(ex.InnerException);
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Ops, algo deu errado!");
