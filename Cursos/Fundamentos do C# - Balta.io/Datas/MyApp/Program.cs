@@ -161,6 +161,32 @@ namespace MyApp
 
             var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(utcDate, timezoneAustralia);
             Console.WriteLine($"{horaAustralia} - Retorna data com horário em Auckland/AUS"); // Retorna data com horário em Auckland/AUS
+
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("");
+
+            // Timespan
+            Console.WriteLine("Timespan:");
+            Console.WriteLine("");
+
+            var timeSpan = new TimeSpan();
+            Console.WriteLine($"{timeSpan} - Retorna timespan vazio"); // Retorna timespan vazio
+
+            var timeSpanNanosegundos = new TimeSpan(1);
+            Console.WriteLine($"{timeSpanNanosegundos} - Retorna 1 nanosegundo"); // Retorna 1 nanosegundo
+
+            var timeSpanHoraMinutoSegundo = new TimeSpan(5, 12, 8);
+            Console.WriteLine($"{timeSpanHoraMinutoSegundo} - Retorna horário definido em hh:mm:ss"); // Retorna horário definido em hh:mm:ss
+
+            var timeSpanDiaHoraMinutoSegundo = new TimeSpan(3, 5, 12, 8);
+            Console.WriteLine($"{timeSpanDiaHoraMinutoSegundo} - Retorna horário definido em hh:mm:ss com dia na frente"); // Retorna horário definido em hh:mm:ss com dia na frente"
+
+            var timeSpanDiaHoraMinutoSegundoMilissegundo = new TimeSpan(3, 5, 12, 8, 100);
+            Console.WriteLine($"{timeSpanDiaHoraMinutoSegundoMilissegundo} - Retorna horário definido em hh:mm:ss:ms com dia na frente"); // Retorna horário definido em hh:mm:ss:ms com dia na frente
+
+            Console.WriteLine(timeSpanHoraMinutoSegundo - timeSpanDiaHoraMinutoSegundo);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Days);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Add(new TimeSpan(12, 0, 0)));
         }
     }
 }
