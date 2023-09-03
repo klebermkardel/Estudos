@@ -6,7 +6,15 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Execeptions - Tratamento de erros
+
+            var arr = new int[3]{1, 2, 3};
+
+            for(var i = 0; i < 10; i++)
+            {
+                // System.IndexOutOfRangeException
+                Console.WriteLine(arr[i]);
+            }
         }
     }
 }
