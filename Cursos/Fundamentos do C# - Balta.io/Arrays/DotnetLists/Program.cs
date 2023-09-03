@@ -19,6 +19,16 @@ namespace DotnetLists
             Console.WriteLine($"{meuArray[2]} - Posição 2: Retorna 3"); // Posição 2: Retorna 3
             Console.WriteLine($"{meuArray[3]} - Posição 3: Retorna 4"); // Posição 3: Retorna 4
             Console.WriteLine($"{meuArray[4]} - Posição 4: Retorna 5"); // Posição 4: Retorna 5
+
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("");
+
+            // Percorrendo arrays
+            Console.WriteLine("Percorrendo arrays:");
+            Console.WriteLine("");
+
+            for(int i = 0; i < meuArray.Length; i++)
+                Console.WriteLine(meuArray[i]); 
         }
     }
 }
