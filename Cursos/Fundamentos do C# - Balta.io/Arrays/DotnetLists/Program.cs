@@ -53,6 +53,21 @@ namespace DotnetLists
 
             foreach(var funcionario in funcionarios)
                 Console.WriteLine($"{funcionario.Id} - {funcionario.Nome}");
+
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("");
+
+            // Adicionado valores
+            Console.WriteLine("Adicionado valores:");            
+            Console.WriteLine("");
+
+            var primeiro = new int[4];
+            var segundo = new int[4];
+
+            segundo[0] = primeiro[0];
+
+            primeiro[0] = 23;
+            Console.WriteLine(segundo[0]);
         }
     }
 
