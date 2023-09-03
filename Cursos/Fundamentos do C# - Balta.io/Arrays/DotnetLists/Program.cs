@@ -24,11 +24,42 @@ namespace DotnetLists
             Console.WriteLine("");
 
             // Percorrendo arrays
-            Console.WriteLine("Percorrendo arrays:");
+            Console.WriteLine("Percorrendo arrays (laço for):");
             Console.WriteLine("");
 
             for(int i = 0; i < meuArray.Length; i++)
                 Console.WriteLine(meuArray[i]); 
+
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("");
+
+            // ForEach
+            Console.WriteLine("ForEach:");
+            Console.WriteLine("");
+
+            foreach(var item in meuArray)
+            {
+                Console.WriteLine(item); 
+            }  
+
+            Console.WriteLine("");
+
+            var funcionarios = new Funcionario[5];
+            funcionarios[0] = new Funcionario() {Id = 0001, Nome="André"};
+            funcionarios[1] = new Funcionario() {Id = 0002, Nome="Cláudio"};
+            funcionarios[2] = new Funcionario() {Id = 0003, Nome="Márcia"};
+            funcionarios[3] = new Funcionario() {Id = 0004, Nome="Maria"};
+            funcionarios[4] = new Funcionario() {Id = 0005, Nome="José"};
+
+            foreach(var funcionario in funcionarios)
+                Console.WriteLine($"{funcionario.Id} - {funcionario.Nome}");
         }
+    }
+
+    public struct Funcionario
+    {
+        public int Id { get; set; }
+
+        public string Nome { get; set; }
     }
 }
