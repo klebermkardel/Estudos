@@ -1,0 +1,14 @@
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\bin\Debug\net7.0\DotnetLists.exe
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\bin\Debug\net7.0\DotnetLists.deps.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\bin\Debug\net7.0\DotnetLists.runtimeconfig.json
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\bin\Debug\net7.0\DotnetLists.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\bin\Debug\net7.0\DotnetLists.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\obj\Debug\net7.0\DotnetLists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\obj\Debug\net7.0\DotnetLists.AssemblyInfoInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\obj\Debug\net7.0\DotnetLists.AssemblyInfo.cs
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\obj\Debug\net7.0\DotnetLists.csproj.CoreCompileInputs.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\obj\Debug\net7.0\DotnetLists.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\obj\Debug\net7.0\refint\DotnetLists.dll
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\obj\Debug\net7.0\DotnetLists.pdb
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\obj\Debug\net7.0\DotnetLists.genruntimeconfig.cache
+C:\Users\55119\OneDrive\Área de Trabalho\Estudos\Cursos\Fundamentos do C# - Balta.io\Arrays\DotnetLists\obj\Debug\net7.0\ref\DotnetLists.dll
