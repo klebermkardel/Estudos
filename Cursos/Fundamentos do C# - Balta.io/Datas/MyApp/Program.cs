@@ -142,6 +142,25 @@ namespace MyApp
             var atual = CultureInfo.CurrentCulture;
 
             Console.WriteLine(DateTime.Now.ToString("D", atual));
+
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("");
+
+            // Timezone
+            Console.WriteLine("Timezone:");
+            Console.WriteLine("");
+
+            var utcDate = DateTime.UtcNow;
+
+            Console.WriteLine($"{utcDate} - Retorna data com horário universal"); // Retorna data com horário universal
+
+            Console.WriteLine($"{utcDate.ToLocalTime()} - Retorna data com horário local"); // Retorna data com horário local
+
+            var timezoneAustralia = TimeZoneInfo.FindSystemTimeZoneById("Pacific/Auckland");
+            Console.WriteLine($"{timezoneAustralia} - Retorna UTC do local especificado"); // Retorna UTC do local especificado
+
+            var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(utcDate, timezoneAustralia);
+            Console.WriteLine($"{horaAustralia} - Retorna data com horário em Auckland/AUS"); // Retorna data com horário em Auckland/AUS
         }
     }
 }
