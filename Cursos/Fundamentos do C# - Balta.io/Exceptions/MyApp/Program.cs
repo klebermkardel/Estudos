@@ -41,6 +41,8 @@ namespace MyApp
                 Console.WriteLine(ex.InnerException);
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Ops, algo deu errado!");
+            } finally {
+                Console.WriteLine("Chegou ao fim!");
             }
         }
 
