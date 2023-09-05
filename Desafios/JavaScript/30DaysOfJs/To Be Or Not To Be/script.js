@@ -1,0 +1,65 @@
+/* Escreva uma função  expectque ajude os desenvolvedores a testar seu código. Deve receber qualquer valor  val e retornar um objeto com as duas funções a seguir.
+
+toBe(val) aceita outro valor e retorna  true se os dois  === se valorizarem. Se eles não forem iguais, deverá ocorrer um erro  "Not Equal".
+notToBe(val) aceita outro valor e retorna  true se os dois  !== se valorizarem. Se eles forem iguais, deverá gerar um erro  "Equal".
+ 
+
+Exemplo 1:
+
+Entrada: func = () => expect(5).toBe(5)
+ Saída: {"value": true}
+ Explicação: 5 === 5 então esta expressão retorna verdadeiro.
+Exemplo 2:
+
+Entrada: func = () => expect(5).toBe(null)
+ Saída: {"error": "Not Equal"}
+ Explicação: 5 !== null então esta expressão gera o erro "Not Equal".
+Exemplo 3:
+
+Entrada: func = () => expect(5).notToBe(null)
+ Saída: {"value": true}
+ Explicação: 5 !== null então esta expressão retorna verdadeiro.
+
+ */
+
+ function expect(val) {
+    return {
+      toBe: function (otherVal) {
+        if (val === otherVal) {
+          return { value: true };
+        } else {
+          throw new Error("Not Equal");
+        }
+      },
+      notToBe: function (otherVal) {
+        if (val !== otherVal) {
+          return { value: true };
+        } else {
+          throw new Error("Equal");
+        }
+      },
+    };
+  }
+  
+  // Exemplos de uso:
+  try {
+    const result1 = expect(5).toBe(5);
+    console.log(result1); // Saída: {"value": true}
+  } catch (error) {
+    console.error(error.message);
+  }
+  
+  try {
+    const result2 = expect(5).toBe(null);
+    console.log(result2);
+  } catch (error) {
+    console.error(error.message); // Saída: "Not Equal"
+  }
+  
+  try {
+    const result3 = expect(5).notToBe(null);
+    console.log(result3); // Saída: {"value": true}
+  } catch (error) {
+    console.error(error.message);
+  }
+  
