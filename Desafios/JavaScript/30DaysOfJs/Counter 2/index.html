@@ -3,54 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>30 Days Of JavaScript - Counter 2</title>
+    <title>30 Days Of JavaScript - Counter</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>30 Days Of JavaScript</h1>
-    <h2>Counter 2</h2>
-    <p>Escreva uma função  createCounter. Deve aceitar um número inteiro inicial  init. Deve retornar um objeto com três funções.</p>
-
-    <p>As três funções são:</p>
-
-    <ul>
-        <li>increment() aumenta o valor atual em 1 e depois o retorna.</li>
-        <li>decrement() reduz o valor atual em 1 e depois o retorna.</li>
-        <li>reset() define o valor atual como  init e depois o retorna.</li>
-    </ul>
-
-    
-
-    <h3>Exemplo 1:</h3>
-
-    <span><strong>Entrada:</strong> init = 5, calls = ["increment","reset","decrement"]</span><br>
-    <span><strong>Saída: </strong> [6,5,4]</span><br>
-    <span><strong>Explicação:</strong><br> 
-    contador const = criarContador(5); <br>
-    contador.incremento(); //6 <br>
-    contador.reset(); //5 <br>
-    contador.decremento(); //4 </span><br>
-
-    <h3>Exemplo 2:</h3>
-
-    <span><strong>Entrada:</strong> init = 0, calls = ["increment","reset","decrement"]</span><br>
-    <span><strong>Saída: </strong> [1,2,1,0,0]</span><br>
-    <span><strong>Explicação:</strong><br> 
-    contador const = criarContador(0); <br>
-    contador.incremento(); //1 <br>
-    contador.incremento(); //2 <br>
-    contador.decremento(); //1 <br>
-    contador.reset(); //0 <br> 
-    contador.reset(); //0</span><br>
-    
-
-    <h3>Restrições:</h3>
-
-    <ul>
-        <li>-1000 <= init <= 1000</li>
-        <li>total calls not to exceed 1000</li>
-    </ul>
-    
-    
+    <button id="btn-increment">Increment</button>
+    <button id="btn-decrement">Decrement</button>
+    <button id="btn-reset">Reset</button>
+    <div id="output">0</div>
 
     <script src="./script.js"></script>
 </body>

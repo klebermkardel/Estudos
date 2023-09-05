@@ -9,6 +9,7 @@ Exemplo 1:
 Entrada: func = () => expect(5).toBe(5)
  Saída: {"value": true}
  Explicação: 5 === 5 então esta expressão retorna verdadeiro.
+
 Exemplo 2:
 
 Entrada: func = () => expect(5).toBe(null)
@@ -22,44 +23,48 @@ Entrada: func = () => expect(5).notToBe(null)
 
  */
 
- function expect(val) {
-    return {
-      toBe: function (otherVal) {
-        if (val === otherVal) {
-          return { value: true };
-        } else {
-          throw new Error("Not Equal");
+function expect(val) {
+          return {
+            toBe: function (otherVal) {
+              if (val === otherVal) {
+                return { value: true };
+              } else {
+                throw new Error("Not Equal");
+              }
+            },
+            notToBe: function (otherVal) {
+              if (val !== otherVal) {
+                return { value: true };
+              } else {
+                throw new Error("Equal");
+              }
+            },
+          };
         }
-      },
-      notToBe: function (otherVal) {
-        if (val !== otherVal) {
-          return { value: true };
-        } else {
-          throw new Error("Equal");
-        }
-      },
-    };
-  }
-  
-  // Exemplos de uso:
-  try {
-    const result1 = expect(5).toBe(5);
-    console.log(result1); // Saída: {"value": true}
-  } catch (error) {
-    console.error(error.message);
-  }
-  
-  try {
-    const result2 = expect(5).toBe(null);
-    console.log(result2);
-  } catch (error) {
-    console.error(error.message); // Saída: "Not Equal"
-  }
-  
-  try {
-    const result3 = expect(5).notToBe(null);
-    console.log(result3); // Saída: {"value": true}
-  } catch (error) {
-    console.error(error.message);
-  }
+
+        document.getElementById("btn-toBe").addEventListener("click", function () {
+            const value1 = document.getElementById("value1").value;
+            const value2 = document.getElementById("value2").value;
+            const outputDiv = document.getElementById("output");
+
+            try {
+                const result = expect(value1).toBe(value2);
+                outputDiv.textContent = JSON.stringify(result);
+            } catch (error) {
+                outputDiv.textContent = error.message;
+            }
+        });
+
+        document.getElementById("btn-notToBe").addEventListener("click", function () {
+            const value1 = document.getElementById("value1").value;
+            const value2 = document.getElementById("value2").value;
+            const outputDiv = document.getElementById("output");
+
+            try {
+                const result = expect(value1).notToBe(value2);
+                outputDiv.textContent = JSON.stringify(result);
+            } catch (error) {
+                outputDiv.textContent = error.message;
+            }
+        });
   

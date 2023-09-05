@@ -39,43 +39,40 @@ total calls not to exceed 1000
 */
 
 function createCounter(init) {
-    let currentValue = init;
-  
-    return {
-      increment: function () {
-        currentValue++;
-        return currentValue;
-      },
-      decrement: function () {
-        currentValue--;
-        return currentValue;
-      },
-      reset: function () {
-        currentValue = init;
-        return currentValue;
-      },
-    };
-  }
-  
-  // Exemplo 1:
-  const counter1 = createCounter(5);
-  const results1 = [];
-  
-  results1.push(counter1.increment()); // 6
-  results1.push(counter1.reset());     // 5
-  results1.push(counter1.decrement()); // 4
-  
-  console.log(results1); // Saída: [6, 5, 4]
-  
-  // Exemplo 2:
-  const counter2 = createCounter(0);
-  const results2 = [];
-  
-  results2.push(counter2.increment()); // 1
-  results2.push(counter2.increment()); // 2
-  results2.push(counter2.decrement()); // 1
-  results2.push(counter2.reset());     // 0
-  results2.push(counter2.reset());     // 0
-  
-  console.log(results2); // Saída: [1, 2, 1, 0, 0]
-  
+  let currentValue = init;
+
+  return {
+    increment: function () {
+      currentValue++;
+      return currentValue;
+    },
+    decrement: function () {
+      currentValue--;
+      return currentValue;
+    },
+    reset: function () {
+      currentValue = init;
+      return currentValue;
+    },
+  };
+}
+
+const counter = createCounter(0);
+
+document.getElementById("btn-increment").addEventListener("click", function () {
+    const outputDiv = document.getElementById("output");
+    const result = counter.increment();
+    outputDiv.textContent = result;
+});
+
+document.getElementById("btn-decrement").addEventListener("click", function () {
+    const outputDiv = document.getElementById("output");
+    const result = counter.decrement();
+    outputDiv.textContent = result;
+});
+
+document.getElementById("btn-reset").addEventListener("click", function () {
+    const outputDiv = document.getElementById("output");
+    const result = counter.reset();
+    outputDiv.textContent = result;
+});

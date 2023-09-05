@@ -4,30 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>30 Days Of JavaScript - To Be Or Not To Be</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>30 Days Of JavaScript</h1>
-    <h2>To Be Or Not To Be</h2>
-    <p>Desafio: Escreva uma função  expectque ajude os desenvolvedores a testar seu código. Deve receber qualquer valor  val e retornar um objeto com as duas funções a seguir.</p>
-    <ul>
-        <li>toBe(val) aceita outro valor e retorna  true se os dois  === se valorizarem. Se eles não forem iguais, deverá ocorrer um erro  "Not Equal".</li>
-        <li>notToBe(val) aceita outro valor e retorna  true se os dois  !== se valorizarem. Se eles forem iguais, deverá gerar um erro  "Equal".</li>
-    </ul>
-
-    <h3>Exemplo 1:</h3>
-    <span><strong>Entrada:</strong> func = () => expect(5).toBe(5)</span>
-    <span><strong>Saída:</strong> {"value": true}</span>
-    <span><strong>Explicação:</strong> 5 === 5 então esta expressão retorna verdadeiro.</span>
-
-    <h3>Exemplo 2:</h3>
-    <span><strong>Entrada:</strong> func = () => expect(5).toBe(null)</span>
-    <span><strong>Saída:</strong> {"error": "Not Equal"}</span>
-    <span><strong>Explicação:</strong> 5 !== null então esta expressão gera o erro "Not Equal".</span>
-
-    <h3>Exemplo 3:</h3>
-    <span><strong>Entrada:</strong> func = () => expect(5).notToBe(null)</span>
-    <span><strong>Saída:</strong> {"value": true}</span>
-    <span><strong>Explicação:</strong> 5 !== null então esta expressão retorna verdadeiro.</span>
+    <label for="value1">Valor 1:</label>
+    <input type="text" id="value1">
+    <label for="value2">Valor 2:</label>
+    <input type="text" id="value2">
+    <button id="btn-toBe">toBe</button>
+    <button id="btn-notToBe">notToBe</button>
+    <div id="output"></div>
 
     <script src="./script.js"></script>
 </body>
