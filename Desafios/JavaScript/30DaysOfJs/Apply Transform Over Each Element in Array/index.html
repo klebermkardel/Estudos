@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days Of JavaScript - Mapeamento de Arrays</title>
+</head>
+<body>
+    <h1>30 Days Of JavaScript </h1>
+    <h2>Mapeamento de Arrays</h2>
+
+    <p>Dado um array inteiro  arr e uma função de mapeamento  fn, retorne um novo array com uma transformação aplicada a cada elemento.</p>
+
+    <p>A matriz retornada deve ser criada de forma que  returnedArray[i] = fn(arr[i], i).</p>
+
+    <p><strong>Por favor, resolva sem o método integrado Array.map.</strong></p>
+
+    <h3>Exemplo 1:</h3>
+
+    <span><strong>Entrada:</strong> arr = [1,2,3], fn = function plusone(n) { return n + 1; }</span><br>
+    <span><strong>Saída:</strong> [2,3,4]</span><br>
+    <span><strong>Explicação: </strong> const newArray = map(arr, plusone); // [2,3,4] 
+    A função aumenta cada valor do array em um.
+    </span>
+
+    <h3>Exemplo 2:</h3>
+
+    <span><strong>Entrada:</strong> arr = [1,2,3], fn = função plusI(n, i) { return n + i; }</span><br>
+    <span><strong>Saída:</strong> [1,3,5]</span><br>
+    <span><strong>Explicação: </strong> A função aumenta cada valor pelo índice em que reside.
+    </span>
+
+
+    <h3>Exemplo 3:</h3>
+
+    <span><strong>Entrada:</strong> arr = [10,20,30], fn = function constante() { return 42; }</span><br>
+    <span><strong>Saída:</strong> [42,42,42]</span><br>
+    <span><strong>Explicação: </strong>  A função sempre retorna 42.
+    </span>
+
+    <h3>Restrições:</h3>
+
+    <ul>
+        <li>0 <= arr.length <= 1000</li>
+        <li>-109 <= arr[i] <= 109</li>
+        <li>fn returns a number</li>
+    </ul>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
