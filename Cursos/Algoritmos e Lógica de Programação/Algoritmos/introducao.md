@@ -50,3 +50,5 @@ Lógica de Programação -> Linguagem de Programação -> Sistema Completo
 - Nassi Shneiderman
 - Portugol
 
+
+
