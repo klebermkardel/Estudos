@@ -10,3 +10,7 @@ console.log(c === a + b)
 console.log(c >= Math.pow(b, a))
 console.log(b <= c % 2)
 console.log(1 === c % 2)
+
+console.log(true && false)
+console.log((a === b) || (c > a))
+console.log(!((a === b) || (c > a)))
