@@ -35,3 +35,31 @@ senao
     Escreva("Vou ficar em casa")
 FimSe
 ```
+
+## Estrutura Condicional Aninhada - If ElseIf (Se senaoSe senao)
+
+```
+Se (condicao1) entao
+    Bloco A
+senao 
+    Se (condicao2) entao
+        Bloco B
+    senao
+        Bloco C
+    FimSe
+FimSe
+```
+
+Exemplo:
+
+```
+Se (dinheiro >= 10000) entao
+    Escreva("Partiu Disney")
+senao 
+    Se (dinheiro >= 5000) e (dinheiro < 10000) entao
+        Escreva("Visitar família")
+    senao
+        Escreva("#chateado")
+    FimSe
+FimSe
+```
