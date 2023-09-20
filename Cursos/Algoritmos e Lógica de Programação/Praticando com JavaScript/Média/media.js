@@ -1,10 +1,14 @@
 let n1, n2
 
-n1 = parseInt(prompt("Digite o primeiro valor: "))
-n2 = parseInt(prompt("Digite o segundo valor: "))
+n1 = parseFloat(prompt("Primeira nota: "))
+n2 = parseFloat(prompt("Segunda nota: "))
 
 media = (n1+n2)/2
 
-alert(`A média entre ${n1} e ${n2} é igual a ${media}`)
+if(media < 7) {
+    alert(`Média: ${media}\n Situação: Aluno Reprovado`)
+} else {
+    alert(`Média: ${media}\n Situação: Aluno Aprovado`)
+}
 
 
