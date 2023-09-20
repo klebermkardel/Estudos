@@ -63,3 +63,18 @@ senao
     FimSe
 FimSe
 ```
+
+## Estrutura Condicional Aninhada - Switch (Escolha Caso)
+
+```
+Escolha(variavel)
+    Caso valor
+        Bloco A
+    Caso valor
+        Bloco B
+    Caso valor
+        Bloco C
+    OutroCaso
+        Bloco D
+FimEscolha
+```
