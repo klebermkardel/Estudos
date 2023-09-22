@@ -111,3 +111,54 @@ Inicio
     Escreval("A soma de A+B é ", RES)
 FimAlgoritmo
 ```
+
+## Funções do VisualG
+
+site <- "CursoEmVideo"
+
+Funções:
+
+1. Compr(site) // retorna 12
+2. Copia(site, 6, 2) // retorna "Em"
+3. Maiusc(site) // retorna "CURSOEMVIDEO"
+4. Minusc(site) // retorna "cursoemvideo"
+5. Pos("Video", site) // retorna 8
+6. Asc("C") // retorna 67
+7. Carac(67) // retorna "C"
+
+## Funções acima no JavaScript
+
+let site = "CursoEmVideo"
+
+1. Compr()
+
+    let resultado = site.length
+    console.log(resultado) // retorna 1
+
+
+2. Copia()
+    let resultado = site.substring(6, 8)
+    console.log(resultado); // retorna "Em"
+
+3. Maiusc()
+    let resultado = site.toUpperCase()
+    console.log(resultado); // retorna "CURSOEMVIDEO"
+
+4. Minusc()
+    let resultado = site.toLowerCase()
+    console.log(resultado) // retorna "cursoemvideo"
+
+5. Pos()
+    let resultado = site.indexOf("Vídeo")
+    console.log(resultado) // retorna 8
+
+6. Asc()
+    let caractere = "C"
+    let resultado = caractere.charCodeAt(0)
+    console.log(resultado) // retorna 67
+
+7. Carac()
+    let codigoASCII = 67
+    let resultado = String.fromCharCode(codigoASCII)
+    console.log(resultado) // retorna "C"
+    
