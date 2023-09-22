@@ -1,6 +1,6 @@
-# Visualg - Funções 
+# Visualg - Rotinas e Funções 
 
-## Funções - Processos repetitivos
+## Rotinas - Processos repetitivos que não retornam um valor
 
 Exemplo (Moedor de carne):
 
@@ -26,7 +26,7 @@ Aperte o botão vermelho
 
 
 ```
-Procedimento FuncaoPreparo()
+Procedimento RotinaPreparo()
 Inicio
     Verifique a escotilha
     Botão azul posição 1
@@ -42,9 +42,9 @@ Programa:
 
 ```
 Inicio
-    FuncaoPreparo()
+    RotinaPreparo()
     Coloque a carne
-    FuncaoPreparo()
+    RotinaPreparo()
 FimAlgoritmo
 ```
 
@@ -55,12 +55,18 @@ Tipo 1: Por valor
 Exemplo:
 
 ```
-Funcao Soma(A, B : Inteiro) 
+Procedimento RotinaSoma(A, B : Inteiro) 
 Inicio
     Escreval("Recebi o valor", A")
     Escreval("Recebi o valor", B)
-    Escreval("A soma vale", A+B)
-FimFuncao
+    Escreval("A soma vale", A+B) // Escreve 9
+FimProcedimento
+
+Inicio
+    N1 <- 5
+    N2 <- 4
+    RotinaSoma(N1, N2)
+FimAlgoritmo
 ```
 
 ### Passagem de parâmetros
@@ -70,17 +76,38 @@ Tipo 3: Por referência
 Exemplo:
 
 ```
-Funcao Soma(var A, B: Inteiro)
+Procedimento RotinaSoma(var A, B: Inteiro)
 Inicio
     A = A + 1
     B = B + 2
     Escreval("A soma vale", A+B)
-FimFuncao
+FimProcedimento
 
 Inicio
     X <- 4
     Y <- 8
     Soma(X, Y)
     Escreval(X, Y)
+FimAlgoritmo
+```
+
+## Funções - Processos repetivivos que retornam um valor
+
+Exemplo (parâmetros por valor):
+
+```
+Funcao Soma(A, B: Inteiro): Inteiro
+var
+    S: Inteiro
+Inicio
+    S = A + B
+    Retorne S
+FimFuncao
+
+Inicio
+    N1 <- 5
+    N2 <- 4
+    RES <- Soma(N1, N2)
+    Escreval("A soma de A+B é ", RES)
 FimAlgoritmo
 ```
