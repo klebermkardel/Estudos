@@ -47,3 +47,18 @@ Inicio
     FuncaoPreparo()
 FimAlgoritmo
 ```
+
+### Passagem de parâmetros
+
+Tipo1: Por valor
+
+Exemplo:
+
+```
+Funcao Soma(A, B : Inteiro) 
+Inicio
+    Escreval("Recebi o valor", A")
+    Escreval("Recebi o valor", B)
+    Escreval("A soma vale", A+B)
+FimFuncao
+```
