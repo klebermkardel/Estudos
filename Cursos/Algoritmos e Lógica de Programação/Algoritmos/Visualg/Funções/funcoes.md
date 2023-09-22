@@ -50,7 +50,7 @@ FimAlgoritmo
 
 ### Passagem de parâmetros
 
-Tipo1: Por valor
+Tipo 1: Por valor
 
 Exemplo:
 
@@ -62,3 +62,9 @@ Inicio
     Escreval("A soma vale", A+B)
 FimFuncao
 ```
+
+### Passagem de parâmetros
+
+Tipo 3: Por referência
+
+Exemplo:
