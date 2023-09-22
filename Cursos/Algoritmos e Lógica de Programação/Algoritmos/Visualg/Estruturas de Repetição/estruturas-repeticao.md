@@ -79,3 +79,20 @@ Escreva("A soma de todos os valores é, S")
 
 ```
 
+# Estrutura Para (For)
+
+Sintaxe:
+
+```
+Para variavel <- inicio ate fim [passo salto] faca
+    Bloco
+FimPara
+```
+
+Exemplo no VisualG:
+
+```
+Para C <- 1 ate 10 passo 1 faca
+    Escreval(C)
+FimPara
+```
