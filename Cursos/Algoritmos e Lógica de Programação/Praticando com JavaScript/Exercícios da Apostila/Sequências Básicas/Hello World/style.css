@@ -1,0 +1,65 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    margin-top: -100px; 
+}
+
+.box {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px; 
+}
+
+.title {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.exercise h2 {
+    font-size: 20px;
+}
+
+.statement {
+    font-style: italic;
+    color: #555;
+}
+
+.box-response {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    border: 1px solid #000;
+}
+
+.exercise h2,
+.exercise p {
+    margin-top: 8px; 
+}
+
+.exercise,
+.box-response {
+    margin-top: 40px; 
+}
+
+#msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1s ease-in-out;
+}

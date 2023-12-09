@@ -1,0 +1,97 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    margin-top: -100px; 
+}
+
+.box {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px; 
+}
+
+.title {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.exercise h2 {
+    font-size: 20px;
+}
+
+.statement {
+    font-style: italic;
+    color: #555;
+}
+
+.form-box {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px; 
+}
+
+.box-response {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    border: 1px solid #000;
+    margin-top: 10px; /* Adicione alguma margem superior para evitar a sobreposição */
+    position: relative; /* Certificando-se de que o posicionamento é relativo */
+}
+
+.exercise h2,
+.exercise p {
+    margin-top: 8px; 
+}
+
+.exercise,
+.box-response {
+    margin-top: 10px; 
+}
+
+#msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1s ease-in-out;
+}
+
+/* Adicionando estilo para a formatação do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; /* Colocando o label em uma nova linha */
+    margin-bottom: 5px; /* Adicionando uma margem abaixo do label */
+}
+
+input {
+    width: 100%; /* Fazendo o input ocupar a largura total do contêiner */
+    padding: 8px; /* Adicionando algum espaçamento interno ao input */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    padding: 8px 15px; /* Adicionando algum espaçamento interno ao botão */
+    box-sizing: border-box;
+}

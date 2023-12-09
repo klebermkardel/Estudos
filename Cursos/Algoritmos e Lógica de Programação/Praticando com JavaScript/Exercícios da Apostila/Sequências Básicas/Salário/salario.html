@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salário</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Salário</h1>
-    <p>Crie um programa que leia o nome e o salário de um funcionário, mostrando no final uma mensagem.</p>
-    <p>Ex:</p>
-    <p>Nome do Funcionário: Maria do Carmo <br>
-    Salário: 1850,45 <br>
-    O funcionário Maria do Carmo tem um salário de R$1850,45 em Junho.</p>
-
+    <div class="box">
+        <h1 class="title">Salário</h1>
+        <div class="exercise">
+            <h2>Exercício:</h2>
+            <p class="statement">Crie um programa que leia o nome e o salário de um funcionário, mostrando no
+            final uma mensagem. <br> Ex: Nome do Funcionário: Maria do Carmo <br>
+            Salário: 1850,45 <br>
+            O funcionário Maria do Carmo tem um salário de R$1850,45 em Junho.</p>
+        </div>
+        <div class="form-box">
+            <form>
+                <div class="form-group">
+                    <label for="nameInput">Digite seu nome:</label>
+                    <input type="text" id="nameInput" name="nameInput">
+                    <label for="salInput">Informe seu salário:</label>
+                    <input type="number" id="salInput" name="salInput">
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="getData()">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="box-response">
+            <p class="response" id="msg"></p>
+        </div>
+    </div>
+    
     <script src="./salario.js"></script>
 </body>
 </html>

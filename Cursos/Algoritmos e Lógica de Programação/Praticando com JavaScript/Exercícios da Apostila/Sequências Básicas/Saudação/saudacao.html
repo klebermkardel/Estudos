@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saudação</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Saudação</h1>
-    <p>Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boasvindas para ela:</p>
-    <p>Ex:</p>
-    <p>Qual é o seu nome? João da Silva <br>Olá João da Silva, é um prazer te conhecer!</p>
+    <div class="box">
+        <h1 class="title">Saudação</h1>
+        <div class="exercise">
+            <h2>Exercício:</h2>
+            <p class="statement">Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas para ela: <br> Exemplo: Qual é o seu nome? João da Silva <br> Olá João da Silva, é um prazer te conhecer!</p>
+        </div>
+        <div class="form-box">
+            <form>
+                <div class="form-group">
+                    <label for="nameInput">Digite seu nome:</label>
+                    <input type="text" id="nameInput" name="nameInput">
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="getData()">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="box-response">
+            <p class="response" id="msg"></p>
+        </div>
+    </div>
+    
     <script src="./saudacao.js"></script>
 </body>
 </html>
