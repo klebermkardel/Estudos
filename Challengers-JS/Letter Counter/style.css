@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    width: 50%;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+button {
+    width: 40%;
+    height: 30px;
+    background: #306dfa;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
