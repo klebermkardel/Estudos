@@ -19,7 +19,7 @@ Este repositório foi criado para acompanhar o meu progresso no desafio #100Days
 
 ## Dia 2: Greeting
 - Escrevi um programa que solicita ao usuário seu nome e imprime uma saudação com esse nome.
-- [Link para o código do desafio do Dia 1](https://github.com/klebermkardel/Estudos/blob/main/100%20Days%20Of%20Code/Dia%202%20-%20Greeting/index.js)
+- [Link para o código do desafio do Dia 2](https://github.com/klebermkardel/Estudos/blob/main/100%20Days%20Of%20Code/Dia%202%20-%20Greeting/index.js)
 
 ...
 
