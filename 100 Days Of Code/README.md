@@ -15,14 +15,11 @@ Este repositório foi criado para acompanhar o meu progresso no desafio #100Days
 
 ## Dia 1: Hello, World!
 - Escrevi um simples programa em JavaScript para imprimir "Hello, World!" no console.
-- Esta é a primeira etapa do desafio e um começo emocionante para a jornada de aprendizado.
+- [Link para o código do desafio do Dia 1](https://github.com/klebermkardel/Estudos/blob/main/100%20Days%20Of%20Code/Dia%201%20-%20Hello%2C%20World!/index.js)
 
 ...
 
 ## Progresso
 - [Dia 1: Hello, World!](#dia-1-hello-world)
-- [Dia 2: [Atualize com o que você fez no segundo dia]](#dia-2-atualize-com-o-que-voc%C3%AA-fez-no-segundo-dia)
-- [Dia 3: [Atualize com o que você fez no terceiro dia]](#dia-3-atualize-com-o-que-voc%C3%AA-fez-no-terceiro-dia)
-- [E assim por diante...]
 
 Sinta-se à vontade para se juntar a mim neste desafio ou me acompanhar durante a minha jornada de aprendizado em JavaScript!
