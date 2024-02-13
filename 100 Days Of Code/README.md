@@ -21,10 +21,15 @@ Este repositório foi criado para acompanhar o meu progresso no desafio #100Days
 - Escrevi um programa que solicita ao usuário seu nome e imprime uma saudação com esse nome.
 - [Link para o código do desafio do Dia 2](https://github.com/klebermkardel/Estudos/blob/main/100%20Days%20Of%20Code/Dia%202%20-%20Greeting/index.js)
 
+## Dia 3: Adder
+- Escrevi um programa que contém uma function que soma dois números informados pelo usuário e retorna a soma entre os dois.
+- [Link para o código do desafio do Dia 3](https://github.com/klebermkardel/Estudos/blob/main/100%20Days%20Of%20Code/Dia%203%20-%20Adder/index.js)
+
 ...
 
 ## Progresso
 - [Dia 1: Hello, World!](#dia-1-hello-world)
 - [Dia 2: Greeting](#dia-2-greeting)
+- [Dia 3: Adder](#dia-3-adder)
 
 Sinta-se à vontade para se juntar a mim neste desafio ou me acompanhar durante a minha jornada de aprendizado em JavaScript!
