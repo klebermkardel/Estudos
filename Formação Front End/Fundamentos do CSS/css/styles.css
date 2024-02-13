@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(247, 247, 247);
+    background-color: #f7f7f7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,4 +15,36 @@ h1 {
 p {
     font-size: 14px;
     color: #585656;
+}
+
+/* Utilizando Classes e ids*/
+
+#title-classes {
+    color: #daa520
+}
+
+#title-ids {
+    color: #787878;
+}
+
+#container-classes {
+    border: 1px solid #ff0000;
+    padding: 20px;
+}
+
+#container-id {
+    border: 1px solid #0000ff;
+    padding: 20px;
+}
+
+.paragraph {
+    background-color: #000;
+    color: #f0f8ff;
+    padding: 5px;
+}
+
+#exclusive-paragraph {
+    background-color: #613d3d;
+    color: #fff;
+    padding: 5px;
 }
