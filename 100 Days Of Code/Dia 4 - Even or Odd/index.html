@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Números</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  .par {
+    background-color: green;
+  }
+  .impar {
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+    <h1>Even or Odd</h1>
+    <p>Crie de forma dinâmica com HTML, CSS e JavaScript uma lista de números de 1 a 100 
+    que quando o usuário clicar no número par ele ficará verde e no número ímpar vermelho</p>
+    <ul id="numeros">
+        <!-- Lista de números será gerada aqui -->
+    </ul>
+
+<script>
+  // Array de números de 1 a 100
+  var numeros = Array.from({ length: 100 }, (_, i) => i + 1);
+
+  function criarListaNumeros() {
+    // Seleciona o elemento <ul> com o id "numeros"
+    var lista = document.getElementById('numeros');
+
+    // Itera sobre o array de números
+    numeros.forEach(function(numero) {
+      // Cria um novo elemento <li>
+      var item = document.createElement('li');
+      // Define o texto do <li> como o número atual
+      item.textContent = numero;
+      // Adiciona um evento de clique ao <li>
+      item.onclick = function() {
+        // Verifica se o número é par
+        if (numero % 2 === 0) {
+          // Se for par, toggle a classe "par"
+          this.classList.toggle('par');
+        } else {
+          // Se for ímpar, toggle a classe "impar"
+          this.classList.toggle('impar');
+        }
+      };
+      // Adiciona o novo <li> à lista
+      lista.appendChild(item);
+    });
+  }
+
+  // Executa a função criarListaNumeros quando a janela é carregada
+  window.onload = criarListaNumeros;
+</script>
+</body>
+</html>
