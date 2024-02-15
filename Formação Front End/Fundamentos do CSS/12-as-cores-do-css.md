@@ -25,3 +25,26 @@
 - No caso de #FFFFFF podemos escrever #FFF
 - A mesma coisa vale para #112233, essa cor pode ser escrita como #123
 - Esta é uma técnica muito utilizada
+
+## RGB
+
+- RGB significa Red, Green e Blue;
+- Nós precisamos inserir a intensidade de cada cor, com valores de 0 a 255;
+- 0 é o mais escuro e 255 o mais claro;
+- Aplicamos RGB com a seguinte sintaxe: rgb(0-255, 0-255, 0-255)
+- O primeiro valor representa o vermelho, depois o verde e por fim o azul;
+- Para criar a cor verde, por exemplo, inserimos: rgb(0, 255, 0)
+
+## RGBA
+
+- Podemos criar cores também com o RGBA, A vem de alpha;
+- A alteração dele muda a opacidade da cor;
+- Os valores possíveis são de 0 a 1;
+- Sendo 0 transparente e 1 totalmente visível;
+- A sintaxe é quase a mesma: rgba(0-255, 0-255, 0-255, 0-1)
+
+## HSL
+
+- HSL é um acrônimo para hue, saturation e lightness;
+- Esta abordagem não é muito utilizada, o ranking de uso é: HEX > RGB > HSL > Nomes de cor;
+- Podemos definir uma cor com : hsl(0-255, 0-100%, 0-100%)
