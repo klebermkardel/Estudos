@@ -48,3 +48,17 @@ p {
     color: #fff;
     padding: 5px;
 }
+
+/* Ordem dos Seletores */
+
+h2 {
+    border-bottom: 2px solid #ff0000;
+}
+
+.subtitle {
+    border-bottom: 3px solid #0000ff;
+}
+
+#id-subtitle {
+    border-bottom: 4px solid #00ff00;
+}

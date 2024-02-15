@@ -1,0 +1,33 @@
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+    color: #773333;
+}
+
+/* Nome das cores */
+
+.color-name {
+    color: red;
+}
+
+/* Hexadecimal */
+
+.hex-color {
+    color: #55a398;
+    background-color: #db5e5e;
+    padding: 10px;
+}
+
+/* Hexadecimal Simplicado */
+
+.simple-hex {
+    color: #47e;
+}
