@@ -1,0 +1,16 @@
+.container {
+    text-align: center;
+    background-color: #004465;
+    padding: 30px;
+    width: 50%;
+}
+
+p {
+    color: #f0f8ff;
+}
+
+.bg {
+    background-color: #ee991a;
+    color: black;
+    padding: 5px;
+}
