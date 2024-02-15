@@ -25,11 +25,16 @@ Este repositório foi criado para acompanhar o meu progresso no desafio #100Days
 - Escrevi um programa que contém uma function que soma dois números informados pelo usuário e retorna a soma entre os dois.
 - [Link para o código do desafio do Dia 3](https://github.com/klebermkardel/Estudos/blob/main/100%20Days%20Of%20Code/Dia%203%20-%20Adder/index.js)
 
+## Dia 4: Even or Odd
+- Escrevi um programa que cria dinamicamente uma lista de números de 1 a 100 usando HTML, CSS e JavaScript. Quando o usuário clica em um número par, ele fica verde, e quando clica em um número ímpar, ele fica vermelho.
+- [Link para o código do desafio do Dia 4](https://github.com/klebermkardel/Estudos/blob/main/100%20Days%20Of%20Code/Dia%204%20-%20Even%20or%20Odd/index.html)
+
 ...
 
 ## Progresso
 - [Dia 1: Hello, World!](#dia-1-hello-world)
 - [Dia 2: Greeting](#dia-2-greeting)
 - [Dia 3: Adder](#dia-3-adder)
+- [Dia 4: Even or Odd](#dia-4-even-or-odd)
 
 Sinta-se à vontade para se juntar a mim neste desafio ou me acompanhar durante a minha jornada de aprendizado em JavaScript!
