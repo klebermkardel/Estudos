@@ -33,6 +33,10 @@ Este repositório foi criado para acompanhar o meu progresso no desafio #100Days
 - Escrevi um programa que solicita ao usuário um número válido e retorna o resultado do fatorial do número informado.
 - [Link para o código do desafio do Dia 5](https://github.com/klebermkardel/Estudos/tree/main/100%20Days%20Of%20Code/Dia%205%20-%20Factorial)
 
+## Dia 5: Factorial
+- Escrevi um programa que solicita ao usuário uma lista de números separados por vírgulas e verifica o maior e o menor número informado exibindo os resultados
+- [Link para o código do desafio do Dia 6](https://github.com/klebermkardel/Estudos/tree/main/100%20Days%20Of%20Code/Dia%206%20-%20Largest%20and%20smallest%20number)
+
 ...
 
 ## Progresso
@@ -41,5 +45,6 @@ Este repositório foi criado para acompanhar o meu progresso no desafio #100Days
 - [Dia 3: Adder](#dia-3-adder)
 - [Dia 4: Even or Odd](#dia-4-even-or-odd)
 - [Dia 5: Factorial](#dia-5-factorial)
+- [Dia 6 - Largest and smallest number](#dia-6-largest-and-smallest-number)
 
 Sinta-se à vontade para se juntar a mim neste desafio ou me acompanhar durante a minha jornada de aprendizado em JavaScript!
