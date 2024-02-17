@@ -1,3 +1,5 @@
+/* Background Color */
+
 .container {
     text-align: center;
     background-color: #004465;
@@ -13,4 +15,34 @@ p {
     background-color: #ee991a;
     color: black;
     padding: 5px;
+}
+
+/* Background Opacity */
+
+div p {
+    color: #000;
+}
+
+.bg-opacity {
+    background-color: #009900;
+    opacity: 0.2;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.bg-opacity-2 {
+    background-color: #aaa;
+    opacity: 0.8;
+    padding: 20px;
+}
+
+/* RGBA com opacidade */
+
+div h1 {
+    color: #000;
+}
+
+.rgba-opacity {
+    background-color: rgba(90, 120, 20, 0.2);
+    padding: 20px;
 }
