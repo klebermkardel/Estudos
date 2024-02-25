@@ -41,6 +41,10 @@ Este repositório foi criado para acompanhar o meu progresso no desafio #100Days
 - Escrevi um programa que solicita ao usuário número e utiliza o Crivo de Eratóstenes para verificar se um número é primo.
 - [Link para o código do desafio do Dia 7](https://github.com/klebermkardel/Estudos/tree/main/100%20Days%20Of%20Code/Dia%207%20-%20Prime%20Number)
 
+## Dia 8: Calculator
+- Escrevi uma calculadora interativa que realiza as principais operações básicas como adição, subtração, multiplicação e divisão, além de realizar o cálculo de porcentagens.
+- [Link para o código do desafio do dia 8](https://github.com/klebermkardel/Estudos/tree/main/100%20Days%20Of%20Code/Dia%208%20-%20Calculator)
+
 ...
 
 ## Progresso
@@ -51,5 +55,6 @@ Este repositório foi criado para acompanhar o meu progresso no desafio #100Days
 - [Dia 5: Factorial](#dia-5-factorial)
 - [Dia 6 - Largest and smallest number](#dia-6-largest-and-smallest-number)
 - [Dia 7 - Prime Number](#dia-7-prime-number)
+- [Dia 8 - Calculator](#dia-8-calculator)
 
 Sinta-se à vontade para se juntar a mim neste desafio ou me acompanhar durante a minha jornada de aprendizado em JavaScript!
