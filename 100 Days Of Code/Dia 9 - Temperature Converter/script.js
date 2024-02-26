@@ -21,7 +21,7 @@ function convertTemperature() {
         // Convertendo de Celsius para Fahrenheit usando a fórmula adequada
         result = (temperature * 9/5) + 32;
         // Exibindo o resultado formatado com as unidades de temperatura
-        resultElement.textContent = temperature + " ºC = " + result.toFixed(2) + " ºF";
+        resultElement.textContent = temperature + "º C = " + result.toFixed(2) + "º F";
     } else if (conversionType === "fahrenheitToCelsius") {
         // Convertendo de Fahrenheit para Celsius usando a fórmula adequada
         result = (temperature - 32) * 5/9;
