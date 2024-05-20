@@ -1,3 +1,7 @@
+# Motivação
+
+A capacidade de pensar de maneira lógica é um dos principais diferenciais para saber como resolver problemas, principalmente na área da computação. Diretamente relacionado a isso, compreender o conceito de algoritmo também é algo fundamental.
+
 # Algoritmos
 
 Um algoritmo é um conjunto de instruções passo a passo que descreve como resolver um problema ou realizar uma tarefa. Eles são a base de todos os programas de computador e estão presentes em diversas áreas da vida cotidiana.
