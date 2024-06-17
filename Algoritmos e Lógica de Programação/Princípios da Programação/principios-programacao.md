@@ -85,6 +85,9 @@ Suas principais características eram:
 
 * Pesava 30 toneladas.
 
-* Aplicção principal: cálculo balístico.
+* Aplicação principal: cálculo balístico.
+
+
+**Arquitetura de Von Neumann**
 
 ![<Arquitetura de Von Neumann](<on-image-arquitetura-von-neumann.svg>)
