@@ -87,4 +87,4 @@ Suas principais características eram:
 
 * Aplicção principal: cálculo balístico.
 
-<img src="./on-image-arquitetura-von-neumann.svg alt="Arquitetura de Von Neumann">
+![<Arquitetura de Von Neumann](<on-image-arquitetura-von-neumann.svg>)
