@@ -88,6 +88,54 @@ Suas principais características eram:
 * Aplicação principal: cálculo balístico.
 
 
-**Arquitetura de Von Neumann**
+**Arquitetura de von Neumann**
 
-![<Arquitetura de Von Neumann](<on-image-arquitetura-von-neumann.svg>)
+![<Arquitetura de von Neumann](<on-image-arquitetura-von-neumann.svg>)
+
+Em 1947 pelo húngaro John von Neumann, com base em seus estudos feitos sobre o ENIAC, surge a definição do esquema básico de funcionamento dos computadores atuais. A chamada **Arquitetura de von Neumann**, é a seguinte.
+
+Ainda em 1947, surge o **EDVAC - Eletronic Discrete Variable Computer**, que se utilizava da notação binária pura, o que simplificou enormemente a construção das ULA (Unidade Aritmética e Lógica).
+
+A memória era construída com lâmpadas de mercúrio que excitadas por impulso elétrico enviavam sinais para frente e para trás, possibilitando leituras de 0 ou 1 (ligado/desligado).
+
+Marca-se aqui a separação das funções de operador e programador, cabendo ao Operador a inserção dos comandos no painel e ao programador a resolução de problemas e criação de novos programas. O uso do computador é otimizado a partir de então.
+
+## Computadores de 2ª Geração
+
+**Transistor**:
+
+![<Transistor](<on-image-transistor.jpg>)
+
+É criado em 1947, na Universidade de Stanford (EUA), o transistor, usado somente a partir da década posterior. O uso comercial em grande escala, todavia, só ocorreria no final da década de 1950. É o principal componente dos computadores de 2ª Geração. A Raytheon lança, ainda em 1948, o Transistor comercial.
+
+Surge em 1952, no Bell Laboratories (EUA), o computador usando transistor (válvula em miniatura), que solucionou muitos problemas técnicos, tais como a queimida de válvulas, aquecimento - foi aumentada a velocidade e diminuído o tamanho dos computadores. Nota-se que a substituição de uma simples válvula queimada era um processo trabalhoso e lento.
+
+Nessa geração de computadores, os usuários ainda necessitavam de formação específica e o uso de computadores era muito restrito, exclusivo para grandes empresas, organismos do governo e centros de pesquisa. É o tempo do "terminal burro".
+
+Criado em 1949, por Mauchly Computer Corporation, o UNIVAC é o primeiro computador **eletrônico disponível comercialmente**. Sua primeira aplicação: processamento das eleições. Trata-se também do primeiro computador adquirido no Brasil, pelo IBGE para apoio em estatísticas.
+
+O UNIVAC - Universal Automatic Computer era uma máquina eletrônica capaz de armazenar programas de computadores através de uma fita magnética de alta velocidade, ao invés dos cartões perfurados. Usava o código BCD de 6 Bits com 1 de paridade.
+
+Algum tempo depois, surge as unidades de risco rígido que repsetaram uma revolução no armazenamento de dados, que antes eram armazenados em fitas. Eram carísssimas, portanto incentivaram o uso de compactação os dados. O famoso *"bug do milênio"* em grande parte ocorreu por isso, pois era "vantajoso" armazenar "56" e não "1956".
+
+## Computadores de 3ª Geração
+
+No ano de 1964, a IBM lança a série 360, permitindo o uso desta tecnologia em empresas de grande e médio portes. A base tecnológica passou a ser o Chip ou circuito integrado (compactação dos transistores em placas de silício).
+
+## Novas Gerações de Computadores
+
+Muito antes da fundação da Intel, Gordon Moore vaticionou o que viria a ser uma das mais interessantes "leis" da TI.
+
+**Lei de Moore**: "O número de transistores dos chips terá um aumento de 100%, pelo mesmo custo, a cada período de 18 meses." (Gordon Moore, presidente da Intel, escreveu esse artigo em 1965).
+
+**Altair 8800**:
+
+![<Altair 8800](<on-image-Altair-8800.jpg>)
+
+Criado em 1975, baseado na CPU da Intel 8080, surge o ALTAIR 8800, que é o primeiro **computador pessoal portátil**, produzido industrialmente para venda em massa, criado pelos norte-americanos Ed Roberts, Forest M. Mims III, Stan Cagle e Robert Zaller.
+
+Se não chegou a ser um grande sucesso comercial, motivou a criação de inúmeros outros microcomputadores, entre os quais se destaca o Apple II.
+
+Lançado em 1976, por Steve Jobs e Steve Wozniak (fundados da Apple Corp.), foi o primeiro microcomputador pessoal a ter sucesso comercial.
+
+Em sequência, surgem os minicomputadores e derivados, até chegarmos aos microcomputadores e seus derivados, como o notebook. Trata-se de uma indústria em evolução constante, sendo impossível prever aonde chegará.
