@@ -45,3 +45,13 @@ Em 1967, surge o Simula 67, que introduz os conceitos de orientação a objetos,
 Pouco depois, em 1970, surge o Pascal, criado pelo húngaro Niklçaus Wirth, que ganharia enorme popularidade na década de 1980, a partir da implementação do Turbo Pascal, pela Borland.
 
 Em 1973, surge a linguagem C, aproveitando a linguagem "BCPL", criado por Dnies Ritchie, da AT&T.
+
+### Quarta Geração e Post
+
+São linguagens de programação que podem criar programas em outras linguagens, quesão voltadas a pesquisas, ou que por meio de interfaces permitem a criação de códigos sem a digitação efetiva de comandos. Atualmente, faz pouco sentido buscar compreender hardware e software pelo conceito de geração, dadas as especificidades e intercorrências entre as influências sofridas e/ou causadas por determinada aplicação. Assim, a partir da 4ª geração de linguagens, não parece fazer muito sentido classificar tecnologias por geração.
+
+São especialmente notáveis algumas situções, que passamos a enumerar:
+
+**Linguagens de interface com banco de dados:** surgiram com o intuito de acessar algum banco de dados, habitualmente baseados no modelo relacional. Durante algum tempo contaram com mais usuários que as tradicionais linguagens de programação (COBOL, C, Pascal e BASIC). No entanto, foi um fenômeno passageiro, que teve início em meados da década de 1980 e tendo sido encerrado antes do final da década de 1990. O maior destaque foi da Nantucket Clipper, mas Data Ease, Data Flex, FoxPro, FORMS estão entre várias outras linguagens de acesso de forma proprietária a banco de dados.
+
+**Linguagens orientadas a objetos**: destacam-se o Java, C#, Visual BASIC e Delphi. Atualmente, Java e C# dominam amplamente o mercado de desenvolvimento de software.
