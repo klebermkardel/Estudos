@@ -55,3 +55,111 @@ São especialmente notáveis algumas situções, que passamos a enumerar:
 **Linguagens de interface com banco de dados:** surgiram com o intuito de acessar algum banco de dados, habitualmente baseados no modelo relacional. Durante algum tempo contaram com mais usuários que as tradicionais linguagens de programação (COBOL, C, Pascal e BASIC). No entanto, foi um fenômeno passageiro, que teve início em meados da década de 1980 e tendo sido encerrado antes do final da década de 1990. O maior destaque foi da Nantucket Clipper, mas Data Ease, Data Flex, FoxPro, FORMS estão entre várias outras linguagens de acesso de forma proprietária a banco de dados.
 
 **Linguagens orientadas a objetos**: destacam-se o Java, C#, Visual BASIC e Delphi. Atualmente, Java e C# dominam amplamente o mercado de desenvolvimento de software.
+
+## Introdução à Lógica de Programação
+
+Quando observamos a palavra "algoritmo", parece soar um pouco estanho aos nossos ouvidos, que são muito mais familiarizadas com palavras de origens latinas do que árabes, o que é o caso de "algoritmo". Essa palavra deriva de Al-Khwarizmi, matemático persa do século IX, a quem se atribui a construção dos primeiros processos para realização de operações aritméticas, o que explica o porquê do nome de um matemático ter sido associado a um processo repetitivo que leva à solução de problemas complexos.
+
+***Algoritmo, por definição, é uma sequência de instruções ordenada com o objetivo de resolver um problema.***
+
+Por volta do século 3 a.C., outro matemático famoso, o grego Euclides, escreve seu famoso algoritmo para o cálculo do MDC (Máximo Divisor Comum). É, provavelmente, o primeiro algoritmo complexo e formalizado de que se tem notícia.
+
+### ALGORITMOS X PROGRAMAS DE COMPUTADOR
+
+Confunde-se frequentemente algoritmo e programa de computador, o que não tem razão de ser. Simplesmente, usamos de um computador para executar um algoritmo. Isso se deve ao fato do computador ser mais rápido e preciso que um ser humano (Máquina Oligofrênica).
+
+No entanto, primeiramente, o algoritmo deve ser transcrito para uma linguagen de programação qualquer, antes de podermos "usá-lo" num computador.
+
+Em seguida, esse código escrito numa linguagem de programação (o "programa") deve ser transformado num programa executável num computador, portanto esse programa deverá ser compilado (processo de validação de sintaxe utilizada) e linkeditado (processo de montagem do programa executável).
+
+Serão apresentadas breves noções de fluxograma, observando-se que sua pouca serventia em programas mais complexos, "causando mais mal do que bem" (GANE, 1983, p. 4).
+
+### Conceituação de Algoritmos
+
+Todo programa deveria ter um ciclo de desenvolvimento aproximado à lista:
+
+* Análise do Problema.
+
+* Projeto do Programa.
+
+* Implementação.
+
+* Testes.
+
+* Verificação.
+
+### Análise - Compreensão
+
+Antes de partirmos para a solução de um problema, devemos entendê-lo o melhor possível.
+
+Ao nos depararmos com um problema, o primeiro passo é compreendê-lo inteiramente. Lembre-se de que quem está perdido e pôem-se a andar, tende a ser perder ainda mais.
+
+Assim, é uma boa estratégia perguntar:
+
+* O que devemos descobrir, calcular ou obter? Qual é o objetivo do programa?
+
+* Quais são os dados disponíveis? São suficientes para atendermos o que se quer?
+
+* Quais são as condições necessárias e suficientes para resolver o problema?
+
+É importante desenhar, rascunhar e usar de todos os artifícios para montar a "lógica" que nos leve à solução ou menos a um racicionio intermediário.
+
+A 1ª Etapa - Análise do Problema - consiste então na compreensão do problema e montgem de uma estratégia para sua resolução.
+
+Você deve se lembrar, antes de qualquer outra coisa, que um algoritmo nada mais é que uma forma de representar a lógica que desejeamos aplicaar. Assim, antes de construir um algoritmo, precisamos definir alguma estratégia.
+
+### Análise - Estratégia
+
+Criar uma estratégia para a solução, passa pela resposta a algumas perguntas, um tanto elementares:
+
+* Já resolveu algum problema similar? Qual?
+
+Se sim, a solução pode ser aproveitada por analogia, para referência ou por ser parte da solução do novo problema. Observe se será necessário introduzir elementos novos ou modificar os existentes.
+
+Já se o problema for muito complexo, provavelmente pode ser fracionado em partes menores, de solução mais simples.
+
+* É possível enxergar o problema de outra forma, de modo que o entendimento se torne mais simples?
+
+Lembre-se que descer uma escada de costas é bem mais complicado do que da maneira natural e chegamos sempre ao mesmo lugar.
+
+Obtidas as respostas, não tente criar a solução inteira, antes de rascunhá-la!
+
+Siga os passos:
+
+* Crie um algoritmo informal com as instruções que resolvam o problema ou que ao menos pareçam resolvê-lo.
+
+* Verifique se cada passo desse algoritmo está correto, simulando-o num papel (teste de mesa ou simulação).
+
+* Identifique os erros e os trate um por vez, sem nunca perder de vista o objetivo real do programa. Esse processo ordenado logicamente faz você aprender a desenvolver soluções.
+
+Quando se elabora um esboço da solução do problema, para em seguida ir-se refinando essa solução, até chegar=se a uma sequência básica de operações que resolva o problema, usou-se uma das principais técnicas relacionadas à construção de algoritmos, intitulada Top-Down.
+
+Essa técnica leva à geração de um pseudocódigo, que chamaremos de Português Estruturado (evite-se a expressão portugol).
+
+O Português Estruturado, na opinião da maioria dos autores de livros de análise, programação ou algoritmos é muito mais eficaz que fluxogramas (estes são muito mais úteis em administração, que não é nosso caso.)
+
+### Projeto de Programa
+
+Este nada mais é que o algoritmo gerado, que visará otimizar o "o binômio tempo-espaço, isto é, visando obter um programa que apresente um tempo de execução mínimo e com o melhor aproveitamento de espaço de memória" (SALVETTI; BARBOSA, 1998).
+
+**a) Implementação**
+
+Quando codificamos um algoritmo numa linguagem de programação, o estamos implementando.
+
+Você poderá, quando estiver cusando disciplinas de Linguagem de Programação, transformar todos os algoritmos vistos em nosso curso em programas de computador.
+
+A implementação pode ser trivial, com a mera substituição de instruções algorítmicas em instruções em uma linguagem ou muito trabalhosa, dependendo da linguagem escolhida.
+
+**b) Testes**
+
+A fase de testes vem crescentemente sendo valorizada. Devemos lembrar que quem faz o programa, rarmente testa seus pontos deficientes. Ora, isso ocorre porque se o analista tivesse percebido essas deficiências, provavelmente o programa não apresentaria esses problemas. Há varias técnicas para testes (caixa, branca, caixa preta, entre várias outras).
+
+Negligenciar essa fase é fatal. Numa prova, nem pensar.
+
+**c) Verificação do programa**
+
+A verificação do programa visa demonstrar que o algoritmo realmente resolve o problema proposto, qualquer que seja sua instância.
+
+É nesta etapa que se constata se o programa resolve todos os casos possíveis! Constata-mos a sabedoria do velho provérbio inglês que diz "que todo problema complexo, aparentemente tem uma solução simples, que usualmente está errada [...]".
+
+Ao simularmos nossos algoritmos estamos fazendo exatamente esse processo. Todavia, quando codificado numa linguagem, mesmo que o algoritmo tenha sido simulado à exaustõ, continuaremos obrigados a testar o programa que foi implementado.
