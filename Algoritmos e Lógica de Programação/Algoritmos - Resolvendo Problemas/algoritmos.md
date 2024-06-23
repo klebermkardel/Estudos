@@ -100,3 +100,19 @@ Note que usamos uma convenção quando definimos caracteres, pois os colocamos e
 Assim, admitindo que o sinal "+" some números e concatene letras teríamos também o seguinte resultado, por maisestranho que possa parecer.
 
 A <- "5" e B <- "3", então A + B resultado em "53" (e não 8!).
+
+### Definindo Variáveis
+
+Variáveis são, portanto, áreas de memória que armazenarão informações pertinentes ao programa durante sua execução, e recebem este nome pois seu conteúdo pode variar ao longo deste período. Podem representar números inteiros, números reais, caracteres, tipos booleanos, palavras, datas, valores monetários, conjuntos e muitomais coisas. Em algoritmos, vamos nos ater apenas nos tipos numéricos, caracteres e booleanos.
+
+***Num programa de computador devemos especificar os tipos de dados que serão utilizados como entrada e saída.***
+
+Por exemplo, no único algoritmo que vimos até agora, para cálculo da área de um triângulo, pudemos perceber duas variáveisnuméricas que receberam, respectivamente, os valores da basee da altura de um triângulo, que teve sua área calculada e armazenada numa variável destinada ao cálculo da área.
+
+Quando vertemos um programa para alguma linguagem de computador, devemos observar que nem tudo ocorre como pensamosem algoritmos, por vários motivos. Uma delas é a chamada tipologia das variáveis de qualquer linguagem de computador.
+
+Por exemplo, enquanto a linguagem Java é tipada, ou seja, caso você tente fazer uma operação ilegal (multiplicar um caractere), o compilador dirá a você. Embora a linguagem C também seja tipada, ela o é de maneira mais fraca, isto é, se você tentar fzer uma operação como somar um caractere a um número, ela tentará solucionar isso para você, se isso for de interesse.
+
+Por fim, há linguagens como Pascal, que são fortemente tipadas. Qualquer tentativa de misturar tipos, mesmo correlatos, será encarada como erro. Assim, se você tentar dividir o inteiro 2 pelo inteiro 1, apenas obterá um erro. Sendo assim, caso desejarmos dividir os dois números inteiros, precisaremos usar uma operção de divisão inteira (para números inteiros) e uma para divisão que tenha como resposta um número real.
+
+Pode parecer complicado, e de fato não é algo muito simples. Todavia, programadores experientes, com o tempo, trabalham tão naturalmente nas linguagens que dominam, que situações assim passam totalmente despercebidas.
