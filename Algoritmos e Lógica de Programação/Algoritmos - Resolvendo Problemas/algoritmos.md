@@ -67,3 +67,36 @@ Daqui por diante, passaremos a definir **instruções** e exemplificá-las quase
 
 Então é chegada a hora de entendermos o que são variáveis de maneira mais formal.
 
+## Variáveis e Sua Tipologia
+
+### Dados, Informações e Variáveis
+
+Chamamos de **dados de entrada** o conjunto de informações que o programa precisa receber para início de processamento. No exemplo anterior, a base e a altura eram nossas "entradas", necessárias para obtenção da área do triângulo, nosso objetivo.
+
+Chamamos de **dados de saída** o conjunto de informações que o programa devolve como resposta após o processamento.
+
+Observemos que nossa função, basicamente, é transformar informações iniciais que usualmente chamamos de dados, em informações finais, as respostas que serão usadas por quem utiliza um programa de computador.
+
+Toda informação para ser útil deve ser FTP (Fidedigna, Temporal e Pertinente)!
+
+Uma informação é FTP quando é verdadeiro, no momento correto e relativo à questão que queremos responder. O quadro a seguir resume essa situação:
+
+![<Informação FTP](<./informacao-ftp.png>)
+
+Entendemos, portanto, que existem vários tipos de dados, que usaremos conforme a necessidade. Por exemplo, podemos somar apenas números, quer sejam reais ou inteiros; ou somardatas com números, obtendo uma data mais adiante do que a data base dessa soma; e também concatenar expressões caracteres, algo quase que uma soma. Vamos exemplificar:
+
+A <- 2 e B <- 3, então A + B resulta em 5.
+
+Já se A <- 1,5 e B <- 2 então A + B resulta em 3,5.
+
+Ainda, se A <- 01 jan 1980 e B <- 4, então A + B resulta em 05 jan 1980.
+
+Finalmente se A <- "Lógica" e B <- "Programação" então A + B resulta em LógicaProgramação (sem espaço).
+
+Algumas operações seriam inválidas, justamente por não fazerem qualquer sentido. Por exemplo, o que resultaria na soma de um número com uma expressão caractere? Erro, somente.
+
+Note que usamos uma convenção quando definimos caracteres, pois os colocamos entre aspas. Isso quer dizer, na maioria das linguagens que estamos diante de uma expressão caractere.
+
+Assim, admitindo que o sinal "+" some números e concatene letras teríamos também o seguinte resultado, por maisestranho que possa parecer.
+
+A <- "5" e B <- "3", então A + B resultado em "53" (e não 8!).
