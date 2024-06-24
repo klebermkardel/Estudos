@@ -140,27 +140,27 @@ A seguir, exibimos alguns exemplos de tipos de variáveis em algumas linguagens 
         </tr>
         <tr>
             <td>byte</td>
-            <td>Inteiro de 8 bits em notação de complemento de dois. Pode assumir<br>valores entre -2<sup>7</sup> = 128 e 2<sup>7</sup> = 127.</td>
+            <td>Inteiro de 8 bits em notação de complemento de dois. Pode assumir<br>valores entre -2<sup>7</sup> = 128 e 2<sup>7</sup> -1 = 127.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>short</td>
+            <td>Inteiro de 16 bits em notação de complemento de dois. Os valores possíveis<br>cobrem a faixa de -2<sup>15</sup> = -32.768 a 2<sup>15</sup> -1 = 32.767.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>int</td>
+            <td>inteiro de 32 bits em noptação de complemento de dois. Pode assumir<br>valores entre -2<sup>31</sup> = 2.147.483.648 e -2<sup>31</sup> - 1 = 2.147.483.647</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>long</td>
+            <td>inteiro de 64 bits em notação de complemento de dois. Pode assumir<br>valores entre -2<sup>63</sup> e -2<sup>63</sup> - 1</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>float</td>
+            <td>Representa números em notação de ponto flutuante normalizada em<br>precisão dupla de 32 bits em conformida com a norma IEEE 754-1985. O<br>menor valor positivo representável é 1.40239846e-46 e o maior é 3.40282347e+38.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>double</td>
+            <td>Representa números em notação de ponto flutuante normalizada em<br>precisão dupla de 64 bits em conformidada com a norma IEEE 754-1985. O<br>menor valor positivo representável é 4.94065645841246544e-324 e o maior é 1.1.7976931348623157e+308.</td>
         </tr>
     </tbody>
 </table>
