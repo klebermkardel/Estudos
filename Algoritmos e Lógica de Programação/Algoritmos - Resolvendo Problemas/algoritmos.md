@@ -165,3 +165,363 @@ A seguir, exibimos alguns exemplos de tipos de variáveis em algumas linguagens 
     </tbody>
 </table>
 
+<table>
+    <thead>
+        <tr>
+            <th colspan="3">Tipos em C</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Tipo</b></td>
+            <td><b>Tamanho em Bytes</b></td>
+            <td><b>Faixa Mínima</b></td>
+        </tr>
+        <tr>
+            <td>char</td>
+            <td>1</td>
+            <td>-127 a 127</td>
+        </tr>
+        <tr>
+            <td>unsigned char</td>
+            <td>1</td>
+            <td>0 a 255</td>
+        </tr>
+        <tr>
+            <td>signed char</td>
+            <td>1</td>
+            <td>-127 a 127</td>
+        </tr>
+        <tr>
+            <td>int</td>
+            <td>4</td>
+            <td>-2.147.483648 a 2.147.483.647</td>
+        </tr>
+        <tr>
+            <td>unsigned int</td>
+            <td>4</td>
+            <td>0 a 4.294.967.295</td>
+        </tr>
+        <tr>
+            <td>signed int</td>
+            <td>4</td>
+            <td>-2.147.483648 a 2.147.483.647</td>
+        </tr>
+        <tr>
+            <td>short int</td>
+            <td>2</td>
+            <td>-32.768 a 32.767</td>
+        </tr>
+        <tr>
+            <td>unsigned short int</td>
+            <td>2</td>
+            <td>0 a 65.535</td>
+        </tr>
+        <tr>
+            <td>signed short int</td>
+            <td>2</td>
+            <td>-32.768 a 32.767</td>
+        </tr>
+        <tr>
+            <td>long int</td>
+            <td>4</td>
+            <td>-2.147.483648 a 2.147.483.647</td>
+        </tr>
+        <tr>
+            <td>signed long int</td>
+            <td>4</td>
+            <td>-2.147.483648 a 2.147.483.647</td>
+        </tr>
+        <tr>
+            <td>unsigned long int</td>
+            <td>4</td>
+            <td>0 a 4.294.967.295</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>4</td>
+            <td>Seis digitos de precisão</td>
+        </tr>
+        <tr>
+            <td>double</td>
+            <td>8</td>
+            <td>Dez digitos de precisão</td>
+        </tr>
+        <tr>
+            <td>long double</td>
+            <td>16</td>
+            <td>Quinze digitos de precisão</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="3">Tipos em Pascal</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Tipo de dado</b></td>
+            <td><b>Conjunto</b></td>
+            <td><b>Tamanho</b></td>
+        </tr>
+        <tr>
+            <td>Shorint</td>
+            <td>-128...127</td>
+            <td>1 byte</td>
+        </tr>
+        <tr>
+            <td>Integer</td>
+            <td>-32767...32767</td>
+            <td>2 bytes</td>
+        </tr>
+        <tr>
+            <td>Longint</td>
+            <td>-2147483648...2147483647</td>
+            <td>4 bytes</td>
+        </tr>
+        <tr>
+            <td>Byte</td>
+            <td>0...255</td>
+            <td>1 byte</td>
+        </tr>
+        <tr>
+            <td>Word</td>
+            <td>0...65535</td>
+            <td>2 bytes</td>
+        </tr>
+       <tr>
+            <td>Single</td>
+            <td>-1.5e...3.4e38</td>
+            <td>4 bytes</td>
+        </tr>
+        <tr>
+            <td>Real</td>
+            <td>2.9e39...1.7e38</td>
+            <td>6 bytes</td>
+        </tr>
+        <tr>
+            <td>Double</td>
+            <td>5.0e324...1.7e308</td>
+            <td>8 bytes</td>
+        </tr>
+        <tr>
+            <td>Extended</td>
+            <td>3.4e-4932...1.1e4932</td>
+            <td>10 bytes</td>
+        </tr>
+        <tr>
+            <td>Boolean</td>
+            <td>true, false</td>
+            <td>1 byte</td>
+        </tr>
+        <tr>
+            <td>WordBool</td>
+            <td>true, false</td>
+            <td>2 bytes</td>
+        </tr>
+       <tr>
+            <td>LongBool</td>
+            <td>true, false</td>
+            <td>4 bytes</td>
+        </tr>
+        <tr>
+            <td>Char</td>
+            <td>1 caractere (ASCII)</td>
+            <td>1 byte</td>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td>1 a 255 caractere (ASCII)</td>
+            <td>1.255 bytes</td>
+        </tr>
+    </tbody>
+</table>
+
+### Operadores Aritméticos
+
+Existem vários operadores que podem ser aplicados a variáveis. Vamos, inicialmente, nos concentrar num tipo específico, os números inteiros.
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="3">Tipos de dados inteiro</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Elemento</b></td>
+            <td><b>Descrição</b></td>
+            <td><b>Símbolo</b></td>
+        </tr>
+        <tr>
+            <td>Operação</td>
+            <td>Adição</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Subtração</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Multiplicação</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quociente Inteiro</td>
+            <td>Div ou /</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Resto de Divisão</td>
+            <td>Mod ou %</td>
+        </tr>
+    </tbody>
+</table>
+
+Temos as quatro operações elementares (soma, subtração, multiplicação e divisão) conhecidas por todos, acrescidas da operação do Resto da Divisão. Deve-se observar aqui o que ocorre com as variáveis, nos exemplos adiante:
+
+Admita que a variável "a" tenha o valor 2 (número dois), a variável "b" tenha valor 3 (três) e a variável "c" tenha valor 6 (seis).
+
+Pois bem, vamos determinar os valores de "d':
+
+d <- c - b, portanto d = 5
+
+d <- a + b, portanto d = 3
+
+d <- a * b, portanto d = 6
+
+d <- c / b, portanto d = 2 (valor de "d" é real, isto é, conta com casas decimais teóricas)
+
+d <- c div b, portanto d = 2 (valor de "d" é inteiro, isto é, não conta com casas decimais teóricas)
+
+d <- b / a, portanto d = 1,5 (valor de "d" é real, isto é, conta com casas decimais teóricas)
+
+d <- c div b, portanto d = 1 (valor de "d" é inteiro, isto é, não conta com casas decimais teóricas)
+
+d <- b % a, portanto d = 1 (resto da divisão inteira de 3 por 2)
+
+d <- c % a, portanto d = 0 (resto da divisão inteira de 6 por 2)
+
+### Operadores Relacionais
+
+Além de operações aritméticas, podemos aplicar as variáveis, operações relacionais. Novamente, vamos nos concentrar inicialmente nas variáveis numéricas inteiras
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="3">Tipos de dados inteiro</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Elemento</b></td>
+            <td><b>Descrição</b></td>
+            <td><b>Símbolo</b></td>
+        </tr>
+        <tr>
+            <td>Relação</td>
+            <td>Menor</td>
+            <td><</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Maior</td>
+            <td>></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Igual</td>
+            <td>=</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Diferente</td>
+            <td><></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Menor ou Igual</td>
+            <td><=</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Maior ou Igual</td>
+            <td>>=</td>
+        </tr>
+    </tbody>
+</table>
+
+Exemplicando - assumindo para "a", "b" e "c" os valores definidos anteriormente:
+
+a) a > b (Falso, 2 é menor que 3 e não maior)
+b) a <= b (Verdadeiro, 2 é menor ou igual a 3)
+c) a = b (Falso, 2 é diferente de 3)
+d) a <> (Verdadeiro, 2 é diferente de 3)
+e) a * b = c (Verdadeiro, pois 6 é igual a 6)
+
+### O Porquê das Variáveis
+
+Variáveis funcionam como repositório de informações (dados) dentro do programa e, por esta razão, estes repositórios de armazenamento devem ser alocados na memória do computador. A maioria das linguagens de programação obriga o programador a declarar as variáveis que serão utilizadas, apresentando-as no início do programa para que os recursos necessários sejam alocados. Outras, entretanto, não obrigam a realizar esta declaração, alocando os recursos no momento em que as variáveis são mencionadas.
+
+Se por acaso uma variável não venha a ter seu valor alterado ao longo da exceução do programa, podemos declará-la como constante.
+
+Essa situação decorre de muitas origens, por exemplo, a linguagem BCPL (origem do C) não obrigava a declaração de uma variável, antes de usá-la. No BASIC, isso também não era obrigatório. Atualmente, entre outras, a linguaguem PHP defende essa tradição.
+
+Existem ainda situações muito específicas. Em PL/SQL, por exemplo, os contadores de uma estrutura de repetição "para" (a ser vista mais adiante), também não devem ser declarados.
+
+Enfim, a grande regra das linguagens de programação e da lógica de programação é que ***a única certeza é que nada é certo***.
+
+Em Português Estruturado, por conseguinte, é opcional declarar ou não uma variável antes de usá-la. Talvez seja uma boa ideia não "perdermos" tempo declarando-as, antes de termos nosso algoritmo inteiramente resolvido, e só depois disso, declararmos nossas variáveis.
+
+Lembremos, contudo, que antes de transcrevermos um algoritmo em Português Estruturado para C, Java ou Pascal, será necessário criarmos todas as diretivas necessárias nas linguagens, ou seja, deveremos declarar as variáveis.
+
+Para resolvermos um problema qualquer, quase que certamente precisaremos armanezar as informações de entrada na memória do computador. Lembre-se, se por um lado, as variáveis são "o sangue" dos programas, por levarem as informções (nossos "nutrientes"), por outro lado, são as maiores causadoras de erros, justamente por má utilização.
+
+Por isso, torna-se tão importante definirmos com a melhor lógica possível nossas variáveis.
+
+### Variáveis nas Linguagens de Programação
+
+Em Java, C ou Pascal, você precisará declarar a variável antes de utilizá-la:
+
+* **Exemplos em Java/C:**
+
+```
+int camisapele = 10;
+float salario;
+String logradouro = "Av Ipiranga";
+```
+
+* **Exemplos em Pascal:**
+
+```
+c: char;
+n: integeger;
+```
+
+* **A sintaxe para Java/C será:**
+
+```
+<tipo_de_dado> <nome_variável> [= inicialização];
+```
+
+* **Já para Pascal será:**
+
+```
+<nome_variável> : <tipo_de_dado>
+```
+
+### Regras na Declaração de Variáveis
+
+Depois de declaradas, variáveis podem ser usadas livremente.
+
+A variável deve ter um nome que facilite o entendimento de sua função no programa. Um bom nome para variável que for armezenar o salário, por exemp, seria "salario". Embora algumas linguagens permitam, atenha-se ao uso de apenas caracteres válidos na língua inglesa!
+
+Toda variável é composta de um caractere alfabético ou "-", seguido de caracteres alfabéticos, números ou "-".
+
+Em linguagens tipadas, apenas informações do mesmo tipo serão armazenadas nas variáveis, ou seja, não é possível armazenar um caractere em um inteiro ou vice-versa.
