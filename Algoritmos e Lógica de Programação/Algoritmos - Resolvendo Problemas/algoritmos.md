@@ -116,3 +116,19 @@ Por exemplo, enquanto a linguagem Java é tipada, ou seja, caso você tente faze
 Por fim, há linguagens como Pascal, que são fortemente tipadas. Qualquer tentativa de misturar tipos, mesmo correlatos, será encarada como erro. Assim, se você tentar dividir o inteiro 2 pelo inteiro 1, apenas obterá um erro. Sendo assim, caso desejarmos dividir os dois números inteiros, precisaremos usar uma operção de divisão inteira (para números inteiros) e uma para divisão que tenha como resposta um número real.
 
 Pode parecer complicado, e de fato não é algo muito simples. Todavia, programadores experientes, com o tempo, trabalham tão naturalmente nas linguagens que dominam, que situações assim passam totalmente despercebidas.
+
+A seguir, exibimos alguns exemplos de tipos de variáveis em algumas linguagens de programação
+
+
+| Tipos em Java                                             |
+|-----------------------------------------------------------|
+| **Tipo** | **Descrição**                                  |
+| boolean  | Pode assumir o valor *true* ou o valor *false* |
+| char     | Caractere em notação Unicode de 16its.<br>Serve para armazenamento de dados alfanuméricos. Também pode ser<br>usado como um dado inteiro de valores na faixa entre 0 e 65535. |
+| Linha 4, Coluna 1 | Linha 4, Coluna 2                     |
+| Linha 5, Coluna 1 | Linha 5, Coluna 2                     |
+| Linha 6, Coluna 1 | Linha 6, Coluna 2                     |
+| Linha 7, Coluna 1 | Linha 7, Coluna 2                     |
+| Linha 8, Coluna 1 | Linha 8, Coluna 2                     |
+| Linha 9, Coluna 1 | Linha 9, Coluna 2                     |
+
