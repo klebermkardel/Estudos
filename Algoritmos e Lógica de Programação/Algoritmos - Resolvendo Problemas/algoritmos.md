@@ -120,11 +120,11 @@ Pode parecer complicado, e de fato não é algo muito simples. Todavia, programa
 A seguir, exibimos alguns exemplos de tipos de variáveis em algumas linguagens de programação
 
 
-| Tipos em Java                                             |
-|-----------------------------------------------------------|
+| Tipos em Java |
+|---------------|
 | **Tipo** | **Descrição**                                  |
 | boolean  | Pode assumir o valor *true* ou o valor *false* |
-| char     | Caractere em notação Unicode de 16its.<br>Serve para armazenamento de dados alfanuméricos. Também pode ser<br>usado como um dado inteiro de valores na faixa entre 0 e 65535. |
+| char     | Caractere em notação Unicode de 16its.         |
 | Linha 4, Coluna 1 | Linha 4, Coluna 2                     |
 | Linha 5, Coluna 1 | Linha 5, Coluna 2                     |
 | Linha 6, Coluna 1 | Linha 6, Coluna 2                     |
