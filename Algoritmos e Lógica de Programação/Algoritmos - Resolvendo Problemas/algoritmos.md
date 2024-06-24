@@ -139,8 +139,8 @@ A seguir, exibimos alguns exemplos de tipos de variáveis em algumas linguagens 
             <td>Caracterece em notação Unicode de 16 bits.<br>Serve para armazenamento de dados alfanuméricos. Também pode ser<br>usado como um dado inteiro com valores na faixa entre 0 e 65535.</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>byte</td>
+            <td>Inteiro de 8 bits em notação de complemento de dois. Pode assumir<br>valores entre -2<sup>7</sup> = 128 e 2<sup>7</sup> = 127.</td>
         </tr>
         <tr>
             <td></td>
