@@ -525,3 +525,292 @@ A variável deve ter um nome que facilite o entendimento de sua função no prog
 Toda variável é composta de um caractere alfabético ou "-", seguido de caracteres alfabéticos, números ou "-".
 
 Em linguagens tipadas, apenas informações do mesmo tipo serão armazenadas nas variáveis, ou seja, não é possível armazenar um caractere em um inteiro ou vice-versa.
+
+## Instruções de Entrada e Saída
+
+Para que o computador possa se comunicar com o usuário, é preciso que seja capaz de receber dados e devolvê-los. Ao conjunto de instruções que permitem escritas em tela, papel ou mídias magnéticas, damos o nome de **saídas**. Já aquelas relativas à digitação de dados ou de sua leitura em meios magnéticos, chamamos de **entradas**.
+
+### SAÍDA 
+
+Entedemos "saída", como o conjunto de instruções que permitem a comunicação com o usuário ou a escrita de dados ou de quaisquer informações em tela (saída principal), papel (impressora) ou em disco (gravação). Para saída, usaremos, na maioria das vezes, o comando "**imprima**", mas "exiba" ou "escreva" são igualmente válidos.
+
+Em Java, por exemplo, usamos a instruções System.out.print("algo pra imprimir") e no C#, Console.Write("imprima isso") desempenha este papel;
+
+Vale notar que a expressão a ser "impressa" aparece cercada por parênteses, recurso usado em inúmeras linguagens de programação. Por ser uma expressão alfanumérica e não uma variável, a expressão aparece entre asps, outra característica encontrada em inúmeras linguagens de programação.
+
+Além disso, notamos que a instrução tem um terminador, no caso, o ponto e vírgula, novamente característica observada em inúmeras outras linguagens de programação.
+
+Em Pascal temos Write('algo a imprimir'); ou WriteLn('algo a imprimir'); a diferença entre um comando e outro é que no primeiro o cursor é posicionado na mesma linha do que foi impresso, enquanto que no segundo o cursor é posicionado na linha abaixo (ln, de line)
+
+Em linguagen C, a instrução varia levemente, "printf", mas há a necessidade de envio de um caractere especial solicitando o salto de linha ("∖n). Em Pascal, "write/writeln", como em Java.
+
+### ENTRADA
+
+Para a entrada de dados, utilizaremos a classe Scanner em Java (conecida como scanf em C ou Console.ReadLine(), quando falamos em C#). Já em Pascal, "read/readln", pois com ela podemos capturar os dados informados através do teclado do computador.
+
+Em todas as linguagens de programação dispomos de um conjunto de instruções para leituras nos mais diversos dispositivos, que resultam em entradas de dados.
+
+### Exemplificando Entradas e Saídas
+
+Nos exemplos apresentados aditante, veremos como escrever instruções de entrada e saída em Português Estruturado e em algumas linguagens de programação:
+
+#### Exemplo de Português Estruturado
+
+```
+|nome := leia();
+|idade := leia();
+|cpf := leia();
+|salario := leia();
+|imprima("Nome: ", nome);
+|imprima("Idade: ", idade);
+|imprima("CPF: ", cpf);
+|imprima("Salário: ", salario);
+```
+
+Em nosso primeiro exemplo, vamos ler uma série de dados pessoais, através de um teclado e mostrar esse resultado na tela do computador, em Português Estruturado
+
+Observamos que barra de endentação marca o início e o final do programa, ou um "parágrafo". Também chamamos essa estrutura de "bloco do programa", ou seja, no final das contas um algoritmo nada mais é que um conjunto de "blocos" devidamente ordenados.
+
+Vamos agora ver programas semelhantes, em Java, C e Pascal:
+
+#### Exemplo em Java
+
+```
+package t01;
+import java.util.Scanner;
+
+pubic class T01 {
+    public static void main (String[] args) {
+        int idade;
+        double salario;
+        String nome cpf;
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digite seu nome: ");
+        nome = entrada.nextLine();
+        System.out.println("Digite seu CPF: ");
+        cpf = entrada.nextLine();
+        System.out.println("Digite sua idade: ");
+        idade = entrada.nextLine();
+        System.out.println("Digite o valor do seu salário: ");
+        salario = entrada.nextLine();
+        System.out.println("Nome: "+nome);
+        System.out.println("Idade: "+idade);
+        System.out.println("CPF: "+cpf);
+        System.out.println("Salário: "+salario);
+        entrada.close();
+    }
+}
+```
+
+#### Exemplo em C
+
+```
+#include <stdio.h>
+int main() {
+    char nome[30], cpf[20];
+    int idade;
+    float salario;
+    printf("Informe o nome: ");
+    scanf("%s", nome);
+    printf("Informe o CPF: ");
+    scanf("%s", cpf);
+    printf("Informe a idade: ");
+    scanf("%d", &idade);
+    printf("Informe o salário: ");
+    scanf("%f", &salario);
+    printf("\nNome: %s", nome);
+    printf("\nIdade: %d", idade);
+    printf("\nCPF: %s", cpf);
+    printf("\nSalário: %.2f", salario);
+}
+```
+
+#### Exemplo em Pascal
+
+```
+Program Teste;
+Uses crt;
+var idade : Integer;
+  nome, cpf : String[20];
+  salario : real;
+begin
+  ClrScr;
+  Write('Nome : '); ReadLn(nome);
+  Write('Idade : '); ReadLn(idade);
+  Write('Salario : '); ReadLn(salario);
+  Write('CPF : '); ReadLn(cpf);
+  Writeln;
+  WriteLn('Nome: ', nome);
+  WriteLn('Idade: ', idade);
+  WriteLn('Salario: ', salario:8:2);
+  WriteLn('CPF: ', cpf);
+  ReadLn;
+end.
+```
+
+#### Problemas Resolvidos (Português Estruturado)
+
+* Dados dois números, imprima sua soma:
+
+```
+algoritmo soma;
+variáveis
+    a, b, s : inteiro;
+fim-variáveis
+início
+    imprima("Digite o número 1:");
+    a := leia();
+    imprima("Digite o número 2:");
+    b := leia();
+    s := a + b;
+    imprima("A soma dos dois números é: ", s);
+fim
+```
+
+* Escreva um programa que receba a data de nascimento de uma pessoa e a data de hoje e calcule, aproximadamente, quantos dias ela viveu. Considere um mês com 30 dias e um ano com 12 meses.
+
+```
+algoritmo dias;
+variáveis
+    dh, mh, ah, dn, mn, an, wd1, wm1, wa, wd2, wm2, tot : inteiro;
+fim-variáveis
+início
+    imprima("Digite o dia de hoje: ");
+    dh := leia();
+    imprima("Digite o mês de hoje: ");
+    mh := leia();
+    imprima("Digite o ano de hoje: ");
+    ah := leia();
+    imprima("Digite o dia de nascimento: ");
+    dn := leia();
+    imprima("Digite o mês de nascimento: ");
+    mn := leia();
+    imprima("Digite o ano de nascimento: ");
+    an := leia();
+    wd1 := 30 - dn;
+    wm1 := (12 - mn) * 30;
+    wa := (ah - an - 1) * 360;
+    wd2 := dh;
+    wm2 := (mh - 1) * 30;
+    tot := wd1 + wm1 + wa + wd2 + wm2;
+    imprima("Dias Vividos (por Totalização): ", tot);
+fim
+```
+
+* Escreva um algoritmo que calcule o IMC de uma pessoa.
+
+Lembrando que o IMC é calculado através da expressão "Peso / Altura²"
+
+```
+algoritmo imc;
+variáveis
+    peso : inteiro;
+    altura, imc : real;
+fim-variáveis
+início
+    imprima("Digite altura: ");
+    altura := leia();
+    imprima("Digite peso: ");
+    peso := leia();
+    imc := peso / (altura * altura);
+    imprima("IMC: ",imc);
+fim
+```
+
+* Escreva um algoritmo que resolva uma equação do 1º Grau.
+
+Admita que a expressão "Ax + B = 0" sempre seja válida, ou seja, "A" sempre será um número distindo de 0:
+
+```
+algoritmo equacao;
+variáveis
+    a,b : inteiro;
+    x : real;
+fim-variáveis
+início
+    imprima("Digite a: ");
+    a := leia();
+    imprima("Digite b: ");
+    b := leia();
+    x :=  -b / a;
+    imprima("Divisão: ", x);
+fim
+```
+
+## Instruções e Funções
+
+Na evolução das linguagens de programação, sempre existiram dificuldades na separação do que seria uma instrução da própria linguagem e o que seria uma função a ser escrita na própria linguagem.
+
+Pensemos em elevar um número ao quadrado. Na prática, basta multiplicar o número por si mesmo. Assim, teríamos alternativamente e dependendo da linguagem de programação uma das três possibilidades:
+
+```
+algoritmo elevaquadrado1;
+variáveis
+  a,b,c,d : inteiro;
+fim-variáveis
+início
+    a := 3;
+    b := a ** 2;
+    c := a ^ 2;
+    d := a * a;
+    imprima(a," elevado ao quadrado resulta: ",b, " ", c," ", d);
+fim
+```
+
+Note que esse algoritmo não será processado em praticamente nenhuma linguagem de programação. Embora todas entendam a instrução "a * a" (uma multiplicação simples), algumas compreenderão "a ** 2" enquanto outras "a ^ 2", por se tratarem de operadores de exponencição diferentes. Na verdade, linguagens antigas como o o FORTRAN usavam "**", pois o símbolo "^" sequer estava disponível nos primeiros computadores.
+
+Nada impede, entretanto, que o implementador entenda que elevar ao quadrado é algo que possa ser feito na própria linguagen. Na realidade, cada implementador entende da maneira que lhe aprouver o que é função e o que é instrução.
+
+E nada é tão óbvio como possa parecer ser.
+
+Por exemplo, Dennis Ritchie criador da Linguagem C, a construiu com o firme propósito de torná-la rápida e independente do hardware (computador) onde será executada. Para tanto, era fundamental tornar as instruções de entrada e saída e funções que pudessem ser implementadas em C no próprio Sistema Operacional nativo, onde os programas compilados em C seriam executados. Assim, foi criada uma biblioteca chamada "stdio.h", que significa "Standard Input Output", ou seja, entrada e saídas padrão, em que "comandos" como **imprima**, que em C pode ser representado na função (e não comando) **printf**.
+
+Embora as entradas e saídas padrão sejam implementadas de maneira diferente em vários sistemas operacionais, a linguagem C as padronizou em funções scanf() e printf(), facilitando e tornando mais produtiva a codificação - do contrário, seria necessário manipular diferentes hardwares em diferentes sistemas operacionais, um verdadeiro pesadelo.
+
+Ao repensar em nosso problemar de elevar um número ao quadrado, chegamos à uma solução que qualquer linguagem de programação poderá implementar:
+
+```
+algoritmo elevaquadrado2;
+variáveis
+  a,b,c : inteiro;
+fim-variáveis
+início
+    a := 3;
+    b := a * a;
+    c := quadrado(a);
+    imprima(a," elevado ao quadrado resulta: ",b," ", c);
+fim
+
+função quadrado(n : inteiro) : inteiro
+início
+    retorne n * n;
+fim
+```
+
+Funções (e Procedimentos) são um tópico muito importante e serão tratados mais adiante num estudo bem mais aprofundado. No momento, basta saber que podemos construir estruturas equivalentes a alguma instrução que não exista numa linguagem.
+
+Veremos nesse material como construir um algoritmo destinado o cálculo da raiz quadrada, criado por ninguém menos que Isaac Newton, que pode ser implementado em qualquer linguagem de programação, pois a "função" cálculo da raiz quadrada de um número, também não é nativa em todas as linguagens de programação.
+
+Assim, uma função é um subprograma ou uma rotina de um programa principal ou "programa chamador"; ao ser chamado no programado principal, o fluxo é desviado para a função ou subprograma, que executa uma tarefa estabelecida e, em seguidam devolve o controle ao programa chamador.
+
+A parte interessante é que informações pode ser passadas nestes "desvios", tornando o subprograma mais flexível e útil. No exemlo, no que a função **quadrado()** recebe um número inteiro entre seus parênteses, e a essa entrada de informações damos o nome de **parâmetros**. Com este número inteiro armazenado em "n" (qualquer número inteiro no intervaki válido!) o subprograma o multiplica por si mesmo, devolvendo-o elevado para o programa principal.
+
+Como podemos facilmente multiplicar o número por si mesmo, parece desnecessário criarmos uma função para isso... na verdade, é mesmo! Contudo, a ideia nesse momento é apenas de apresentação de um conceito.
+
+Conceito (as funções) que tem um criador, ou melhor, criadora. A primeira pessoa a pensar na criação de funções repetitivas que pudessem ser usadas para executar certos processos inúmeras vezes foi ninguém menos que Ada de Lovelace
+
+## Fluxogramas
+
+Trata-se de uma técnica muito útil para documentação de processos administrativos e que é usada por alguns autores como apoio ao aprendizado de lógica de programação.
+
+![<Fluxograma](<./on-image-fluxograma-calculo-area-triangulo.svg>)
+
+O Fluxograma, também conhecido como diagrama de blocos, é uma forma quase universal de representação, pois utiliza figuras geométricas para ilustração dos passos a serem observados na resolução de problemas.
+
+A seguir, alguns símbolos usados na representação de intruções geralmente utilizados nas réguas de fluxograma.
+
+Cada instrução ou ação aser executada deve ser representada por meio de um símbolo gráfico.
+
+Não nos utilizaremos desse recurso nesse material, uma vez que vários autores concordam quanto a pouco eficiência dos fluxogramas, principalmente quando a complexidade dos algoritmos cresce. No entanto, para aqueles que preferirem ao menos no princípio utilizarem de uma notação mais visual, essa técnica poderá ser válida.
+
+![<Elementos Gráficos Fluxograma](<./on-image-elementos-fluxograma.svg>)
