@@ -213,3 +213,74 @@ início
     fim-se
 fim
 ```
+
+#### Tabela Verdade
+
+Vamos considerar termos duas variáveis "a" e "b", mas que em vez de valores, tenham conteúdos booleanos, ou seja, assumem apenas situação de verdadeiro ou falso. Podemos fazer uma analogia com um trem, que tem a frente um desvio. Uma baliza (ou flag, se usarmos seu sinônimo em inglês) vai definir o destino desse hipotético trem.
+
+Supondo que nosso trem esteja partindo de Paris, mas num entroncamente é decididido se ele irá para Roma ou pra Berlim. Se esse entrocamento for uma variável, "a" por exemplo, podemos definir que sempre que "a" for Verdade, então o trem irá para Roma. Em caso contrário, irá para Berlim.
+
+Todavia, podemos inserir novas variáveis. Por exemplo, uma variável "b" que quando o trem não for para Roma, permita decidir se seu destino será Berlim ou Praga. E assim sucessivamente.
+
+Além disso, podemos incluir as palavras "E", para indicar que uma condição somente estará satisfeira se duas premissas forem simultaneamente e verdadeiras ou "OU" que indica que uma condição estará satisfeita, qunado ao menos uma das condições for verdadeira.
+
+Voltando ao nosso hipotético trem, poderíamos dizer que ele irá para Roma se “a” E “b” forem simultaneamente verdadeiros. Quando um dos dois for falso, poderíamos estabelecer que se “a” for falso E “b” verdadeiro, então vamos para Berlim. Já se “a” for falso E “b” verdadeiro, então vamos para Praga. Teríamos agora a possibilidade de incluir um novo destino a nosso hipotético trem: Bratislava. Esse seria o destino, na hipótese de “a” E “b” serem ambas falsas, simultaneamente.
+
+O mesmo raciocínio se aplica a palavra “OU”. Todavia, seu uso é bem distinto. Vamos imaginar que um vendedor seja recompensado com um bônus, quando tiver feito mais de 50 visitas no mês ou quando tiver vendido além da meta. Se considerarmos “a” uma variável booleana que tenha como conteúdo “Verdade” se o vendedor fez mais de 50 visitas ou “Falso” quando tiver feito 50 ou menos visitas e “b” de forma análoga, mas relativa a meta comercial, teríamos:
+
+* Se “a” verdade e “b” falso (visitou mais de 50, mas não atingiu a meta) então bônus.
+
+* Se “a” falso e “b” verdade (visitou 50 ou menos, mas atingiu a meta) então bônus.
+
+* Se “a” e “b” verdadeiros (visitou mais de 50 e atingiu a meta) então bônus.
+
+* Se “a” e “b” falsos (nem visitou mais de 50 e também não atingiu a meta) então sem bônus.
+
+Ou seja, somente numa condição nosso vendedor não receberá seu bônus.
+
+Para facilitar a compreensão costumamos pensar nessas situações de maneira mais geral, sem trens ou vendedores...
+
+Usamos, então, uma tabela genérica, que chamamos de Tabela Verdade, conforme a que é apresentada adiante:
+
+<table>
+    <thead>
+        <tr>
+            <th>a</th>
+            <th>b</th>
+            <th>a E b</th>
+            <th>a OU b</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Verdade</td>
+            <td>Verdade</td>
+            <td>Verdade</td>
+            <td>Verdade</td>
+        </tr>
+        <tr>
+            <td>Verdade</td>
+            <td>Falso</td>
+            <td>Falso</td>
+            <td>Verdade</td>
+        </tr>
+        <tr>
+            <td>Falso</td>
+            <td>Verdade</td>
+            <td>Falso</td>
+            <td>Verdade</td>
+        </tr>
+        <tr>
+            <td>Falso</td>
+            <td>Falso</td>
+            <td>Falso</td>
+            <td>Falso</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Exemplo de tabela verdade</td> 
+        </tr>
+    </tfoot>
+</table>
+
