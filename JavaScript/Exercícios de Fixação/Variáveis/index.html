@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("1 - Troca de Variáveis")
+        console.log("-----------------")
+        let a = 5
+        let b = 10
+
+        console.log("Antes da troca:")
+        console.log("a =", a) // 5
+        console.log("b =", b) // 10
+
+        let temp = a // variável auxiliar
+        a = b
+        b = temp
+
+        console.log("Depois da troca:")
+        console.log("a =", a) // 10
+        console.log("b =", b) // 5
+
+        console.log("2 - Calculo da Média")
+        console.log("-----------------")
+        var n1 = 6
+        var n2 = 8
+        var n3 = 10
+        var media = (n1+n2+n3)/3
+        
+        console.log(media)
+
+        console.log("3 - Conversor de Temperatura")
+        console.log("-----------------")
+        var c = 30.0
+        var f = c * 1.8 + 32
+
+        console.log(`${c}ºC em Fahrenheit são ${f}ºF`)
+
+        console.log("4 - Concatenação de Strings")
+        console.log("-----------------")
+        var nome = "Kleber"
+        var sobrenome = "Molina Kardel"
+
+        console.log(nome + " " + sobrenome)
+
+        console.log("5 - Área do triângulo")
+        console.log("-----------------")
+        var base = 10
+        var altura = 20
+        var area = base * altura
+
+        console.log(`Área do triângulo: ${area}m²`)
+
+        console.log("6 - Idade em dias")
+        console.log("-----------------")
+        var idade = 28
+        var diasVividos = idade * 365
+        console.log("Você já viveu " + diasVividos + " dias")
+
+        console.log("6 - Valor com desconto")
+        console.log("-----------------")
+        var precoOriginal = 150.00; // valor do produto em reais
+        var percentualDesconto = 20; // desconto em %
+
+        var valorDesconto = (precoOriginal * percentualDesconto) / 100;
+        var precoFinal = precoOriginal - valorDesconto;
+
+        console.log("Preço original: R$" + precoOriginal.toFixed(2));
+        console.log("Desconto: " + percentualDesconto + "%");
+        console.log("Valor do desconto: R$" + valorDesconto.toFixed(2));
+        console.log("Preço final com desconto: R$" + precoFinal.toFixed(2));
+
+    </script>
+</body>
+</html>
