@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05 - Operadores</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            padding: 10px
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var num1 = 5
+        var num2 = 2
+
+        var soma = num1 + num2  // 7 Operador de adição +
+        var subtracao = num1 - num2 // 3 Operador de subtração -
+        var multiplicacao = num1 * num2 // 10 Operador de mulltiplicação *
+        var divisao = num1 / num2 // 2.5 Operador divisão inteira /
+        var restoDivisao = num1 % num2 // 1 Operador resto da divisão %
+        var potencia = num1 ** num2 // 25 Operador de potencialização **
+
+        document.write("<h2>Cálculos simples:</h2></br>")
+        document.write(`${num1} + ${num2} = ${soma} </br>`)
+        document.write(`${num1} - ${num2} = ${subtracao} </br>`)
+        document.write(`${num1} x ${num2} = ${multiplicacao} </br>`)
+        document.write(`${num1} / ${num2} = ${divisao} </br>`)
+        document.write(`${num1} % ${num2} = ${restoDivisao} </br>`)
+        document.write(`${num1} ** ${num2} = ${potencia} </br>`)
+
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a/2
+        var e = 6 * 2/d 
+        var f = b % e + 4/e
+
+        document.write("<h2>Cálculos com ordem de precedência:</h2></br>")
+        document.write(`5 + 3 = ${a} </br>`) // 8
+        document.write(`${a} % 5 = ${b} </br>`) // 3
+        document.write(`5 x ${b} ** 2 = ${c} </br>`) // 45
+        document.write(`10 - ${a}/2 = ${d} </br>`) // 6
+        document.write(`6 x 2/${d} = ${e} </br>`) // 2
+        document.write(`${b} % ${e} + 4/${e} = ${f} </br>`) // 3
+
+        document.write("<h2>Auto-atribuição</h2>")
+        var n = 3
+
+        document.write("<h2>Auto-atribuições com operadores aritméticos:</h2></br>")
+        document.write(`Valor inicial: n = ${n} </br>`)
+
+        n += 4 // n = n + 4 → 3 + 4 = 7
+        document.write(`n += 4 → ${n} </br>`)
+        n -= 2 // n = n - 2 → 7 - 2 = 5
+        document.write(`n -= 2 → ${n} </br>`)
+        n *= 3 // n = n * 3 → 5 * 3 = 15
+        document.write(`n *= 3 → ${n} </br>`)
+        n /= 5 // n = n / 5 → 15 / 5 = 3
+        document.write(`n /= 5 → ${n} </br>`)
+        n %= 2 // n = n % 2 → 3 % 2 = 1
+        document.write(`n %= 2 → ${n} </br>`)
+        n **= 4 // n = n ** 4 → 1 ** 4 = 1
+        document.write(`n **= 4 → ${n} </br>`)
+
+        var x = 5
+
+        document.write("<h2>Incremento e Decremento:</h2></br>")
+        document.write(`Valor inicial: x = ${x} </br>`)
+
+        x++ // incremento pós-fixado: x = x + 1 → 5 + 1 = 6
+        document.write(`x++ → ${x} </br>`)
+
+        ++x // incremento pré-fixado: x = x + 1 → 6 + 1 = 7
+        document.write(`++x → ${x} </br>`)
+
+        x-- // decremento pós-fixado: x = x - 1 → 7 - 1 = 6
+        document.write(`x-- → ${x} </br>`)
+
+        --x // decremento pré-fixado: x = x - 1 → 6 - 1 = 5
+        document.write(`--x → ${x} </br>`)
+    </script>
+</body>
+</html>
