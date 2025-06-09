@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios CSS - Portfolio Pessoal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: #f0f0f0;
+        }
+
+        h1 {
+            margin: 10px 0 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #left-side {
+            width: 30vw;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #left-side .bio {
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #left-side .bio p {
+            margin-left: 20px;
+        }
+
+        #left-side .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 120px;
+            border: .5px solid black;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .image img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #right-side {
+            padding: 15px;
+        }
+
+        #right-side h2 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            display: flex;
+            justify-content: start;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        i {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+
+        .info span {
+            font-weight: bold;
+            font-size: 1rem;       }
+
+        .info a {
+            font-size: .8rem;
+            color: #7c7c7c;
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            color: #686868;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<!-- 
+
+ - Foto de perfil, nome, bio curta e links para redes sociais.
+
+ - Estilização com cores suaves e fontes bem escolhidas.
+
+-->
+<body>
+    <h1>Meu portfólio</h1>
+
+    <div class="container">
+        <div id="left-side">
+            <div class="image">
+                <img src="./images/avatar.png" alt="">
+            </div>
+            <div class="bio">
+                <h3>Olá, sou o João Silva!</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ut odit deleniti minima, modi natus! Dolor, eaque cupiditate. Similique, perferendis numquam a voluptate necessitatibus rem odio ducimus debitis eveniet nemo!</p>
+            </div>
+        </div>
+        <div id="right-side">
+            <h2>Vamos trabalhar juntos?</h2>
+            <div class="social-medias">
+                <ul class="list-socialMedias">
+                    <li>
+                        <i class="fa-brands fa-instagram"></i> 
+                        <div class="info">
+                            <span>Instagram</span>
+                            <a href="#">@devjoao</a>
+                        </div></li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="info">
+                             <span>E-mail</span>
+                             <a href="#">devjoao@email.com</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div class="info">
+                            <span>Linkedin</span>
+                            <a href="#">Joao Dev</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-github"></i>
+                        <div class="info">
+                            <span>Github</span>
+                            <a href="#">@devjoao</a>
+                        </div>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
