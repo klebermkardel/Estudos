@@ -18,10 +18,3 @@ Este primeiro dia cobre conceitos essenciais como declaração de variáveis, ti
   - `>`, `<`
 
 ---
-
-## 📁 Arquivos
-
-- `dia01.js`: Código principal com exemplos e testes dos conceitos estudados
-- Pasta Exercícios/Dia01: `calculadora.js`: Mini-projeto simples com operações matemáticas básicas
-
----

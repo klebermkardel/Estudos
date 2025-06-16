@@ -1,31 +1,8 @@
-# 🧠 O que são funções?
-
-Funções são blocos de código que executam uma tarefa específica. A ideia é organizar o código e reutilizar trechos que se repetem.
-
-### 📌 Sintaxe básica:
-
-```javascript
-function nomedaFuncao() {
-    // Bloco de codigo
-}
-```
-
-### 🧪 Exemplo simples:
-
-```javascript
-function saudacao() {
-    console.log("Bom dia, João!");
-}
-
-// Chamando a função:
-saudacao(); // Saída: Bom dia, João!
-```
-
-## 🔧 O que são parâmetros?
+# 🔧 O que são parâmetros?
 
 Parâmetros são valores que você envia para uma função, para ela usar dentro do seu bloco de código.
 
-### 📌 Exemplo:
+## 📌 Exemplo:
 
 ```javascript
 function saudar(nome) {
@@ -36,12 +13,12 @@ saudar("Kleber"); // Saída: Olá, Kleber!
 saudar("Ana");    // Saída: Olá, Ana!
 ```
 
-## 🔁 O que é return?
+# 🔁 O que é return?
 
 O return serve para devolver um valor da função para quem chamou ela.
 Isso é útil quando você quer guardar o resultado em uma variável, ou usá-lo em outros lugares.
 
-### 📌 Exemplo:
+## 📌 Exemplo:
 
 ```javascript
 function somar(a, b) {
@@ -52,7 +29,7 @@ const resultado = somar(5, 3);
 console.log(resultado); // Saída: 8
 ```
 
-## 🧱 Parte 3: Funções com múltiplos parâmetros + return
+## Funções com múltiplos parâmetros + return
 
 ### 📌 Exemplo:
 
