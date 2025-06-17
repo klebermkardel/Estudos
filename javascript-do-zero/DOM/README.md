@@ -75,6 +75,6 @@ Você não tocou no HTML, mas a página mudou porque o DOM foi manipulado.
 
 * Ele representa a página como objetos manipuláveis.
 
-** Você pode **acessar**, **alterar**, **criar** e **remover** partes da página dinamicamente.
+* Você pode **acessar**, **alterar**, **criar** e **remover** partes da página dinamicamente.
 
-** É através do DOM que você **faz sua página interagir com o usuário**.
+* É através do DOM que você **faz sua página interagir com o usuário**.
