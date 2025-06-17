@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Exemplo de Manipulação de Conteúdo</title>
+    <style>
+        .cartao {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 16px;
+            width: 250px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="perfil" class="cartao">
+        <h2 id="nome">Nome</h2>
+        <p id="descricao">Descrição</p>
+        <img src="https://via.placeholder.com/150" alt="Foto do Perfil" id="foto">
+    </div>
+
+    <button id="botao">Atualizar Perfil</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
