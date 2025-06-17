@@ -1,6 +1,4 @@
-# Introdução
-
-Este resumo é baseado na aula do Curso em Vídeo do Professor Guanabara, que aborda a história e evolução da internet, culminando na importância do HTML e HTTP.
+# Introdução - A História da Internet
 
 ## Tópicos Abordados
 
