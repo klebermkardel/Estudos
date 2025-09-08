@@ -1,41 +1,56 @@
 /*
-
 Categorias de Idade (Requisitos Completos)
 O Problema: Peça a idade de uma pessoa e classifique-a em uma das seguintes categorias: "Criança", "Adolescente", "Adulto" ou "Idoso".
-
-Requisitos (Faixas Etárias):
-
-Criança: Se a idade for de 0 a 12 anos.
-
-Adolescente: Se a idade for de 13 a 17 anos.
-
-Adulto: Se a idade for de 18 a 59 anos.
-
-Idoso: Se a idade for 60 anos ou mais.
-
 */
 
+// Importa a biblioteca 'prompt-sync' para permitir a entrada de dados do usuário.
 const prompt = require('prompt-sync')();
 
-console.log("\n--- Categorias de Idade --- ")
+// Exibe um título para o programa.
+console.log("\n--- Categorias de Idade --- ");
 
+// Pede ao usuário que informe a idade e a converte para o tipo Number.
 const idade = Number(prompt("Informe a sua idade: "));
 
-if(isNaN(idade) || !Number.isInteger(idade) || idade < 0) {
+// --- BLOCO DE VALIDAÇÃO ---
+// Garante que a idade seja um número inteiro e não negativo.
+// A condição || (OU) exibe um erro se a idade for:
+// 1. NaN (Não é um número) OU
+// 2. Não for um número inteiro OU
+// 3. For um número negativo.
+if (isNaN(idade) || !Number.isInteger(idade) || idade < 0) {
     console.log("Erro: Por favor, informe apenas números inteiros e positivos.");
 } else {
+    // --- BLOCO DE LÓGICA PRINCIPAL ---
+    
+    // Declara a variável que irá armazenar a classificação.
+    // Usar uma variável e um único bloco de 'console.log' no final é uma boa prática.
     let classificacao;
 
-    if(idade <= 12) {
+    // Esta cadeia 'if...else if...else' é muito eficiente. Ela verifica as faixas em ordem.
+    
+    // 1ª Verificação: Se a idade é menor ou igual a 12, classifica como "Criança" e para a verificação.
+    if (idade <= 12) {
         classificacao = "Criança";
-    } else if(idade <= 17) {
+    } 
+    // 2ª Verificação: Este bloco só é executado se a condição anterior (idade <= 12) for FALSA.
+    // Portanto, já sabemos que a idade é >= 13. Só precisamos checar o limite superior da faixa.
+    else if (idade <= 17) {
         classificacao = "Adolescente";
-    } else if(idade <= 59) {
+    } 
+    // 3ª Verificação: Se chegou aqui, já sabemos que a idade é > 17 (ou seja, >= 18).
+    // Só precisamos checar o limite superior da faixa de adulto.
+    else if (idade <= 59) {
         classificacao = "Adulto";
-    } else {
+    } 
+    // 4ª Verificação: Se nenhuma das condições anteriores foi verdadeira,
+    // a idade só pode ser 60 ou mais. O 'else' final captura esta última categoria.
+    else {
         classificacao = "Idoso";
     }
 
-    console.log(`\nSua idade: ${idade} anos`)
-    console.log(`Classificação: ${classificacao}`)
+    // --- SAÍDA FINAL ---
+    // Exibe a idade e a classificação que foi determinada na lógica acima.
+    console.log(`\nSua idade: ${idade} anos`);
+    console.log(`Classificação: ${classificacao}`);
 }
