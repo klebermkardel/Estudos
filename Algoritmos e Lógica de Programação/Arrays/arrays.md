@@ -2,14 +2,14 @@
 
 ## A Teoria: O que são Arrays?
 
-Até agora, cada variável guardava um único valor (`let nome = "Ana"`). Um **Array** (também chamado de vetor ou lista) é um tipo especial de variável que pode guardar **múltiplos valores** em uma coleção ordenada.
+Até agora, cada variável guardava um único valor (let nome = "Ana";). Um **Array** (também chamado de vetor ou lista) é um tipo especial de variável que pode guardar **múltiplos valores** em uma coleção ordenada.
 
 Pense em um array como um **gaveteiro** ou uma **prateleira**. A prateleira é a variável, e cada item que você coloca nela é um **elemento** do array.
 
 ## Conceitos-Chave:
-
+    
 * **Elementos**: Os valores dentro do array.
-* **Índice (Index)**: A posição de cada elemento. **MUITO IMPORTANTE:** A contagem dos índices em programação **sempre começa do zerto (0)**.
+* **Índice (Index)**: A posição de cada elemento. **MUITO IMPORTANTE**: A contagem dos índices em programação **sempre começa do zero (0)**.
 
 ## Exemplo de um Array:
 
@@ -110,6 +110,16 @@ console.log(frutas); // Saída: ["Maçã", "Banana"]
 console.log(primeiraFruta); // Saída: "Morango"
  ```
 
+* ```.splice(indice, quantidade, ...itens)```:
+ * **Descrição**: O "canivete suíço" dos arrays. Remove, substitui ou adiciona elementos em qualquer posição.
+ * **Exemplo (Remover**);
+
+ ```js
+ const letras = ['a', 'b', 'c', 'd', 'e'];
+ letras.splice(2, 1); // A partir do índice 2, remova 1 elemento
+ console.log(letras); // Saída: ['a', 'b', 'd', 'e']
+ ```
+
 **Encontrar e Verificar Elementos**
 
 * ```.indexOf(elemento)```:
@@ -133,7 +143,35 @@ console.log(primeiraFruta); // Saída: "Morango"
  console.log(nomes.includes("Daniel")); // Saída: false
  ```
 
+**Transformar e Combinar**
 
+* ```.reverse()```:
+ * **Descrição**: Inverte a ordem dos elementos do array. **Atenção**: Este método modifica o array original!
+ * **Exemplo**:
+
+ ```js
+ const numeros = [1, 2, 3, 4];
+ numeros.reverse();
+ console.log(numeros); // Saída: [4, 3, 2, 1]
+ ```
+
+* ```.join(separador)```:
+
+ * **Descrição**: Junta todos os elementos de um array em uma única string, separados pelo argumento fornecido.
+ * **Exemplo**:
+
+ ```js
+ const palavras = ["Olá", "mundo", "!"];
+ console.log(palavras.join(' ')); // Saída: "Olá mundo !"
+ ```
+
+* **Nota sobre** ```.split(separador)```: Este é um método de **String**, mas é o par perfeito do ```.join()```. Ele quebra uma string em um array.
+
+```js
+const frase = "Eu amo programar";
+const palavras = frase.split(' ');
+console.log(palavras); // Saída: ["Eu", "amo", "programar"]
+```
 
 ## A Combinação Poderosa: Laços e Arrays
 
@@ -191,7 +229,7 @@ console.log(`A soma de todas as notas é: ${somaDasNotas}`);
 
  ```js
  const numeros = [1, 2, 3];
- const numerosDobrados = numeros.map(numnero => numero * 2);
+ const numerosDobrados = numeros.map(numero => numero * 2);
  console.log(numerosDobrados); // Saída: [2, 4, 6]
  ```
 
@@ -203,4 +241,24 @@ console.log(`A soma de todas as notas é: ${somaDasNotas}`);
  const idades = [15, 22, 18, 30, 16];
  const adultos = idades.filter(idade => idade >= 18);
  console.log(adultos); // Saída: [22, 18, 30]
+ ```
+
+* ```.find(callback)```:
+ * **Descrição**: Retorna o **primeiro elemento** do array que satisfaz a uma condição. Se nenhum for encontrado, retorna ```undefined```. Ideal para **encontrar um item específico**.
+ * **Exemplo**:
+
+ ```js
+ const numeros = [10, 25, 55, 30];
+ const primeiroMaiorQue50 = numeros.find(numero => numero > 50);
+ console.log(primeiroMaiorQue50); // Saída: 55
+ ```
+
+* ```.reduce(callback, valorInicial)```:
+ * **Descrição**: "Reduz" o array a um único valor, aplicando uma função que acumula o resultado a cada iteração. Ideal para **somar totais, calcular médias, etc**.
+ * **Exemplo**:
+
+ ```js
+ const numeros = [1, 2, 3, 4, 5];
+ const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+ console.log(soma); // Saída: 15
  ```
