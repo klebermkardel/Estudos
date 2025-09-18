@@ -201,3 +201,58 @@ Vamos usar um exemplo para ficar mais claro. Imagine nosso array com 5 números 
 
  **A Troca de Variáveis (Swap)**: A parte ```const temp = ...``` é a forma clássica de trocar os valores de duas variáveis. Pense nisso como ter dois copos, um com água e outro com suco, e precisar de um copo vazio (```temp```) para conseguir trocar os líquidos de lugar.
 
+
+**2. Seleção Direta (Selection Sort)**
+
+ * **A Teoria**: O algoritmo de Seleção Direta funciona dividindo a lista em duas partes: uma parte **ordenada** (que começa vazia, à esquerda) e uma parte **desordenada** (o resto da lista, à direita). A cada passo, o algoritmo encontra o **menor elemento** na parte desordenada e o move para o final da parte ordenada.
+
+ * **Analogia**: Imagine que você tem uma mão de cartas de baralho desordenadas. Para ordenar:
+
+  1. Você olha para todas as cartas e encontra a **menor de todas**. Você a pega e a coloca na primeira posição (a mais à esquerda).
+
+  2. Agora, ignorando a carta que você já ordenou, você olha para o restante das cartas e novamente procura pela ***menor entre elas**. Você a pega e a coloca na segunda posição.
+
+  3. Você repete esse processo – encontrar o menor do resto e colocar na próxima posição vazia – até que todas as cartas estejam ordenadas.
+
+ * **A Sintaxe (Implementação)**: Assim como o Bubble Sort, ele usa laços aninhados, mas com propósitos diferentes
+
+  * O **laço externo** avança a posição inicial da parte "desordenada" da lista (a carta que queremos substituir).
+
+  * O **laço interno** é responsável por **encontrar** o índice do menor elemento no resto da lista.
+
+  * A **troca** acontece apenas uma vez por passagem, depois que o laço interno já encontrou o menor elemento
+
+  ```js
+  /**
+   * Ordenada um array de números em ordem crescente usando o algoritmo Selection Sort.
+   * @param {Array<number>} array - O array de números a ser ordenado
+   */
+
+   function selectionSort(array) {
+    const n = array.length;
+
+    // Laço externo: percorre o array para definir a posição do item a ser ordenado.
+    for (let i = 0; i < n - 1; i++) {
+        // Assume que o menor elemento está na posição atuak.
+        let menorIndice = i;
+
+        // Laço interno: percorre o RESTANTE do array para encontrar o menor
+        for (let j = i + 1; j < n; j++) {
+            // Se encontrar um elemento menor que o 'menorIndice' atual...
+            if(array[j] < array[menorIndice]) {
+                // ...atualiza o 'menorIndice' para guardar a nova posição.
+                menorIndice = j;
+            }
+        }
+
+        // Após o laço interno terminar, 'menorIndice' contém a posição do menor
+        // elemento da parte desordenada. Se essa posição for diferente da inicial, troca.
+        if (menorIndice !== i) {
+            const temp = array[i];
+            array[i] = array[menorIndice];
+            array[menorIndice] = temp;
+        }
+    }
+    return array;
+   }
+  ```
