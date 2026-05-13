@@ -6,4 +6,4 @@ const progresso = (vagasCandidatadas / vagasTotais) * 100
 
 const mediaDeCandidaturas = progresso >= 50
 
-console.log("Estou acima da média de candidaturas?", mediaDeCandidaturas)
+console.log("Estou acima da média de candidaturas?", med)
