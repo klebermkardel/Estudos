@@ -6,13 +6,14 @@ Imagine que variáveis são **caixas** onde você guarda informações para usar
 
 Foi a única forma de criar variáveis por muito tempo. Hoje, **quase não é usada** em projetos modernos porque ela é "bagunçada". Ela permite que você crie duas variáveis com o mesmo nome sem reclamar, o que gera muitos bugs.
  
-    * **Regra de ouro**: Evite usar ```var```.
+    * **Regra de ouro**: Evite usar "var".
 
 2. ```let``` (A caixa flexível)
 
 O ```let``` é usado para valores que **podem mudar** ao longo do tempo.
 
     * **Exemplo**: Sua idade, o saldo da conta ou a pontuação de um jogo.
+
     * Você declara uma vez e pode reatribuir o valor depois.
 
 3. ```const``` (A caixa lacrada)
@@ -20,7 +21,8 @@ O ```let``` é usado para valores que **podem mudar** ao longo do tempo.
 Vem de "Constante". É usada para valores que **nunca mudam** após serem definidos.
 
     * **Exemplo**: Seu CPF, sua data de nascimento ou o valor de PI (3,14).
-    * Se você tentar mudar o valor de uma ```const```, o JavaScript vai dar um erro. É excelente para segurança do código.
+
+    * Se você tentar mudar o valor de uma const, o JavaScript vai dar um erro. É excelente para segurança do código.
 
 ## Prática: Transformando seu dia em código
 
