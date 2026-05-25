@@ -2,7 +2,7 @@
 
 Ele é o irmão rebelde do ```while```. A única diferença é que ele **executa a ação primeiro** e só depois checa se deve continuar. Isso garante que o código rode **pelo menos uma vez**, mesmo que a condição seja falsa logo de cara.
 
-    **Exemplo na vida real**: Você entra na quadra e arremessa a bola pro cesto uma vez (```do```). Só depois você olha para o relógio para ver se ainda tem tempo de continuar treinando (```while```).
+**Exemplo na vida real**: Você entra na quadra e arremessa a bola pro cesto uma vez (```do```). Só depois você olha para o relógio para ver se ainda tem tempo de continuar treinando (```while```).
 
 ## O Próximo Passo: O irmão do ```while```
 

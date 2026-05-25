@@ -2,7 +2,7 @@
 
 O ```for``` é o loop planejado, o oposto do ```while```. Você usa o ```for``` quando você sabe exatamente o limite da repetição (onde começa, onde termina e o ritmo do passo).
 
-    **Exemplo na vida real**: Faça **10** arremessos livres na quadra. Você sabe o ínicio (1º arremesso), o fim (10º arremesso) e vai contando de 1 em 1.
+**Exemplo na vida real**: Faça **10** arremessos livres na quadra. Você sabe o ínicio (1º arremesso), o fim (10º arremesso) e vai contando de 1 em 1.
 
 ## A Estrutura do ```for```
 

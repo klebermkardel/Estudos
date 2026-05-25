@@ -4,11 +4,11 @@ No dia a dia, nossa vida é cheia de loops. Um loop nada mais é do que **repeti
 
 Pensando na sua rotina:
 
-    * Você come uma colherada de comida **enquanto** o prato não estiver vazio.
+* Você come uma colherada de comida **enquanto** o prato não estiver vazio.
 
-    * Você bate a bola no chão **enquanto** estiver jogando basquete.
+* Você bate a bola no chão **enquanto** estiver jogando basquete.
 
-    * Você dorme **até que** o despertador toque às 06h50.
+* Você dorme **até que** o despertador toque às 06h50.
 
 Repare que todas essas ações têm duas coisas: **a ação que se repete** e a **a condição para parar**.
 
@@ -22,4 +22,4 @@ Antes de escrever qualquer linha de código de repetição, você precisa conhec
 
 Se voê criar uma condição que **nunca se torna falsa**, o computador vai tentar rodar aquilo para sempre. O processador vai a 100%, o navegador trava e o VS Code chora.
 
-    **Exemplo de loop infinito lógico**: "Coma uma colherada de comida enquanto o prato não estiver vazio", mas você nunca engole a comida e o prato nunca esvazia. Você fica travado nessa ação para sempre.
+**Exemplo de loop infinito lógico**: "Coma uma colherada de comida enquanto o prato não estiver vazio", mas você nunca engole a comida e o prato nunca esvazia. Você fica travado nessa ação para sempre.
