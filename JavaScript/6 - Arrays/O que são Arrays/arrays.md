@@ -61,7 +61,7 @@ Os Arrays no JavaScript vêm com "ferramentas" embutidas para facilitar nossa vi
     vagas.push("Analista de Sistemas") // Adicionou no fim
     console.log(vagas.length) // Exibe 3
     ```
-## Por queos Arrays são tão poderosos?
+## Por que os Arrays são tão poderosos?
 
 Imagime que, em vez de 4 vagas, você tivesse 500. Se fossem variáveis individuais (```vaga1```, ```vaga2```...), seria impossível gerenciar. Com o Array, você tem um **contêiner único**.
 
