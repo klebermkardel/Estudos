@@ -49,9 +49,9 @@ Muitas vezes você não quer que a função apenas jogue algo no ```console.log`
 
 O ```return``` faz duas coisas:
 
-    1. Cospe o resultado da função para fora dela.
+1. Cospe o resultado da função para fora dela.
 
-    2. **Para a execução da função imediatamente** (nada que estiver abaixo do ```return``` dentro daquela função será executado).
+2. **Para a execução da função imediatamente** (nada que estiver abaixo do ```return``` dentro daquela função será executado).
 
 ```js
 function calcularPontos(cestaDeDois, cestaDeTres) {
