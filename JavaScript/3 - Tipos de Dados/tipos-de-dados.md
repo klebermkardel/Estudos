@@ -6,21 +6,21 @@ No JavaScript, cada valor tem um **Tipo de Dado**. Entender isso evita que você
 
 Representa sequências de caracteres. Elas precisam estar envolvidas por aspas (simples, duplas, ou crases).
 
-    * **Exemplo:** ```"Basquete"```, ```'São Paulo'```, ````Estudando JS````.
-    * **Uso:** Nomes, mensagens, endereços.
+* **Exemplo:** ```"Basquete"```, ```'São Paulo'```, ````Estudando JS````.
+* **Uso:** Nomes, mensagens, endereços.
 
 **2. Number (Números)**
 
 No JavaScript, não há distinção entre números inteiros e decimais (com vírgula). Todos são do tipo ```number```.
 
-    * **Exemplo:** ```10```, ```3.14``` (use ponto, não virgula!), ```-5```.
+* **Exemplo:** ```10```, ```3.14``` (use ponto, não virgula!), ```-5```.
 
 **3. Boolean (Boleanos)**
 
 É o tipo mais simples: só aceita dois valores: ```true``` (verdadeiro) ou ```false``` (falso).
 
-    * **Exemplo:** ```true```, ```false```.
-    * **Uso:**: Perguntas de "sim ou não". Está chovendo? O usuário está logado? O quintal está limpo?
+* **Exemplo:** ```true```, ```false```.
+* **Uso:**: Perguntas de "sim ou não". Está chovendo? O usuário está logado? O quintal está limpo?
 
 ## O Operador ```typeof```
 
