@@ -10,7 +10,7 @@ Como você já domina as **Arrow Functions**, esses métodos vão parecer mágic
 
 O ```.forEach()``` serve puramente para **passar por cada item do array** e executar uma ação (como um ```console.log```). Ele não altera a lista e não devolve nada, apenas "olha" item por item.
 
-    - Analogia: Olhar para cada par de tênis no seu armário e dizer a cor dele em voz alta.
+- Analogia: Olhar para cada par de tênis no seu armário e dizer a cor dele em voz alta.
 
 ```js
 const empresas = ["Google", "Amazon", "Apple"]
@@ -23,7 +23,7 @@ empresas.forEach(empresa => console.log("Empresa: " + empresa))
 
 O ```.map()``` passa por todos os itens da lista, aplica uma transformação em cada um e **devolve um array novo do mesmo tamanho,** com os dados modificados.
 
-    - Analogia: Pegar uma lista de preços em dólar e transformar tudo para real. A quantidade de itens é a mesma, mas os valores mudaram.
+- Analogia: Pegar uma lista de preços em dólar e transformar tudo para real. A quantidade de itens é a mesma, mas os valores mudaram.
 
 ```js
 const arremessos = [2, 3, 2]
@@ -38,7 +38,7 @@ console.log(pontosMultiplicados) // [20, 30, 20]
 
 O ```.filter()``` roda uma checagem (verdadeiro ou falso) em cada item da lista. Se a condição for verdadeira, o item entra no novo array. Se for falsa, fica de fora. Ele **devolve um array filtrado** geralmente menor que o item original.
 
-    - Analogia: Filtrar as vagas do seu e-mail para ver apenas as que pagam acima de um valor X.
+- Analogia: Filtrar as vagas do seu e-mail para ver apenas as que pagam acima de um valor X.
 
 ```js
 const pontosTreino = [0, 3, 0, 2, 0]
@@ -55,11 +55,11 @@ O ```.reduce()``` é o método mais complexo, mas é o mais poderoso. Ele serve 
 
 Ele usa dois parâmetros principais na Arrow Function:
 
-    1. ```acumulador```: a variável que guarda a soma (igual ao seu ```let totalPontos = 0``` de antes).
-    2. ```valorAtual```: o item da lista que ele está lendo naquele segundo.
-    3. No final do método, passamos o **valor inicial** do acumulador (geralmente ```0```).
+1. ```acumulador```: a variável que guarda a soma (igual ao seu ```let totalPontos = 0``` de antes).
+2. ```valorAtual```: o item da lista que ele está lendo naquele segundo.
+3. No final do método, passamos o **valor inicial** do acumulador (geralmente ```0```).
     
-    - Analogia: Passar as compras no caixa do mercado. O painel começa em R$ 0,00 (```valor inicial```) e vai somando cada produto (```valor atual```) até dar o preço final (```acumulador```).
+- Analogia: Passar as compras no caixa do mercado. O painel começa em R$ 0,00 (```valor inicial```) e vai somando cada produto (```valor atual```) até dar o preço final (```acumulador```).
 
 ```js
 const pontosDoJogo = [2, 3, 2, 2, 3]
