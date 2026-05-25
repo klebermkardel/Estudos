@@ -50,11 +50,11 @@ console.log(treinos) // ["Arremesso", "Ponte Aérea", "Defesa", "Rebote"]
 
 Os Arrays no JavaScript vêm com "ferramentas" embutidas para facilitar nossa vida:
 
-    * ```.length```: Diz quants itens existem no array.
-    * ```.push()```: Adiciona um item ao final da lista.
-    * ```.pop()```: Remove o último item da lista.
-    * ```.unshift()```: Adiciona um item no início.
-    * ```.shift()```: Remove o primeiro item.
+* ```.length```: Diz quants itens existem no array.
+* ```.push()```: Adiciona um item ao final da lista.
+* ```.pop()```: Remove o último item da lista.
+* ```.unshift()```: Adiciona um item no início.
+* ```.shift()```: Remove o primeiro item.
 
     ```js
     const vagas = ["Desenvolvedor Júnior", "Estágio Tech"]
@@ -67,9 +67,9 @@ Imagime que, em vez de 4 vagas, você tivesse 500. Se fossem variáveis individu
 
 Agora, vamos subir o nível. Existem dois métodos muito usados para "limpar" ou organizar seus dados.
 
-    * ```.indexOf()```: Serve para descobrir em qual posição (índice) um item específico está. Se ele não encontra nada, retorna -1.
+* ```.indexOf()```: Serve para descobrir em qual posição (índice) um item específico está. Se ele não encontra nada, retorna -1.
 
-    * ```.splice()```: É a "faca suiça" dos arrays. Ele serve para remover, substituir ou adicionar itens em qualquer lugar da lista (não só no fim ou no começo).
+* ```.splice()```: É a "faca suiça" dos arrays. Ele serve para remover, substituir ou adicionar itens em qualquer lugar da lista (não só no fim ou no começo).
 
 ## Exemplo de ```.splice()```
 
