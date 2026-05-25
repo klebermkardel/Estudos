@@ -8,7 +8,9 @@ Ele é chamado de "ternário" porque é o único operador do JavaScript que util
 
 A lógica funciona como uma pergunta de sim ou não: 
 
-```condição ? valor_se_verdadeiro : valor_se_falso```
+```js
+condição ? valor_se_verdadeiro : valor_se_falso
+```
 
 1. **A Condição:** Uma comparação que resulta em ```true``` ou ```false```.
 2. **O Ponto de Interrogação (```?```):** Separa a condição dos resultados.
