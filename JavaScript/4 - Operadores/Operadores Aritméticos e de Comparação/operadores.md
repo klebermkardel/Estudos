@@ -19,8 +19,8 @@ São os que você já conhece da matemática, usados para cálculos:
 
 Estes são fundamentais para a tomada de decisão (o conteúdo que veremos a seguir). Eles sempre resultam em um **Boolean** (```true``` ou ```false```).
 
-    * ```==``` **(Igualdade):** Compara apenas valor (ignora o tipo.) ```"10" == 10``` é ```true```.
-    * ```===``` **(Igualdade Estrita):** Compara o valor e o tipo. ```"10" === 10``` é ```false```. **(Use sempre este!)**
-    * ```!=``` e ```!==```: Diferente e Estritamente diferente. 
-    * ```>``` e ```<```: Maior que ou Menor que
-    * ```>=``` e ```<=```: Maior ou igual / Menor ou igual
+* ```==``` **(Igualdade):** Compara apenas valor (ignora o tipo.) ```"10" == 10``` é ```true```.
+* ```===``` **(Igualdade Estrita):** Compara o valor e o tipo. ```"10" === 10``` é ```false```. **(Use sempre este!)**
+* ```!=``` e ```!==```: Diferente e Estritamente diferente. 
+* ```>``` e ```<```: Maior que ou Menor que
+* ```>=``` e ```<=```: Maior ou igual / Menor ou igual
