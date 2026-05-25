@@ -4,11 +4,11 @@ Em JavaScript, um array não é apenas uma lista de dados passiva. Ele é um **O
 
 Imagine o Array como um **Smartphone**:
 
-    - Os **Dados** dentro dele (as strings, os números) são suas fotos e suas músicas.
+* Os **Dados** dentro dele (as strings, os números) são suas fotos e suas músicas.
 
-    - Os **Métodos** são os **aplicativos nativos** que já vêm instalados no aparelho para manipular essas fotos e músicas (como o app de editar imagem, o botão de compartilhar, a lixeira).
+* Os **Métodos** são os **aplicativos nativos** que já vêm instalados no aparelho para manipular essas fotos e músicas (como o app de editar imagem, o botão de compartilhar, a lixeira).
 
-Tenicamente, **método é uma função que pertence a um objeto**. É uma ação que o JavaScript já sabe fazer com aquele tipo de dado. Você reconhece um método porque ele sempre precisa de parênteses ```()``` no final para ser executado (como ```push()```, ```indexOf()```).
+Tecnicamente, **método é uma função que pertence a um objeto**. É uma ação que o JavaScript já sabe fazer com aquele tipo de dado. Você reconhece um método porque ele sempre precisa de parênteses ```()``` no final para ser executado (como ```push()```, ```indexOf()```).
 
 ## Os Métodos Básicos (O Kit de Sobrevivência):
 
@@ -16,43 +16,43 @@ Estes são os métodos que alteram o "tamanho" e a estrutura da sua lista. Eles 
 
 **Para Adicionar Itens:**
 
-    - ```.push(item)```: Empurra um novo item para o final da lista
-    - ```.unshift(item)```: Empura um novo item para o começo dela (índice 0) e arrasta todos os outros para a frente.
+* ```.push(item)```: Empurra um novo item para o final da lista
+* ```.unshift(item)```: Empura um novo item para o começo dela (índice 0) e arrasta todos os outros para a frente.
 
 **Para Remover Itens**:
 
-    - ```.pop()```: Remove o último item da lista. Ele não precisa de nada dentro dos parênteses, ele simplesmente "arranca" o fim.
-    - ```.shift()```: Remove o primeiro item da lista (índice 0) e reajusta os indices de todo mundo que sobrou.
+* ```.pop()```: Remove o último item da lista. Ele não precisa de nada dentro dos parênteses, ele simplesmente "arranca" o fim.
+* ```.shift()```: Remove o primeiro item da lista (índice 0) e reajusta os indices de todo mundo que sobrou.
 
 **Para Localizar e Modificar**: 
 
-     - ```.indexOf(item)```: Procura o item de cima a baixo e te diz o número do índice dele. (Se não localizar retorna -1).
-    - ```.splice(índice, quantidade)```: Entra em uma posição específica e deleta (ou substitui) a quantidade de itens que você mandar.
+* ```.indexOf(item)```: Procura o item de cima a baixo e te diz o número do índice dele. (Se não localizar retorna -1).
+* ```.splice(índice, quantidade)```: Entra em uma posição específica e deleta (ou substitui) a quantidade de itens que você mandar.
 
-    Para adicionar um item em uma posição específica (que não seja no começo nem no fim), você deve usar o mesmo ```.splice()``` que usamos para remover, mas com um "truque" nos argumentos.
+Para adicionar um item em uma posição específica (que não seja no começo nem no fim), você deve usar o mesmo ```.splice()``` que usamos para remover, mas com um "truque" nos argumentos.
 
-    O método ```.splice()``` aceita um terceiro argumento (e quanto mais você quiser), que repsenta o novo item que você quer inserir.
+O método ```.splice()``` aceita um terceiro argumento (e quanto mais você quiser), que repsenta o novo item que você quer inserir.
 
-    **Sintaxe para inserção**:
+**Sintaxe para inserção**:
 
-    ```array.splice(indice_onde_vai_entrar, 0, item_novo)```
+```array.splice(indice_onde_vai_entrar, 0, item_novo)```
 
-        - **Primeiro argumento**: O número do índice onde o item vai se instalar.
-        - **Segundo argumento:** O número ```0```. Isso diz ao JavaScript: "Não remova nenhum item, apenas empurre os outros para o lado".
-        - **Terceiro argumento**: O valor que você quer colocar lá dentro.
+* **Primeiro argumento**: O número do índice onde o item vai se instalar.
+* **Segundo argumento:** O número ```0```. Isso diz ao JavaScript: "Não remova nenhum item, apenas empurre os outros para o lado".
+* **Terceiro argumento**: O valor que você quer colocar lá dentro.
 
-    **Exemplo Prático**:
+**Exemplo Prático**:
 
-    ```js
-    const empresas = ["Microsoft", "Google", "Apple"];
+```js
+const empresas = ["Microsoft", "Google", "Apple"];
 
-    // No índice 1, remova 0 itens e adicione "Netflix"
-    empresas.splice(1, 0, "Netflix");
+// No índice 1, remova 0 itens e adicione "Netflix"
+empresas.splice(1, 0, "Netflix");
 
-    console.log(empresas); 
+console.log(empresas); 
     
-    // Resultado: ["Microsoft", "Netflix", "Google", "Apple"]
-    ```
+// Resultado: ["Microsoft", "Netflix", "Google", "Apple"]
+```
 
 ## Existem outros métodos mais importantes?
 
