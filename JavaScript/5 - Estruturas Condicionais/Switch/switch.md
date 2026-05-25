@@ -8,10 +8,10 @@ Pense no ```if/else``` como um GPS que decide entre "esquerda ou direita". O ```
 
 Ele funciona com quatro palavras-chave: 
 
-    1. ```switch```: Define qual variável estamos testando.
-    2. ```case```: Cada um dos valores que queremos comparar.
-    3. ```break```: Crucial! Ele "sai" do switch. Sem ele, o código continua lendo todos os casos abaixo.
-    4. ```default```: O plano B, caso nenhum valor combine (como o seu ```else```).
+1. ```switch```: Define qual variável estamos testando.
+2. ```case```: Cada um dos valores que queremos comparar.
+3. ```break```: Crucial! Ele "sai" do switch. Sem ele, o código continua lendo todos os casos abaixo.
+4. ```default```: O plano B, caso nenhum valor combine (como o seu ```else```).
 
 2. Prática (Dentro da pasta Prática)
 
