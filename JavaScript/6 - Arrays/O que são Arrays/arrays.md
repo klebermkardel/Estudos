@@ -4,7 +4,7 @@ Os **Arrays** (ou Vetores) são fundamentais. Até agora, cada variável sua era
 
 Um **Array** é como uma **estante organizada**: uma única variável que consegue guardar múltiplos valores de uma vez, mantendo-os em ordem.
 
-1. Como criar um Array
+## Como criar um Array
 
 Usamos colchetes ```[]``` e separamos os itens por vírgulas.
 
@@ -16,7 +16,7 @@ const treinos = ["Arremesso", "Drible", "Defesa", "Rebote"]
 const notas = [10, 8, 5, 9]
 ```
 
-2. O conceito de Índice (A contagem começa no ZERO)
+## O conceito de Índice (A contagem começa no ZERO)
 
 Esta é a regra de ouro: na programação, o primeiro item de uma lista não está na posição 1,mas sim na posição 0.
 
@@ -24,7 +24,7 @@ Esta é a regra de ouro: na programação, o primeiro item de uma lista não est
     * Posição 1: "Drible"
     * Posição 2: "Defesa"
 
-3. Acessando itens da "Estante"
+## Acessando itens da "Estante"
 
 Para pegar um valor específico, usamos o nome do array seguido do índice entre colchetes:
 
@@ -35,7 +35,7 @@ console.log(treinos[0]) // Exibe "Arremesso"
 console.log(treinos[2]) // Exibe "Defesa"
 ``` 
 
-4. Modificando um item
+## Modificando um item
 
 Você pode mudar o conteúdo de uma posição específica, mesmo se o array for uma ```const``` (porque você não está mudando a "estante", apenas o "objeto" que está dentro dela):
 
@@ -46,7 +46,7 @@ treinos[1] = "Ponte Aérea"
 console.log(treinos) // ["Arremesso", "Ponte Aérea", "Defesa", "Rebote"] 
 ```
 
-5. Propriedades e Métodos Básicos
+## Propriedades e Métodos Básicos
 
 Os Arrays no JavaScript vêm com "ferramentas" embutidas para facilitar nossa vida:
 
@@ -61,7 +61,7 @@ Os Arrays no JavaScript vêm com "ferramentas" embutidas para facilitar nossa vi
     vagas.push("Analista de Sistemas") // Adicionou no fim
     console.log(vagas.length) // Exibe 3
     ```
-6. Por queos Arrays são tão poderosos?
+## Por queos Arrays são tão poderosos?
 
 Imagime que, em vez de 4 vagas, você tivesse 500. Se fossem variáveis individuais (```vaga1```, ```vaga2```...), seria impossível gerenciar. Com o Array, você tem um **contêiner único**.
 
