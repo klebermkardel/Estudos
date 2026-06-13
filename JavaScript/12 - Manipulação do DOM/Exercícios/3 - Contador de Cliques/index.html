@@ -5,34 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios DOM - Contador de Cliques</title>
     <style>
-        body {
-            background-color: #b3daad;
-            font-family: Arial, Helvetica, sans-serif;
+        body { 
+            background-color: #b3daad; 
+            font-family: Arial, Helvetica, sans-serif; 
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
         }
 
-        .contador {
-            font-size: 2rem;
-            font-weight: bold;
+        .contador { 
+            font-size: 2rem; 
+            font-weight: bold; 
         }
 
-        .btn {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            font-size: 1rem;
-            margin-top: 10px;
-            background-color: antiquewhite;
-            border: .5px solid black;
-            border-radius: 4px;
-            height: 30px;
+        .btn { 
+            padding: 20px; 
+            font-size: 1rem; 
+            margin-top: 10px; 
             cursor: pointer;
         }
     </style>
@@ -45,13 +39,18 @@
     </div>
 
     <script>
+        // Seleciona os elementos
         const elemento = document.querySelector(".contador");
         const botao = document.querySelector(".btn");
 
-        let contador = parseInt(elemento.textContent);
+        // Captura o texto inicial ("0") do HTML e converte em tipo numérico real
+        let contador = parseInt(elemento.textContent, 10);
 
         const clicar = () => {
-            contador++;
+            // 1. Atualiza o valor numérico do contador
+            contador++; 
+            
+            // 2. Injeta o número atualizado de volta no HTML para atualizar a tela do usuário
             elemento.textContent = contador;
         };
 

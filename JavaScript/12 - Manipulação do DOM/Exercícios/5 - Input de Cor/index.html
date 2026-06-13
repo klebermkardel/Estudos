@@ -4,91 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios DOM - Input de Cor</title>
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            gap: 10px; 
+        }
+
+        #cor { 
+            padding: 5px; 
+            text-align: center; 
+            font-size: 1rem; 
+        }
+
+        .btn { 
+            padding: 
+            10px; font-weight: bold; 
+            cursor: pointer; 
+        }
+        
+        .paragrafos { width: 50%; text-align: justify; }
+    </style>
 </head>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        gap: 5px;
-    }
-
-    .campo-input {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        font-size: 18px;
-    }
-
-    #cor {
-        width: 150px;
-        text-align: center;
-        padding: 5px;
-        border: .5px solid black;
-        border-radius: 5px;
-        margin-bottom: 10px;
-        font-size: 22px;
-    }
-
-    .btn {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: #53bae7;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    .paragrafos {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-    }
-
-</style>
 <body>
     <div class="container">
         <h1>Input de Cor</h1>
-        <div class="campo-input">
-            <label for="cor">Digite uma cor (em inglês) ou hexadecimal. Ex: "blue", "red" ou "ff00ff"</label>
-            <input type="text" id="cor">
+        <div>
+            <label for="cor">Digite uma cor (inglês ou hexadecimal):</label>
+            <input type="text" id="cor" placeholder="Ex: blue ou #ff0000">
         </div>
         <button class="btn">Alterar Cor</button>
         <div class="paragrafos">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur vehicula purus non consequat. Nam finibus turpis tristique, condimentum ante vel, pellentesque nisl. Aliquam finibus aliquet suscipit. Maecenas nec diam iaculis erat lacinia ornare non a urna. Aenean dolor magna, placerat et hendrerit laoreet, sodales quis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula in lacus sed dapibus. In vel purus ullamcorper, aliquet lectus nec, tristique arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi luctus magna sed est consequat facilisis. Donec pharetra, arcu non ultrices suscipit, quam quam euismod felis, ac euismod neque justo cursus turpis. In nec justo vel augue auctor vulputate in sit amet turpis.</p>
-
-            <p>Nunc tincidunt massa massa, ut dictum mi tempus eu. Cras in metus eget turpis hendrerit suscipit a a ante. Nullam rhoncus dolor in luctus consectetur. Phasellus lobortis eu elit vel posuere. Morbi nisl quam, consequat eget felis in, iaculis aliquet leo. Etiam lacinia eu arcu vitae convallis. Aliquam in nunc ipsum. Sed nec ligula sollicitudin, porttitor nisl vel, facilisis arcu. Praesent luctus risus mi, eu venenatis elit vulputate eget. Nulla viverra in lorem eget tempor. Duis convallis fringilla quam, a pharetra dui varius nec. Vestibulum turpis ipsum, tempus id massa ac, pulvinar laoreet ante. In hac habitasse platea dictumst. Aliquam molestie purus ante, imperdiet vehicula ipsum hendrerit et.</p>
-
-            <p>Nam vel tempus purus. Donec posuere neque arcu, vitae scelerisque tellus elementum at. Donec nec cursus erat, laoreet dignissim nisi. Proin eget erat mauris. Aenean mattis arcu pharetra sagittis eleifend. Aenean pellentesque eros ac consequat laoreet. Quisque in nunc et dolor imperdiet hendrerit.</p>
+            <p>Primeiro parágrafo de exemplo para testes de estilos.</p>
+            <p>Segundo parágrafo capturado e manipulado via coleção de dados.</p>
         </div>
     </div>
-    <script>
-        const inputCor = document.querySelector("#cor")
-        const botao = document.querySelector(".btn")
 
-        const paragrafos = document.querySelectorAll("p") 
+    <script>
+        const inputCor = document.querySelector("#cor");
+        const botao = document.querySelector(".btn");
+        // Captura todos os parágrafos criando um NodeList (lista de elementos)
+        const paragrafos = document.querySelectorAll("p"); 
 
         const mudarCor = () => {
-            const corDesejada = inputCor.value
+            // BOA PRÁTICA: Pegamos o .value aqui dentro para capturar o texto exato do MOMENTO do clique
+            const corDesejada = inputCor.value;
 
+            // Como 'paragrafos' é uma lista, precisamos rodar o .forEach para pintar um por um
             paragrafos.forEach(paragrafo => {
-                paragrafo.style.color = corDesejada
+                paragrafo.style.color = corDesejada;
             });
-        }
+        };
 
-        botao.addEventListener("click", mudarCor)
+        botao.addEventListener("click", mudarCor);
     </script>
 </body>
 </html>

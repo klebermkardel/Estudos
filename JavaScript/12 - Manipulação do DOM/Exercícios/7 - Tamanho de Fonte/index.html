@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercícios DOM - Tamanho de Donte</title>
+    <title>Exercícios DOM - Tamanho de Fonte</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        body { 
+            font-family: 
+            Arial, Helvetica, sans-serif; 
         }
 
-        .actions {
-            display: flex;
-            gap: 10px;
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        }
+
+        .actions { 
+            display: flex; 
+            gap: 10px; 
+            align-items: center; 
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <p>Validador de Tamanho de Fonte: Crie dois botões: "Aumentar Fonte" e "Diminuir Fonte". Faça-os alterar o font-size de um texto na tela em passos de 2px.</p>
         <h1>Tamanho da Fonte</h1>
         <p class="texto">Texto que vai aumentar ou diminuir</p>
         <div class="actions">
@@ -34,33 +35,41 @@
             <button class="btn-aumentar">Aumentar Fonte</button>
         </div>
     </div>
+
     <script>
-        const texto = document.querySelector(".texto")
-        const botaoDiminuir = document.querySelector(".btn-diminuir")
-        const botaoAumentar = document.querySelector(".btn-aumentar")
-        const textoTamanhoFonte = document.querySelector(".tamanho-da-fonte")
+        const texto = document.querySelector(".texto");
+        const botaoDiminuir = document.querySelector(".btn-diminuir");
+        const botaoAumentar = document.querySelector(".btn-aumentar");
+        const textoTamanhoFonte = document.querySelector(".tamanho-da-fonte");
 
-        const estilos = window.getComputedStyle(texto)
-        const tamanhoFonteInicial = estilos.getPropertyValue('font-size')
+        // Captura os estilos reais calculados pelo navegador para o elemento
+        const estilos = window.getComputedStyle(texto);
+        // Extrai o valor atual da propriedade CSS 'font-size' (retorna ex: "16px")
+        const tamanhoFonteInicial = estilos.getPropertyValue('font-size');
 
-        let valorTamanhoFonte = parseInt(tamanhoFonteInicial, 10)
+        // Usamos 'let' para criar uma variável mutável, convertendo "16px" para o número 16
+        let valorTamanhoFonte = parseInt(tamanhoFonteInicial, 10);
 
-        textoTamanhoFonte.textContent = `${valorTamanhoFonte}px`
+        // Exibe o tamanho inicial na tela dentro do span
+        textoTamanhoFonte.textContent = `${valorTamanhoFonte}px`;
 
+        // Função responsável por subtrair 2px da fonte
         const diminuirFonte = () => {
-            valorTamanhoFonte = valorTamanhoFonte - 2
-            texto.style.fontSize = `${valorTamanhoFonte}px` 
-            textoTamanhoFonte.textContent = `${valorTamanhoFonte}px`
-        }
-        
-        const aumentarFonte = () => {
-            valorTamanhoFonte = valorTamanhoFonte + 2
-            texto.style.fontSize = `${valorTamanhoFonte}px`
-            textoTamanhoFonte.textContent = `${valorTamanhoFonte}px`
-        }
+            valorTamanhoFonte = valorTamanhoFonte - 2; // Atualiza o número na memória
+            texto.style.fontSize = `${valorTamanhoFonte}px`; // Injeta o novo estilo no texto
+            textoTamanhoFonte.textContent = `${valorTamanhoFonte}px`; // Sincroniza o número na tela
+        };
 
-        botaoDiminuir.addEventListener("click", diminuirFonte)
-        botaoAumentar.addEventListener("click", aumentarFonte)
+        // Função responsável por somar 2px à fonte
+        const aumentarFonte = () => {
+            valorTamanhoFonte = valorTamanhoFonte + 2; // Atualiza o número na memória
+            texto.style.fontSize = `${valorTamanhoFonte}px`; // Injeta o novo estilo no texto
+            textoTamanhoFonte.textContent = `${valorTamanhoFonte}px`; // Sincroniza o número na tela
+        };
+
+        // Associa os cliques aos seus respectivos motores de função
+        botaoDiminuir.addEventListener("click", diminuirFonte);
+        botaoAumentar.addEventListener("click", aumentarFonte);
     </script>
 </body>
 </html>

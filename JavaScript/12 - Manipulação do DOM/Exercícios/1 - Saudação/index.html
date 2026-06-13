@@ -1,4 +1,4 @@
-<!-- Saudação: Crie um botão que, ao ser clicado, muda o texto de um <h1> de "Bom dia" para "Boa noite". -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,25 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício DOM - Saudação</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
         }
-
+        
         .container {
-            display: flex;
-            justify-content: center;
+            display: flex; 
+            justify-content: center; 
             align-items: center;
-            height: 100vh;
+            height: 100vh; 
             flex-direction: column;
         }
 
         .btn-saudacao {
-            padding: 10px;
-            font-size: 1rem;
+            padding: 10px; 
+            font-size: 1rem; 
             font-weight: bolder;
-            border-radius: 5px;
-            border: none;
-            background-color: #9aecda;
+            border-radius: 5px; 
+            border: none; 
+            background-color: #9aecda; 
             cursor: pointer;
         }
     </style>
@@ -37,20 +37,17 @@
     </div>
 
     <script>
-        // Seleção dos elementos mapeados na árvore do DOM
+        // Seleciona os elementos pelo ID e pela classe
         const titulo = document.querySelector("#titulo");
         const botao = document.querySelector(".btn-saudacao");
 
-        /**
-        * Função de callback vinculada ao evento de clique.
-        * Altera o nó de texto interno do elemento h1 selecionado.
-        */
+        // Função executada quando o usuário clica no botão
         const saudar = () => {
-        // Altera o conteúdo textual de "Bom dia!" para "Boa noite!"
-        titulo.innerText = "Boa noite!";
+            // Altera o conteúdo de texto interno da tag H1
+            titulo.innerText = "Boa noite!";
         };
 
-        // Registra o escutador de eventos do tipo clique no botão
+        // Adiciona um ouvinte de evento para capturar o clique e disparar a função
         botao.addEventListener("click", saudar);
     </script>
 </body>

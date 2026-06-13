@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios DOM - Troca de Imagem</title>
-</head>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
+    <style>
+        body { 
+            font-family: 
+            Arial, Helvetica, sans-serif; 
+        }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-</style>
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        }
+
+        img { 
+            height: 200px; 
+            width: 200px; 
+            margin-bottom: 10px; 
+        }
+    </style>
+</head>
 <body>
     <div class="container">
         <h1>Trocar Imagem</h1>
@@ -26,15 +33,18 @@
     </div>
 
     <script>
-        const imagem = document.querySelector(".image")
-        const botao = document.querySelector(".btn")
+        const imagem = document.querySelector(".image");
+        const botao = document.querySelector(".btn");
 
         const trocarImagem = () => {
-            imagem.setAttribute("src", "https://images.kabum.com.br/produtos/fotos/777177/console-nintendo-switch-2-256gb-preto-azul-e-vermelho_1758732034_m.jpg")
-            imagem.setAttribute("alt", "Nintendo Switch 2")
-        }
+            // Modifica o atributo 'src' trocando o link da imagem atual pelo novo link do produto
+            imagem.setAttribute("src", "https://images.kabum.com.br/produtos/fotos/777177/console-nintendo-switch-2-256gb-preto-azul-e-vermelho_1758732034_m.jpg");
+            
+            // BOA PRÁTICA: Atualiza o texto de acessibilidade (alt) para leitores de tela
+            imagem.setAttribute("alt", "Nintendo Switch 2");
+        };
 
-        botao.addEventListener("click", trocarImagem)
+        botao.addEventListener("click", trocarImagem);
     </script>
 </body>
 </html>

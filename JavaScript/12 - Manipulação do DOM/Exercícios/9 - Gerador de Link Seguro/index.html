@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios DOM - Gerador de Link Seguro</title>
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        }
+        
+        .link { padding: 5px; margin-bottom: 10px; }
+    </style>
 </head>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .link {
-        padding: 5px;
-    }
-</style>
 <body>
     <div class="container">
         <h1>Gerador de Link Seguro</h1>
@@ -30,17 +28,22 @@
     </div>
 
     <script>
-        const link = document.querySelector(".link")
-        const botao = document.querySelector(".btn")
+        const link = document.querySelector(".link");
+        const botao = document.querySelector(".btn");
 
         const gerarLink = () => {
-            link.textContent = "Ir para o Google"
-            link.setAttribute("href", "https://google.com")
-            link.setAttribute("target", "_blank")
-            link.setAttribute("rel", "noopener noreferrer")
-        }
+            // Atualiza o texto visível dentro da tag de link <a>
+            link.textContent = "Ir para o Google";
+            // Altera o destino do clique injetando a URL do site no atributo href
+            link.setAttribute("href", "https://google.com");
+            // Altera o target para "_blank" para abrir a página em uma nova aba
+            link.setAttribute("target", "_blank");
+            
+            // BOA PRÁTICA DE MERCADO: Protege a aba original contra vulnerabilidades de segurança
+            link.setAttribute("rel", "noopener noreferrer");
+        };
 
-        botao.addEventListener("click", gerarLink)
+        botao.addEventListener("click", gerarLink);
     </script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10 DOM - Zerar Estilos</title>
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            gap: 15px; 
+        }
+
+        .caixa-teste { 
+            width: 200px; 
+            height: 100px; 
+            background-color: #ccc; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-weight: bold; 
+            transition: 0.3s; 
+        }
+
+        .actions { display: flex; gap: 10px; }
+        
+        button { 
+            padding: 10px; 
+            cursor: pointer; 
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Zerar Estilos Inline</h1>
+        <div class="caixa-teste">Objeto Base</div>
+        <div class="actions">
+            <button class="btn-modificar">Modificar via JS</button>
+            <button class="btn-resetar">Zerar Estilos</button>
+        </div>
+    </div>
+
+    <script>
+        const caixa = document.querySelector(".caixa-teste");
+        const btnModificar = document.querySelector(".btn-modificar");
+        const btnResetar = document.querySelector(".btn-resetar");
+
+        // Injeta uma avalanche de estilos inline diretamente na tag
+        const modificarElemento = () => {
+            caixa.style.backgroundColor = "purple";
+            caixa.style.color = "white";
+            caixa.style.borderRadius = "50px";
+            caixa.style.transform = "scale(1.2)";
+            caixa.textContent = "Modificado!";
+        };
+
+        // Remove de uma só vez todas as propriedades inline injetadas
+        const zerarEstilos = () => {
+            // Atribuir uma string vazia ao cssText deleta por completo o atributo style="..." do HTML
+            caixa.style.cssText = "";
+            // Restaura o conteúdo de texto para o valor inicial
+            caixa.textContent = "Objeto Base";
+        };
+
+        btnModificar.addEventListener("click", modificarElemento);
+        btnResetar.addEventListener("click", zerarEstilos);
+    </script>
+</body>
+</html>

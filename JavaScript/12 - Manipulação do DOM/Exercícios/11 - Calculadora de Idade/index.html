@@ -5,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios DOM - Calculadora de Idade</title>
     <style>
-        body { font-family: Arial, Helvetica, sans-serif; }
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
             height: 100vh;
-            gap: 10px;
+            gap: 10px; 
         }
-        .resultado {
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
+
+        .resultado { font-weight: bold; font-size: 1.2rem; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Calculadora de Idade</h1>
-        <div class="campo-input">
+        <div>
             <label for="ano-nascimento">Digite seu ano de nascimento:</label>
-            <input type="number" id="ano-nascimento" placeholder="Ex: 1995">
+            <input type="number" id="ano-nascimento">
         </div>
         <button class="btn">Calcular Idade</button>
-        
         <p class="resultado"></p>
     </div>
 
@@ -38,26 +37,31 @@
         const botao = document.querySelector(".btn");
         const elementoResultado = document.querySelector(".resultado");
 
+        // Instancia o objeto de Data nativo para capturar o ano atual dinamicamente do sistema
         const data = new Date();
         const anoAtual = data.getFullYear();
 
         const calcularIdade = () => {
+            // Lê o input e converte o texto para número inteiro de base 10
             const anoNascimento = parseInt(inputAnoNascimento.value, 10);
 
+            // Filtra e valida entradas inconsistentes ou vazias do usuário
             if (!anoNascimento || anoNascimento > anoAtual || anoNascimento < 1900) {
                 elementoResultado.textContent = "Por favor, digite um ano válido!";
                 elementoResultado.style.color = "red";
-                return;
+                return; // Encerra a execução da função imediatamente impedindo cálculos bizarros
             }
-            
+
+            // Realiza o cálculo aritmético com os valores numéricos limpos
             const idade = anoAtual - anoNascimento;
 
+            // Injeta a string com o resultado no elemento de display fixo (evita acúmulo de tags)
             elementoResultado.textContent = `Sua idade é: ${idade} anos`;
             elementoResultado.style.color = "black";
-
+            
+            // Reseta o valor do input por cortesia visual (UX)
             inputAnoNascimento.value = "";
         };
-
 
         botao.addEventListener("click", calcularIdade);
     </script>

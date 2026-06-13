@@ -1,53 +1,48 @@
-<!-- Semáforo Digital: Crie um círculo usando CSS. Faça três botões ("Verde", "Amarelo", "Vermelho") que alteram a cor de fundo do círculo para a respectiva cor clicada. -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício DOM - Semáforo Digital (DRY)</title>
+    <title>Exercício DOM - Semáforo Digital</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
         }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
         }
 
-        .circulo {
-            height: 100px;
-            width: 100px;
-            border: 1px solid #000;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            transition: background-color 0.3s ease; /* Transição suave de cor */
+        .circulo { 
+            height: 100px; 
+            width: 100px; 
+            border: 1px solid #000; 
+            border-radius: 50%; 
+            margin-bottom: 20px; 
+            transition: background-color 0.3s; 
         }
 
-        .botoes {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: 300px;
+        .botoes { 
+            display: flex; 
+            justify-content: space-between; 
+            width: 100%; 
+            max-width: 300px; 
         }
 
-        /* Estilização unificada dos botões */
-        .btn {
-            padding: 10px;
-            border-radius: 10px;
-            border: none;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            color: #fff;
+        .btn { 
+            padding: 10px; 
+            border-radius: 10px; 
+            border: none; 
+            font-size: 1rem; 
+            font-weight: bold; 
+            cursor: pointer; 
+            color: #fff; 
         }
 
-        /* Cores exclusivas aplicadas por classes separadas */
         .btn-verde { background-color: #1d6a06; }
         .btn-amarelo { background-color: #ebe304; color: #000; }
         .btn-vermelho { background-color: #e10404; }
@@ -55,7 +50,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="titulo">Semáforo Digital (DRY)</h1>
+        <h1>Semáforo Digital</h1>
         <div class="circulo"></div>
         <div class="botoes">
             <button class="btn btn-verde" data-cor="#1d6a06">Verde</button>
@@ -65,26 +60,22 @@
     </div>
 
     <script>
+        // Seleciona os elementos
         const circulo = document.querySelector(".circulo");
-        
-        // Em vez de selecionar botão por botão, selecionamos todos de uma vez só!
+        // querySelectorAll seleciona TODOS os botões, criando uma lista (array)
         const botoes = document.querySelectorAll(".btn");
 
-        /**
-         * Função ÚNICA de controle.
-         * O parâmetro 'evento' traz todas as informações do clique do usuário.
-         */
+        // Função única para tratar qualquer um dos cliques (Princípio DRY)
         const mudarCorSemaforo = (evento) => {
-            // 'evento.target' é o botão exato que foi clicado.
-            // '.dataset.cor' pega o valor que escrevemos no 'data-cor' do HTML.
+            // evento.target é o elemento específico que disparou o clique
+            // dataset.cor lê o valor que escrevemos em 'data-cor' no HTML
             const corSelecionada = evento.target.dataset.cor;
             
-            // Aplica a cor dinamicamente
+            // Injeta a cor de fundo dinamicamente no elemento círculo
             circulo.style.backgroundColor = corSelecionada;
         };
 
-        // Como 'botoes' é um array de elementos, usamos o .forEach para colocar
-        // o ouvinte de clique em todos eles de forma automática em um único bloco!
+        // Percorre a lista de botões adicionando o ouvinte de clique em cada um deles
         botoes.forEach(botao => {
             botao.addEventListener("click", mudarCorSemaforo);
         });

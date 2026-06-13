@@ -4,58 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios DOM - Exibir Elemento</title>
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        .container { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;
+        }
+
+        .card { 
+            width: 300px; 
+            border: 1px solid black; 
+            border-radius: 5px; 
+            padding: 15px; 
+        }
+
+        .btn { 
+            background-color: transparent; 
+            border: 1px solid #000; 
+            padding: 5px; 
+            cursor: pointer; 
+            margin-top: 5px; 
+        }
+
+        .image-card {
+            border-bottom: 1px solid #000;
+        }
+        
+        .more-infos { margin-top: 10px; line-height: 1.4; }
+
+        img {
+            width: 300px;
+        }
+    </style>
 </head>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .card {
-        height: 550px;
-        width: 300px;
-        border: 1px solid black;
-        border-radius: 5px;
-    }
-
-    .image-card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 1px solid black;
-    }
-
-    .infos-card {
-        display: flex;
-        flex-direction: column;
-        font-size: 1rem;
-        justify-content: center;
-        align-items: flex-start;
-        margin-left: 20px;
-    }
-
-    .infos-card span {
-        font-weight: bold;
-    }
-
-    img {
-        height: 200px;
-        width: 200px;
-    }
-
-    .btn {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-</style>
 <body>
     <div class="container">
         <h1>Exibir Elemento</h1>
@@ -72,23 +59,26 @@
             </div>
         </div>
     </div>
+
     <script>
-        const moreInfos = document.querySelector(".more-infos")
-        const botao = document.querySelector(".btn")
+        const moreInfos = document.querySelector(".more-infos");
+        const botao = document.querySelector(".btn");
 
-        moreInfos.style.display = "none"
+        // Define o estado inicial como oculto direto pela propriedade de estilo inline
+        moreInfos.style.display = "none";
 
-        const alternarExbicao = () => {
-            if(botao.textContent === "Mais Informações") {
-                moreInfos.style.display = "block"
-                botao.textContent = "Menos Informações"
+        const alternarExibicao = () => {
+            // Verifica o estado textual atual do botão para decidir a ação
+            if (botao.textContent === "Mais Informações") {
+                moreInfos.style.display = "block"; // Altera o CSS para exibir o bloco
+                botao.textContent = "Menos Informações"; // Atualiza o rótulo do botão
             } else {
-                moreInfos.style.display = "none"
-                botao.textContent = "Mais Informações"
+                moreInfos.style.display = "none"; // Altera o CSS para ocultar o bloco
+                botao.textContent = "Mais Informações"; // Retorna o rótulo original
             }
-        }
+        };
 
-        botao.addEventListener("click", alternarExbicao)
+        botao.addEventListener("click", alternarExibicao);
     </script>
 </body>
 </html>

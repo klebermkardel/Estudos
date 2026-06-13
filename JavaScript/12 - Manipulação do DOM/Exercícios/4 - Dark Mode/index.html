@@ -3,46 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercícios DOM - Dark Mode (Clean Code)</title>
+    <title>Exercícios DOM - Dark Mode</title>
     <style>
-        /* Estilos Padrão (Modo Claro) */
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
+        body { font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; color: #000000; transition: 0.3s; }
+        .container { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; }
         p { font-size: 2rem; }
-
-        .btn {
-            padding: 10px;
-            font-size: 1rem;
-            background-color: #eee;
-            border: .5px solid black;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* Classes que o JavaScript vai injetar dinamicamente */
-        body.dark-mode {
-            background-color: #1a1a1a;
-            color: #fff;
-        }
-
-        body.dark-mode .btn {
-            background-color: #333;
-            color: #fff;
-            border-color: #fff;
-        }
+        .btn { padding: 10px; font-size: 1rem; cursor: pointer; }
+        
+        /* Classe que será injetada/removida dinamicamente no body */
+        body.dark-mode { background-color: #1a1a1a; color: #ffffff; }
     </style>
 </head>
 <body>
@@ -53,11 +22,14 @@
     </div>
 
     <script>
+        // Seleciona o botão
         const botao = document.querySelector(".btn");
 
         const alternarModoEscuro = () => {
+            // classList.toggle adiciona a classe se ela não existir, ou remove se ela já existir
             document.body.classList.toggle("dark-mode");
 
+            // classList.contains verifica se a classe está ativa no momento para mudar o texto do botão
             if (document.body.classList.contains("dark-mode")) {
                 botao.textContent = "Modo Claro";
             } else {
