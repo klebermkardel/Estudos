@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios DOM - Calculadora de Idade</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 10px;
+        }
+        .resultado {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Idade</h1>
+        <div class="campo-input">
+            <label for="ano-nascimento">Digite seu ano de nascimento:</label>
+            <input type="number" id="ano-nascimento" placeholder="Ex: 1995">
+        </div>
+        <button class="btn">Calcular Idade</button>
+        
+        <p class="resultado"></p>
+    </div>
+
+    <script>
+        const inputAnoNascimento = document.querySelector("#ano-nascimento");
+        const botao = document.querySelector(".btn");
+        const elementoResultado = document.querySelector(".resultado");
+
+        const data = new Date();
+        const anoAtual = data.getFullYear();
+
+        const calcularIdade = () => {
+            const anoNascimento = parseInt(inputAnoNascimento.value, 10);
+
+            if (!anoNascimento || anoNascimento > anoAtual || anoNascimento < 1900) {
+                elementoResultado.textContent = "Por favor, digite um ano válido!";
+                elementoResultado.style.color = "red";
+                return;
+            }
+            
+            const idade = anoAtual - anoNascimento;
+
+            elementoResultado.textContent = `Sua idade é: ${idade} anos`;
+            elementoResultado.style.color = "black";
+
+            inputAnoNascimento.value = "";
+        };
+
+
+        botao.addEventListener("click", calcularIdade);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios DOM - Troca de Imagem</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Trocar Imagem</h1>
+        <img class="image" src="https://images.kabum.com.br/produtos/fotos/947309/echo-studio-amazon-geracao-mais-recente-grafite-b0dxnfvj9h_1771452430_m.jpg" alt="Echo Studio">
+        <button class="btn">Trocar Imagem</button>
+    </div>
+
+    <script>
+        const imagem = document.querySelector(".image")
+        const botao = document.querySelector(".btn")
+
+        const trocarImagem = () => {
+            imagem.setAttribute("src", "https://images.kabum.com.br/produtos/fotos/777177/console-nintendo-switch-2-256gb-preto-azul-e-vermelho_1758732034_m.jpg")
+            imagem.setAttribute("alt", "Nintendo Switch 2")
+        }
+
+        botao.addEventListener("click", trocarImagem)
+    </script>
+</body>
+</html>

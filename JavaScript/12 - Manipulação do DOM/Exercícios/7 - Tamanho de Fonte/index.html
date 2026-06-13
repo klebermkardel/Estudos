@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios DOM - Tamanho de Donte</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Validador de Tamanho de Fonte: Crie dois botões: "Aumentar Fonte" e "Diminuir Fonte". Faça-os alterar o font-size de um texto na tela em passos de 2px.</p>
+        <h1>Tamanho da Fonte</h1>
+        <p class="texto">Texto que vai aumentar ou diminuir</p>
+        <div class="actions">
+            <button class="btn-diminuir">Diminuir Fonte</button>
+            <span class="tamanho-da-fonte"></span>
+            <button class="btn-aumentar">Aumentar Fonte</button>
+        </div>
+    </div>
+    <script>
+        const texto = document.querySelector(".texto")
+        const botaoDiminuir = document.querySelector(".btn-diminuir")
+        const botaoAumentar = document.querySelector(".btn-aumentar")
+        const textoTamanhoFonte = document.querySelector(".tamanho-da-fonte")
+
+        const estilos = window.getComputedStyle(texto)
+        const tamanhoFonteInicial = estilos.getPropertyValue('font-size')
+
+        let valorTamanhoFonte = parseInt(tamanhoFonteInicial, 10)
+
+        textoTamanhoFonte.textContent = `${valorTamanhoFonte}px`
+
+        const diminuirFonte = () => {
+            valorTamanhoFonte = valorTamanhoFonte - 2
+            texto.style.fontSize = `${valorTamanhoFonte}px` 
+            textoTamanhoFonte.textContent = `${valorTamanhoFonte}px`
+        }
+        
+        const aumentarFonte = () => {
+            valorTamanhoFonte = valorTamanhoFonte + 2
+            texto.style.fontSize = `${valorTamanhoFonte}px`
+            textoTamanhoFonte.textContent = `${valorTamanhoFonte}px`
+        }
+
+        botaoDiminuir.addEventListener("click", diminuirFonte)
+        botaoAumentar.addEventListener("click", aumentarFonte)
+    </script>
+</body>
+</html>
