@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios DOM - Dark Mode (Clean Code)</title>
+    <style>
+        /* Estilos Padrão (Modo Claro) */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        p { font-size: 2rem; }
+
+        .btn {
+            padding: 10px;
+            font-size: 1rem;
+            background-color: #eee;
+            border: .5px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Classes que o JavaScript vai injetar dinamicamente */
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        body.dark-mode .btn {
+            background-color: #333;
+            color: #fff;
+            border-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dark Mode</h1>
+        <p>Esse texto vai mudar de cor</p>
+        <button class="btn">Modo Escuro</button>
+    </div>
+
+    <script>
+        const botao = document.querySelector(".btn");
+
+        const alternarModoEscuro = () => {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                botao.textContent = "Modo Claro";
+            } else {
+                botao.textContent = "Modo Escuro";
+            }
+        };
+
+        botao.addEventListener("click", alternarModoEscuro);
+    </script>
+</body>
+</html>

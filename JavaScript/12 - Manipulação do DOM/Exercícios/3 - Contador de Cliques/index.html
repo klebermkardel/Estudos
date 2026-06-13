@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios DOM - Contador de Cliques</title>
+    <style>
+        body {
+            background-color: #b3daad;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contador {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            font-size: 1rem;
+            margin-top: 10px;
+            background-color: antiquewhite;
+            border: .5px solid black;
+            border-radius: 4px;
+            height: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">Contador de Cliques</h1>
+        <span class="contador">0</span>
+        <button class="btn">Clicar</button>
+    </div>
+
+    <script>
+        const elemento = document.querySelector(".contador");
+        const botao = document.querySelector(".btn");
+
+        let contador = parseInt(elemento.textContent);
+
+        const clicar = () => {
+            contador++;
+            elemento.textContent = contador;
+        };
+
+        botao.addEventListener("click", clicar);
+    </script>
+</body>
+</html>
