@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Validador de Senha</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #senha {
+        padding: 5px;
+        text-align: left;
+    }
+
+    /* Classes CSS de feedback visual controladas pelo JavaScript */
+    .borda-vermelha {
+        border: 2px solid red;
+        outline: none;
+    }
+  
+    .borda-verde {
+        border: 2px solid green;
+        outline: none;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Validador de Senha</h1>
+        <div>
+            <label for="senha">Digite a sua senha: </label>
+            <input type="password" id="senha" placeholder="******">
+        </div>
+    </div>
+
+    <script>
+        // Mapeia o elemento de entrada utilizando o ID nativo
+        const campoSenha = document.getElementById('senha');
+
+        /**
+         * Ouvinte de evento do tipo 'input'.
+         * Dispara a função de callback em tempo real a cada tecla pressionada ou apagada.
+         */
+        campoSenha.addEventListener('input', function() {
+            // Verifica se a quantidade de caracteres (length) atinge o requisito mínimo
+            if (campoSenha.value.length >= 6) {
+                // Remove o feedback de erro e ativa a borda de sucesso
+                campoSenha.classList.remove('borda-vermelha');
+                campoSenha.classList.add('borda-verde');
+            } else {
+                // Caso contrário (menos de 6 caracteres), remove o sucesso e aplica o erro
+                campoSenha.classList.remove('borda-verde');
+                campoSenha.classList.add('borda-vermelha');
+            }
+        });
+    </script>
+</body>
+</html>

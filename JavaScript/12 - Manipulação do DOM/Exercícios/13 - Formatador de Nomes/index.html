@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Formatador de Nomes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formatador de Nomes</h1>
+        <div>
+            <label for="nome">Digite o seu nome: </label>
+            <input type="text" id="nome">
+        </div>
+        <button class="btn">Formatar Nome</button>
+        <p class="retorno"></p>
+    </div>
+
+    <script>
+        // Mapeamento das tags HTML para o escopo do JavaScript
+        const inputNome = document.querySelector("#nome");
+        const botao = document.querySelector(".btn");
+        const retorno = document.querySelector(".retorno");
+
+        /**
+         * Função de callback que captura, higieniza e renderiza o nome.
+         */
+        const formatarNome = () => {
+            // Captura o valor atual do input, remove espaços extras nas pontas (.trim) 
+            // e transforma todas as letras em maiúsculas (.toUpperCase)
+            const nomeHigienizado = inputNome.value.trim().toUpperCase();
+
+            // Cláusula de segurança simples: se o usuário clicar com o campo vazio
+            if (!nomeHigienizado) {
+                retorno.textContent = "Por favor, digite um nome antes de formatar!";
+                retorno.style.color = "red";
+                return;
+            }
+
+            // Injeta o resultado tratado dentro do parágrafo na tela
+            retorno.textContent = `Nome higienizado: ${nomeHigienizado}`;
+            retorno.style.color = "black";
+
+            // Limpa o campo de texto para a próxima digitação
+            inputNome.value = "";
+        };
+
+        // Adiciona o ouvinte para disparar o motor de formatação no clique do botão
+        botao.addEventListener("click", formatarNome);
+    </script>
+</body>
+</html>

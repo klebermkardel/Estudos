@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Placar de Futebol</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        .placar {
+            display: flex;
+            gap: 15px;
+            font-size: 1.5rem;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 5px 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid #333;
+        }
+
+        /* Estilo padrão do navegador para botões desativados */
+        button:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .resultado {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #1d6a06;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Placar de Futebol</h1>
+        <div class="placar">
+            <button class="btn-time-a">+</button>
+            <span class="time-a"></span>
+            <span class="placar-time-a">0</span>
+            <span>X</span>
+            <span class="placar-time-b">0</span>
+            <span class="time-b"></span>
+            <button class="btn-time-b">+</button>
+        </div>
+        <p class="resultado"></p>
+    </div>
+
+    <script>
+        // Mapeamento dos Displays de Texto e Nomes
+        const timeA = document.querySelector(".time-a");
+        const textoPlacarTimeA = document.querySelector(".placar-time-a");
+        const timeB = document.querySelector(".time-b");
+        const textoPlacarTimeB = document.querySelector(".placar-time-b");
+
+        // Mapeamento dos Botões de Ação
+        const incrementoTimeA = document.querySelector(".btn-time-a");
+        const incrementoTimeB = document.querySelector(".btn-time-b");
+        const elementoResultado = document.querySelector(".resultado");
+
+        // Definição dinâmica dos nomes dos clubes
+        const nomeTimeA = "São Paulo";
+        const nomeTimeB = "Palmeiras";
+        timeA.textContent = nomeTimeA;
+        timeB.textContent = nomeTimeB;
+
+        // Inicialização dos contadores numéricos na memória do JS
+        let placarTimeA = parseInt(textoPlacarTimeA.textContent, 10);
+        let placarTimeB = parseInt(textoPlacarTimeB.textContent, 10);
+
+        /**
+         * Centraliza a lógica de encerramento da partida.
+         * Desativa os gatilhos e renderiza o campeão na tela.
+         * @param {string} timeCampeao - O nome do time que venceu a partida.
+         */
+        const finalizarPartida = (timeCampeao) => {
+            elementoResultado.textContent = `🏆 Fim de jogo! O ${timeCampeao} é o Campeão!`;
+            
+            // Bloqueia os botões no DOM para impedir novos incrementos pós-jogo
+            incrementoTimeA.disabled = true;
+            incrementoTimeB.disabled = true;
+        };
+
+        // Motor de pontos do Time A
+        const incrementarTimeA = () => {
+            placarTimeA++;
+            textoPlacarTimeA.textContent = placarTimeA;
+
+            // Condicional de vitória: Chegou a 5, encerra o jogo
+            if (placarTimeA === 5) {
+                finalizarPartida(nomeTimeA);
+            }
+        };
+
+        // Motor de pontos do Time B
+        const incrementarTimeB = () => {
+            placarTimeB++;
+            textoPlacarTimeB.textContent = placarTimeB;
+
+            // Condicional de vitória: Chegou a 5, encerra o jogo
+            if (placarTimeB === 5) {
+                finalizarPartida(nomeTimeB);
+            }
+        };
+
+        // Vinculação dos ouvintes de eventos de clique
+        incrementoTimeA.addEventListener("click", incrementarTimeA);
+        incrementoTimeB.addEventListener("click", incrementarTimeB);
+    </script>
+</body>
+</html>

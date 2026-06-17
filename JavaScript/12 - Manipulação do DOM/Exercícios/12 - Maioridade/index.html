@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios DOM - Maioridade</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 5px;
+    }
+
+    .btn {
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Maioridade</h1>
+        <div>
+            <label for="ano-nascimento">Digite seu ano de nascimento: </label>
+            <input type="number" id="ano-nascimento">
+        </div>
+        <button class="btn">Verificar Idade</button>
+        <p class="resultado"></p>
+    </div>
+
+    <script>
+        // Mapeamento dos elementos do DOM usando seletores de ID (#) e Classe (.)
+        const inputAnoNascimento = document.querySelector("#ano-nascimento");
+        const botao = document.querySelector(".btn");
+        const resultado = document.querySelector(".resultado");
+
+        // Captura dinamicamente o ano atual baseado no relógio do sistema do usuário
+        const data = new Date();
+        const anoAtual = data.getFullYear();
+
+        /**
+         * Motor lógico que calcula a idade e valida o acesso por maioridade.
+         */
+        const verificarIdade = () => {
+            // Captura o valor do campo e converte de texto para número inteiro (Base 10)
+            const anoNascimento = parseInt(inputAnoNascimento.value, 10);
+
+            // Cláusula de Guarda: Bloqueia campos vazios, anos futuros ou irreais
+            if (!anoNascimento || anoNascimento > anoAtual || anoNascimento < 1900) {
+                resultado.textContent = "Por favor, digite um ano válido!";
+                resultado.style.color = "red";
+                return; // Encerra a função imediatamente antes de fazer cálculos
+            }
+
+            // Descobre a idade subtraindo os anos numéricos
+            const idade = anoAtual - anoNascimento;
+
+            // Condicional de verificação de maioridade legal (18 anos)
+            if (idade < 18) {
+                // Altera o texto e injeta a cor vermelha inline no elemento de resposta
+                resultado.textContent = `Acesso Negado. Você tem ${idade} anos.`;
+                resultado.style.color = "red";
+            } else {
+                // Altera o texto e injeta a cor verde inline no elemento de resposta
+                resultado.textContent = `Acesso Permitido. Maioridade confirmada (${idade} anos).`;
+                resultado.style.color = "green";
+            }
+
+            // Reseta o campo de digitação por cortesia de usabilidade (UX Clean)
+            inputAnoNascimento.value = "";
+        };
+        
+        // Vincula o clique do botão à execução da lógica de maioridade
+        botao.addEventListener("click", verificarIdade);
+    </script>
+</body>
+</html>

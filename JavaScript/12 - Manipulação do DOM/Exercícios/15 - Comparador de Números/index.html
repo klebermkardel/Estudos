@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Comparador de Números</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    input {
+        padding: 5px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    /* Remove as setas padrão do input numérico nos navegadores Chrome/Safari/Edge */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .btn-comparar {
+        font-weight: bold;
+        background-color: #7fffd4;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .resultado {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Comparador de Números</h1>
+        <div class="inputs">
+            <label for="num1">Digite o 1º número: </label>
+            <input type="number" id="num1">
+            <label for="num2">Digite o 2º número: </label>
+            <input type="number" id="num2">
+        </div>
+        <button class="btn-comparar">Comparar Números</button>
+        <span class="resultado"></span>
+    </div>
+
+    <script>
+        // Mapeamento dos elementos de entrada e saída de dados no DOM
+        const inputNum1 = document.querySelector("#num1");
+        const inputNum2 = document.querySelector("#num2");
+        const botao = document.querySelector(".btn-comparar");
+        const resultado = document.querySelector(".resultado");
+
+        /**
+         * Executa a análise comparativa entre as duas entradas numéricas.
+         */
+        const compararNumeros = () => {
+            // Cláusula de Guarda: Verifica se algum campo está em branco antes de fazer a conversão
+            if (inputNum1.value.trim() === "" || inputNum2.value.trim() === "") {
+                resultado.textContent = "Por favor, digite dois números válidos!";
+                resultado.style.color = "red";
+                return; // Interrompe a execução da função imediatamente se houver campos vazios
+            }
+
+            // Converte as strings das caixas de texto em números inteiros reais (Base 10)
+            const num1 = parseInt(inputNum1.value, 10);
+            const num2 = parseInt(inputNum2.value, 10);
+            
+            // Restaura a cor padrão do texto do resultado para preto caso estivesse vermelho
+            resultado.style.color = "black";
+
+            // Estrutura condicional em cascata (if / else if / else) para avaliar grandeza matemática
+            if (num1 > num2) {
+                resultado.textContent = `O primeiro número (${num1}) é maior que o segundo (${num2}).`;
+            } else if (num2 > num1) {
+                resultado.textContent = `O segundo número (${num2}) é maior que o primeiro (${num1}).`;
+            } else {
+                resultado.textContent = `Os dois números são iguais (${num1}).`;
+            }
+        };
+
+        // Vincula o evento de clique ao botão comparador
+        botao.addEventListener("click", compararNumeros);
+    </script>
+</body>
+</html>
