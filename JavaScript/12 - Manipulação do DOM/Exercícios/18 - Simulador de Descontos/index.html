@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Simulador de Descontos</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #preco {
+        padding: 5px;
+        text-align: center;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .btn-calcular {
+        padding: 8px 15px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .resultado {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Simulador de Descontos</h1>
+        <div>
+            <label for="preco">Informe o valor do produto (R$): </label>
+            <input type="number" id="preco" step="0.01">
+        </div>
+        <button class="btn-calcular">Calcular Desconto</button>
+        <span class="resultado"></span>
+    </div>
+
+    <script>
+        // Mapeamento dos elementos do ecossistema do simulador
+        const campoPreco = document.querySelector("#preco");
+        const botao = document.querySelector(".btn-calcular");
+        const resultado = document.querySelector(".resultado");
+
+        /**
+         * Aplica regra de negócio para conceder 10% de desconto em compras acima de R$ 100.
+         */
+        const calcularDesconto = () => {
+            // Cláusula de Guarda: Impede campos vazios ou valores zerados/negativos
+            if(campoPreco.value.trim() === "" || campoPreco.value <= 0) {
+                resultado.textContent = "Por favor, informe um valor válido maior que zero!";
+                resultado.style.color = "red";
+                return; // Encerra o fluxo
+            }
+
+            // Captura o preço como um ponto flutuante (decimal)
+            const precoOriginal = parseFloat(campoPreco.value);
+            let precoFinal;
+            
+            // Restaura a cor de texto padrão
+            resultado.style.color = "black";
+
+            // Condicional: Aplica 10% de desconto (multiplicar por 0.90) apenas se atingir R$ 100
+            if(precoOriginal >= 100) {
+                precoFinal = precoOriginal * 0.90;
+                // Formata o valor final como moeda padrão BRL (R$)
+                resultado.textContent = `Valor final com desconto (10%): ${precoFinal.toLocaleString('pt-BR', {style: "currency", currency: 'BRL'})}`;
+            } else {
+                precoFinal = precoOriginal;
+                // Exibe o valor sem desconto caso não atinja o teto mínimo
+                resultado.textContent = `Valor final: ${precoFinal.toLocaleString('pt-BR', {style: "currency", currency: 'BRL'})}`;
+            }
+
+            // Reseta a caixa de digitação
+            campoPreco.value = "";
+        };
+
+        // Ativa o ouvinte para escutar o clique e processar o desconto
+        botao.addEventListener("click", calcularDesconto);
+    </script>
+</body>
+</html>

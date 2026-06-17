@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Campos Vazios</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    #inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    input {
+        padding: 5px;
+        text-align: center;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Checador de Campos Vazios</h1>
+        <div id="inputs">
+            <label for="nome">Digite o seu nome: </label>
+            <input type="text" id="nome">
+            <label for="email">Digite o seu e-mail: </label>
+            <input type="text" id="email">
+        </div>
+        <button class="verificar">Enviar Formulário</button>
+        <p class="mensagem"></p>
+    </div>
+
+    <script>
+        // Mapeamento dos elementos de entrada, botão e feedback de tela
+        const campoNome = document.querySelector("#nome");
+        const campoEmail = document.querySelector("#email");
+        const botao = document.querySelector(".verificar");
+        const mensagem = document.querySelector(".mensagem");
+
+        /**
+         * Controla o fluxo de envio e validação do formulário.
+         */
+        const verificarForm = () => {
+            // Captura os valores das strings ignorando espaços nas pontas (.trim)
+            const nome = campoNome.value.trim();
+            const email = campoEmail.value.trim();
+
+            // Estrutura Condicional para controle de validação
+            if (nome === "" || email === "") {
+                // Alerta de erro caso falte alguma informação
+                mensagem.textContent = "Preencha todos os campos!";
+                mensagem.style.color = "red";
+                return; // Bloqueia a execução da função para manter o que já foi digitado
+            } else {
+                // Notificação de sucesso visual
+                mensagem.textContent = "Formulário enviado com sucesso!";
+                mensagem.style.color = "green";
+                // Fluxo liberado sem travas de 'return'
+            }
+
+            // Limpa os campos do formulário no DOM após o processamento com sucesso
+            campoNome.value = "";
+            campoEmail.value = "";
+        };
+
+        // Associa o ouvinte de clique ao gatilho do botão
+        botao.addEventListener("click", verificarForm);
+    </script>
+</body>
+</html>

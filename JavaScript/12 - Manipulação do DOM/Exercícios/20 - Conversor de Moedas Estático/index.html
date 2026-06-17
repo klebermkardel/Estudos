@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<h lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Conversor de Moedas Estático</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #valor {
+        padding: 5px;
+        text-align: center;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .btn-calcular {
+        padding: 8px 15px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+</style>
+<bo>
+    <div class="container">
+        <h1>Conversor de Moedas Estático</h1>
+        <div>
+            <label for="valor">Digite o valor desejado em reais (R$):</label>
+            <input type="number" id="valor">
+        </div>
+        <button class="btn-calcular">Converter Valor</button>
+        <p class="resultado"></p>
+    </div>
+
+    <script>
+        // Mapeamento dos elementos de interface no DOM
+        const campoValor = document.querySelector("#valor");
+        const botao = document.querySelector(".btn-calcular");
+        const campoResultado = document.querySelector(".resultado");
+
+        /**
+         * Lógica para converter o valor monetário de Real (BRL) para Dólar (USD)
+         */
+        const converterValor = () => {
+            // Cláusula de Guarda: Valida entradas vazias ou valores inválidos
+            if(campoValor.value.trim() === "" || campoValor.value <= 0) {
+                campoResultado.textContent = "Por favor, digite um valor válido acima de 0";
+                campoResultado.style.color = "red";
+                return; // Bloqueia a execução do restante da função
+            }
+
+            // Captura o valor do input convertido em número de ponto flutuante (decimal)
+            const valorEmReal = parseFloat(campoValor.value);
+
+            // CORREÇÃO APLICADA: Divisão correta do valor em Real pela cotação do Dólar (5.00)
+            const valorEmDolar = valorEmReal / 5.00;
+
+            // Restaura a cor padrão de texto e renderiza o valor formatado internacionalmente ($)
+            campoResultado.style.color = "black";
+            campoResultado.textContent = `Valor convertido para dólar: ${valorEmDolar.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}`;
+
+            // Limpa o campo do formulário para uma nova operação
+            campoValor.value = "";
+        }
+
+        // Adiciona o ouvinte de evento para disparar a conversão no clique do botão
+        botao.addEventListener("click", converterValor);
+    </script>

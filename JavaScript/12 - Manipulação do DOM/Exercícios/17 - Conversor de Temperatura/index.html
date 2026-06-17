@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 17 - Conversor de Temperatura</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #temperatura {
+        padding: 5px;
+        text-align: center;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Conversor de Temperatura (Celsius p/ Fahrenheit)</h1>
+        <div>
+            <label for="temperatura">Digite a temperatura em graus Celsius: </label>
+            <input type="number" id="temperatura">
+        </div>
+        <button class="btn-converter">Converter</button>
+        <span class="resultado"></span>
+    </div>
+
+    <script>
+        // Mapeamento dos elementos de entrada, ação e saída de dados no DOM
+        const campoTemperatura = document.querySelector("#temperatura");
+        const botao = document.querySelector(".btn-converter");
+        const resultado = document.querySelector(".resultado");
+
+        /**
+         * Realiza a conversão de Celsius para Fahrenheit.
+         */
+        const converterTemperatura = () => {
+            // Cláusula de Guarda: Impede a execução se o campo estiver vazio ou apenas com espaços
+            if (campoTemperatura.value.trim() === "") {
+                resultado.textContent = "Por favor, digite um número válido!";
+                resultado.style.color = "red";
+                return; // Aborta a função imediatamente
+            }
+
+            // Converte a string capturada do input para um número decimal real
+            const grausCelsius = parseFloat(campoTemperatura.value);
+
+            // Executa o cálculo da fórmula física de conversão
+            const grausFahrenheit = (grausCelsius * 1.8) + 32;
+
+            // Insere a string de resposta na tela formatando os valores numéricos
+            resultado.textContent = `${grausCelsius}°C equivalem a ${grausFahrenheit}°F`;
+            resultado.style.color = "black";
+
+            // Limpa o campo de digitação do HTML para uma nova conversão (UX Clean)
+            campoTemperatura.value = "";
+        };
+
+        // Escuta o evento de clique do botão para acionar a lógica de conversão
+        botao.addEventListener("click", converterTemperatura);
+    </script>
+</body>
+</html>
