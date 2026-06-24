@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Filtro de Nomes</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 0.5px solid black;
+        text-align: center;
+    }
+
+    .lista-de-nomes {
+        list-style: none;
+        padding: 0;
+        margin-top: 15px;
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Filtro de Nomes</h1>
+        <div>
+            <label for="nome">Digite para buscar: </label>
+            <input type="text" id="nome" placeholder="Buscar nome...">
+        </div>
+        <ul class="lista-de-nomes">
+            <li>Kleber</li>
+            <li>Camila</li>
+            <li>Cinthia</li>
+            <li>Victor</li>
+            <li>Henrique</li>
+        </ul>
+    </div>
+
+    <script>
+        // Mapeia o input de texto de busca
+        const campoBusca = document.querySelector("#nome");
+        // Captura TODOS os itens da lista de uma vez (cria uma NodeList/Array)
+        const itensLista = document.querySelectorAll(".lista-de-nomes li");
+
+        /**
+         * Função que filtra os nomes da lista em tempo real.
+         */
+        const filtrarNomes = () => {
+            // Captura o termo digitado e padroniza tudo em letras minúsculas
+            const termoBusca = campoBusca.value.toLowerCase();
+
+            // Percorre cada um dos <li> da tela para decidir quem aparece e quem some
+            itensLista.forEach(item => {
+                // Pega o texto de dentro do <li> atual e também joga para minúsculas
+                const nomeDoItem = item.textContent.toLowerCase();
+
+                // Regra de Negócio: Se o nome contiver as letras digitadas no input
+                if (nomeDoItem.includes(termoBusca)) {
+                    item.style.display = "block"; // Deixa o item visível na tela
+                } else {
+                    item.style.display = "none";  // Esconde o item da tela
+                }
+            });
+        };
+
+        // Adiciona o ouvinte do tipo 'input' para disparar o filtro a cada tecla mexida
+        campoBusca.addEventListener("input", filtrarNomes);
+    </script>
+</body>
+</html>

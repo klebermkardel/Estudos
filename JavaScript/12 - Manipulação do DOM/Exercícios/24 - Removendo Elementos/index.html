@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Removendo Elementos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .caixas {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: px;
+            width: 80%;
+            padding: 20px;
+        }
+
+        .btn-adicionar {
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Removendo Elementos</h1>
+        <div class="caixas">
+            </div>
+        <button class="btn-adicionar">Adicionar Caixa</button>
+    </div>
+
+    <script>
+        // Mapeamento das estruturas do DOM
+        const bloco = document.querySelector(".caixas");
+        const botao = document.querySelector(".btn-adicionar");
+
+        /**
+         * Cria e renderiza caixas com listeners de autodeleção anexados.
+         */
+        const adicionarCaixa = () => {
+            // 1. Cria o elemento <div> de forma dinâmica na memória do JS
+            const novaCaixa = document.createElement('div');
+
+            // 2. Aplicação de propriedades de estilização inline
+            novaCaixa.style.height = "100px";
+            novaCaixa.style.width = "150px";
+            novaCaixa.style.backgroundColor = "red";
+            novaCaixa.style.border = "1px solid black";
+            novaCaixa.style.cursor = "pointer"; // Indica interatividade ao passar o mouse
+
+            // 3. Conecta o novo nó à árvore física do HTML como filho do container ".caixas"
+            bloco.appendChild(novaCaixa);
+
+            /**
+             * Adiciona um ouvinte de evento individual para o elemento recém-criado.
+             * Garante que apenas a caixa clicada seja removida da tela.
+             */
+            novaCaixa.addEventListener('click', function () {
+                novaCaixa.remove(); // Remove o próprio nó do DOM
+            });
+        }
+
+        // Associa o clique do botão gerador à execução do fluxo
+        botao.addEventListener("click", adicionarCaixa);
+    </script>
+</body>
+</html>

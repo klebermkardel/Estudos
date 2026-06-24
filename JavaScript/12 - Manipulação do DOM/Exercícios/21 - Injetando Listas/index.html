@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Injetando Listas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    .lista-de-frutas {
+        list-style: none;
+        padding: 0;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Injetando Lista de Frutas</h1>
+        <ul class="lista-de-frutas">
+            </ul>
+    </div>
+
+    <script>
+        // Mapeia o elemento pai <ul> onde os novos itens serão inseridos
+        const elementoLista = document.querySelector(".lista-de-frutas");
+
+        // Array com os dados brutos que queremos exibir
+        const frutas = ["Maçã", "Banana", "Uva", "Morango"];
+
+        /**
+         * Percorre cada elemento do array criando novas tags HTML em tempo de execução.
+         */
+        frutas.forEach(fruta => {
+            // 1. Cria uma nova tag <li> isolada na memória do navegador
+            const novoItem = document.createElement('li');
+
+            // 2. Define o conteúdo de texto da tag criada com a string da fruta atual do loop
+            novoItem.innerText = fruta;
+
+            // 3. Insere o elemento <li> recém-criado de forma física dentro da tag <ul> no HTML
+            elementoLista.appendChild(novoItem);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Lista de Compras</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 5px;
+            border: .5px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <div>
+            <label for="item">Digite um item: </label>
+            <input type="text" id="item">
+        </div>
+        <button class="btn-adicionar">Adicionar Item</button>
+        <ul class="lista-de-compras">
+        </ul>
+    </div>
+
+    <script>
+        // Mapeamento dos elementos de interface no DOM
+        const elementoInput = document.querySelector("#item");
+        const elementoLista = document.querySelector(".lista-de-compras");
+        const botao = document.querySelector(".btn-adicionar");
+
+        // Array global que serve como base de dados temporária na memória do JS
+        let listaCompras = [];
+
+        /**
+         * Captura o valor do input, valida e renderiza um novo item de lista (li)
+         */
+        const adicionarItem = () => {
+            // Captura o valor removendo espaços indesejados nas pontas
+            const item = elementoInput.value.trim();
+
+            // Cláusula de Guarda: Impede a adição de strings vazias
+            if(item === "") {
+                alert("Por favor, digite um item antes de adicionar!");
+                return;
+            }
+
+            // Cláusula de Guarda: Utiliza o método .includes() para rejeitar duplicatas no Array
+            if(listaCompras.includes(item)) {
+                alert("Esse item já está na lista!");
+                elementoInput.value = "";
+                return; // Bloqueia a criação do elemento na tela
+            }
+
+            // Adiciona o novo item ao histórico do array na memória
+            listaCompras.push(item);
+
+            // Criação e injeção do elemento físico no DOM
+            const novoItem = document.createElement('li');
+            novoItem.innerText = item;
+            elementoLista.appendChild(novoItem);
+
+            // Limpa o input de digitação para o próximo item (UX Clean)
+            elementoInput.value = "";
+        }
+
+        // Associa o clique do botão à execução da função gerenciadora
+        botao.addEventListener("click", adicionarItem);
+    </script>
+</body>
+</html>
