@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/CSS/global-style.css">
+    <title>Exercícios DOM - Filtrando Usuários Ativos</title>
+    <style>
+        body {
+            background-color: #f4f7f6;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            gap: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin: 0;
+        }
+
+        .btn-filtro {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+            transition: background 0.2s ease;
+        }
+
+        .btn-filtro:hover {
+            background-color: #2980b9;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 10px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            width: 260px;
+            height: 180px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid #eef2f1;
+            position: relative;
+        }
+
+        .card-nome {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin: 0 0 8px 0;
+        }
+
+        .card-cargo {
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin: 0 0 15px 0;
+            font-weight: normal;
+        }
+
+        /* Badges visuais de Status */
+        .badge {
+            font-size: 0.85rem;
+            font-weight: bold;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+        .badge-ativo {
+            background-color: #e8f8f5;
+            color: #2ecc71;
+        }
+
+        .badge-inativo {
+            background-color: #fce4d6;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Painel de Usuários</h1>
+        <button class="btn-filtro">Mostrar Apenas Ativos</button>
+        <div class="cards">
+            </div>
+    </div>
+
+    <script>
+        // 1. Array de Objetos com nome, cargo e status dos usuários
+        const usuarios = [
+            {nome: "Kleber", cargo: "Desenvolvedor Web", status: "ativo"}, 
+            {nome: "Cinthia", cargo: "Secretária", status: "ativo"},
+            {nome: "Camila", cargo: "Tradutora e Revisora", status: "inativo"},
+            {nome: "Victor", cargo: "Designer de Jogos", status: "inativo"}
+        ];
+
+        // Mapeando elementos chaves do DOM
+        const containerCards = document.querySelector(".cards");
+        const botaoFiltro = document.querySelector(".btn-filtro");
+
+        // Estado de controle para sabermos se o filtro está ativo ou não
+        let filtrandoApenasAtivos = false;
+
+        // Renderiza os cards na tela filtrando ou não por status baseado no estado
+        const renderizarCards = () => {
+            // Limpa o container para evitar que cards antigos fiquem duplicados na tela
+            containerCards.innerHTML = "";
+
+            // Aplica a regra de negócio do filtro utilizando o método .filter()
+            const listaFiltrada = filtrandoApenasAtivos ? usuarios.filter(usuario => usuario.status === "ativo") : usuarios;
+
+            // Itera sobre a lista resultante para desenhar os cards no DOM
+            listaFiltrada.forEach(usuario => {
+                const novoCard = document.createElement('div');
+                novoCard.classList.add("card");
+
+                // CORREÇÕES APLICADAS: Ajustadas as classes CSS, corrigido tags corrompidas e fechamento do Template Literal
+                novoCard.innerHTML = `
+                    <h2 class="card-nome">${usuario.nome}</h2>
+                    <p class="card-cargo">${usuario.cargo}</p>
+                    <span class="badge badge-${usuario.status}">${usuario.status}</span>
+                `;
+
+                containerCards.appendChild(novoCard);
+            });
+        };
+
+        /**
+         * Alterna o estado do filtro ao clicar no botão e atualiza a interface.
+         */
+        botaoFiltro.addEventListener("click", () => {
+            // Inverte o estado booleano da flag
+            filtrandoApenasAtivos = !filtrandoApenasAtivos;
+
+            // Altera o texto do botão para dar feedback visual do estado atual ao usuário
+            if (filtrandoApenasAtivos) {
+                botaoFiltro.textContent = "Mostrar Todos os Usuários";
+            } else {
+                botaoFiltro.textContent = "Mostrar Apenas Ativos";
+            }
+
+            // Remonta os cards na tela com base no novo estado
+            renderizarCards();
+        });
+
+        // Executa a primeira renderização assim que a página carrega para exibir todos os dados
+        renderizarCards();
+    </script>
+</body>
+</html>

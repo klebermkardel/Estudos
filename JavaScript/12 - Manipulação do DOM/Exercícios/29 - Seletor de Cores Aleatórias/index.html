@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM - Seletor de Cores Aleatórias</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            background-color: #ffffff;
+            border: 2px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mudarCor()">Mudar Cor</button>
+
+    <script>
+        // Array (Vetor) contendo strings de cores em formato Hexadecimal
+        const cores = ["#FF5733", "#33FF57", "#3357FF", "#F3FF33", "#FF33F0", "#33FFF0"];
+
+        /**
+         * Seleciona um índice randômico do array de cores e aplica ao background do body.
+         */
+        const mudarCor = () => {
+            // Math.random() gera um decimal entre 0 e 0.999...
+            // Multiplicar por cores.length escala esse intervalo de acordo com o tamanho do array
+            // Math.floor() arredonda o resultado para baixo, garantindo um número inteiro válido (de 0 a 5)
+            const indiceAleatorio = Math.floor(Math.random() * cores.length);
+
+            // Aplica a cor sorteada direto no estilo inline da tag <body> no DOM
+            document.body.style.backgroundColor = cores[indiceAleatorio];
+        }
+    </script>
+</body>
+</html>

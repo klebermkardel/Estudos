@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/CSS/global-style.css">
+    <title>Exercícios DOM - Invertendo Listas</title>
+    <style>
+        #lista {
+            list-style: none;
+            padding: 20px;
+            font-size: 1.2rem;
+            line-height: 2;
+        }
+
+        .btn-inverter {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #40e0d0;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(64, 224, 208, 0.2);
+        }
+
+        .btn-inverter:hover {
+            background-color: #30cfc0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invertendo Listas</h1>
+        <ul id="lista">
+            </ul>
+        <button class="btn-inverter" onclick="inverterLista()">Inverter Lista</button>
+    </div>
+
+    <script>
+        // Array de dados (Estado global da nossa aplicação)
+        const itens = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
+
+        // Elemento receptor mapeado do DOM
+        const elementoLista = document.querySelector("#lista");
+
+        /**
+         * Limpa a lista atual do HTML e reconstrói os elementos baseados no Array 'itens'
+         */
+        const renderizarLista = () => {
+            // Limpa os nós antigos para evitar duplicação em massa
+            elementoLista.innerHTML = '';
+            
+            // Itera sobre o array montando a nova estrutura de nós (li)
+            itens.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                elementoLista.appendChild(li);
+            });
+        }
+
+        /**
+         * Aplica a inversão de posições nos dados e dispara a re-renderização da tela.
+         */
+        const inverterLista = () => {
+            // Altera diretamente os índices do array na memória (Mutação controlada)
+            itens.reverse();
+            
+            // Atualiza a interface do usuário com a nova ordem
+            renderizarLista();
+        }
+
+        // Primeira chamada para desenhar a lista na tela assim que o documento carregar
+        renderizarLista();
+    </script>
+</body>
+</html>

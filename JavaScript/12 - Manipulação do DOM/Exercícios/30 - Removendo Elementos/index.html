@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/CSS/global-style.css">
+    <title>Exercícios DOM - Removendo Último da Lista</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #lista {
+            list-style: none;
+            padding: 20px;
+            font-size: 1.2rem;
+            line-height: 2;
+        }
+
+        #remover-btn {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #40e0d0;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(64, 224, 208, 0.2);
+            transition: background-color 0.2s ease;
+        }
+
+        #remover-btn:hover {
+            background-color: #30cfc0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Removendo Último Elemento da Lista</h1>
+        <ul id="lista">
+            <!-- Itens adicionados dinamicamente pelo JS -->
+        </ul>
+        <button id="remover-btn">Remover Último Elemento</button>
+    </div>
+    
+    <script>
+        // 1. Estado global da aplicação (Array de dados original)
+        let meuArray = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+
+        // 2. Selecionando os elementos de interface no DOM
+        const lista = document.getElementById('lista');
+        const botao = document.getElementById('remover-btn');
+
+        /**
+         * Limpa o container HTML e renderiza os itens atualizados do array.
+         */
+        const renderizarLista = () => {
+            lista.innerHTML = ''; // Limpa a ul para não duplicar os itens antigos
+            
+            meuArray.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                lista.appendChild(li);
+            });
+        }
+
+        /**
+         * Escuta o clique no botão para remover de forma segura o último índice da lista.
+         */
+        botao.addEventListener('click', () => {
+            // Regra de validação: Só tenta remover se houver algo no vetor
+            if (meuArray.length > 0) {
+                meuArray.pop();     // Remove cirurgicamente o último elemento do array
+                renderizarLista();  // Re-renderiza a interface com o novo estado dos dados
+            } else {
+                alert('A lista já está vazia!');
+            }
+        });
+
+        // 5. Renderiza a lista pela primeira vez assim que a página é carregada
+        renderizarLista();
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/CSS/global-style.css">
+    <title>Exercícios DOM - Calculadora de Média de Notas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 15px;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #nota {
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #ccc;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .calcular-media {
+            background-color: rgb(241, 215, 177);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .exibicao {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Média de Notas</h1>
+        <div class="inputs">
+            <label for="nota">Digite uma nota (0 a 10): </label>
+            <input type="number" id="nota" min="0" max="10" step="0.1" placeholder="Ex: 7.5">
+        </div>
+        <button class="calcular-media">Adicionar Nota</button>
+
+        <div class="exibicao">
+            <p class="historico">Notas digitadas: Nenhuma</p>
+            <p class="media">Média Atual: 0.0</p>
+        </div>
+    </div>
+
+    <script>
+        // Elementos mapeados do DOM
+        const botao = document.querySelector(".calcular-media");
+        const inputNotas = document.querySelector("#nota");
+        const txtHistorico = document.querySelector(".historico");
+        const txtMedia = document.querySelector(".media");
+
+        // Array que funcionará como repositório de histórico na memória do JS
+        const notas = [];
+
+        /**
+         * Adiciona uma nova nota, gera o histórico e processa a média aritmética em tempo real.
+         */
+        const calcularMedia = () => {
+            // Alterado para parseFloat para aceitar frações/decimais legítimos em notas
+            const nota = parseFloat(inputNotas.value);
+
+            // Cláusula de Guarda: Valida se o input está vazio, corrompido ou fora do escopo escolar
+            if (isNaN(nota) || nota < 0 || nota > 10) {
+                alert("Por favor, digite uma nota válida entre 0 e 10!");
+                inputNotas.value = "";
+                return; // Aborta a execução do script
+            }
+
+            // Adiciona a nota no início da nossa lista (Array)
+            notas.unshift(nota); 
+
+            // Soma todos os valores contidos no array usando o acumulador nativo .reduce()
+            const somaTotal = notas.reduce((acumulador, notaAtual) => acumulador + notaAtual, 0);
+
+            // Executa a divisão matemática da média com base na quantidade total de itens salvos
+            const mediaFinal = somaTotal / notas.length;
+
+            // Renderiza os dados nas tags fixas sem recriar novos elementos no HTML
+            txtHistorico.textContent = `Notas digitadas: [ ${notas.join(" | ")} ]`;
+            txtMedia.textContent = `Média Atual: ${mediaFinal.toFixed(1)}`; // Limita o resultado a 1 casa decimal
+
+            // Reseta a caixa de texto para uma nova digitação
+            inputNotas.value = "";
+        };
+
+        // Vincula o clique do botão à execução da função gerenciadora
+        botao.addEventListener("click", calcularMedia);
+    </script>
+</body>
+</html>

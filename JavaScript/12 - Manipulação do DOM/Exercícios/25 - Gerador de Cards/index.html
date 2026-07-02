@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/CSS/global-style.css">
+    <title>Exercícios DOM - Gerador de Cards</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f6; /* Fundo cinza claro para destacar os cards brancos */
+            margin: 0;
+        }
+
+        .container {
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* container dos cards otimizado para responsividade */
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Permite que os cards pulem de linha se a tela for pequena */
+            gap: 20px;       /* Espaçamento perfeito e idêntico entre os cards */
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Card com design moderno e limpo */
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 12px; /* Cantos arredondados suaves */
+            padding: 30px;
+            width: 260px;
+            height: 180px; /* Altura fixa confortável para o conteúdo do card */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave para dar profundidade */
+            border: 1px solid #eef2f1;
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transição suave para o efeito hover */
+        }
+
+        /* Efeito interativo ao passar o mouse pelo card */
+        .card:hover {
+            transform: translateY(-5px); /* Eleva levemente o card */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Intensifica a sombra */
+        }
+
+        /* Estilização da tipografia interna do card */
+        .card-nome {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin: 0 0 8px 0;
+        }
+
+        .card-cargo {
+            font-size: 1rem;
+            color: #7f8c8d; /* Tom cinza elegante para o cargo secundário */
+            margin: 0;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Cards de Usuários</h1>
+        <div class="cards">
+            </div>
+    </div>
+    
+    <script>
+        // Array de Objetos simulando dados de um banco de dados
+        const usuarios = [
+            {nome: "Kleber", cargo: "Desenvolvedor Web"}, 
+            {nome: "Cinthia", cargo: "Secretária"},
+            {nome: "Camila", cargo: "Tradutora e Revisora"}
+        ];
+
+        // Mapeia o container receptor no DOM
+        const containerCards = document.querySelector(".cards");
+
+        /**
+         * Renderiza os cards na tela iterando sobre o array de usuários
+         */
+        usuarios.forEach(usuario => {
+            // 1. Cria o elemento card
+            const novoCard = document.createElement('div');
+            novoCard.classList.add("card");
+            containerCards.appendChild(novoCard);
+
+            // 2. Cria e estiliza o elemento do Nome
+            const elementoNome = document.createElement('h2');
+            elementoNome.classList.add("card-nome");
+            elementoNome.innerText = usuario.nome;
+            novoCard.appendChild(elementoNome);
+
+            // 3. Cria e estiliza o elemento do Cargo
+            const elementoCargo = document.createElement('p');
+            elementoCargo.classList.add("card-cargo");
+            elementoCargo.innerText = usuario.cargo;
+            novoCard.appendChild(elementoCargo);
+        });
+    </script>
+</body>
+</html>
