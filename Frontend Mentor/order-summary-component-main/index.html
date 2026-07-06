@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+    :root {
+      --pale-blue: hsl(225, 100%, 94%);
+      --bright-blue: hsl(245, 75%, 52%);
+      --very-pale-blue: hsl(225, 100%, 98%);
+      --desaturated-blue: hsl(224, 23%, 55%);
+      --dark-blue: hsl(223, 47%, 23%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Red Hat Display', sans-serif;
+      background-color: var(--pale-blue);
+      background-image: url('./images/pattern-background-desktop.svg');
+      background-repeat: repeat-x;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      max-width: 450px;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0px 20px 40px rgba(56, 42, 165, 0.15);
+      text-align: center;
+    }
+
+    .card-header img {
+      width: 100%;
+      display: block;
+    }
+
+    .card-body {
+      padding: 45px 48px;
+    }
+
+    .card-title {
+      color: var(--dark-blue);
+      font-size: 1.75rem;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .card-description {
+      color: var(--desaturated-blue);
+      font-size: 1rem;
+      line-height: 1.6;
+      font-weight: 500;
+      margin-bottom: 25px;
+      padding: 0 10px;
+    }
+
+    .plan-box {
+      background-color: var(--very-pale-blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 32px;
+    }
+
+    .plan-details {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .plan-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .plan-text strong {
+      color: var(--dark-blue);
+      font-weight: 900;
+      font-size: 1rem;
+    }
+
+    .plan-text span {
+      color: var(--desaturated-blue);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .btn-change {
+      color: var(--bright-blue);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: underline;
+    }
+
+    .btn-change:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    .btn-primary {
+      background-color: var(--bright-blue);
+      color: #fff;
+      border: none;
+      width: 100%;
+      padding: 15px;
+      border-radius: 12px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0px 15px 20px rgba(56, 42, 165, 0.25);
+      transition: background-color 0.2s ease;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary:hover {
+      background-color: #5042e4;
+    }
+
+    .btn-secondary {
+      background: none;
+      border: none;
+      color: var(--desaturated-blue);
+      font-family: inherit;
+      font-weight: 900;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      color: var(--dark-blue);
+    }
+
+    @media (max-width: 480px) {
+      .card-body {
+        padding: 32px 24px;
+      }
+
+      .card-title {
+        font-size: 1.4rem;
+      }
+
+      
+    }
+
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-header">
+        <img src="./images/illustration-hero.svg" alt="Hero Illustration">
+      </div>
+      <div class="card-body">
+        <h1 class="card-title">Order Summary</h1>
+        <p class="card-description">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </p>
+
+        <div class="plan-box">
+          <div class="plan-details">
+            <div class="icon-music">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#DFE6FB"/><path fill="#717FA6" d="M19 16v13.574a4.34 4.34 0 00-2.5-.786c-2.31 0-4.186 1.745-4.186 3.89 0 2.146 1.876 3.891 4.186 3.891 2.31 0 4.186-1.745 4.186-3.89V21.135l10.814-2.316v10.33a4.34 4.34 0 00-2.5-.786c-2.31 0-4.186 1.745-4.186 3.89 0 2.146 1.876 3.89 4.186 3.89 2.31 0 4.186-1.745 4.186-3.89V14l-12.5 2z"/></g></svg>
+            </div>
+            <div class="plan-text">
+              <strong>Annual Plan</strong>
+              <span>$59.99/year</span>
+            </div>
+          </div>
+          <a href="#" class="btn-chance">Change</a>
+        </div>
+
+        <button class="btn-primary">Proceed to Payment</button>
+        <button class="btn-secondary">Cancel Order</button>
+      </div>
+    </div>
+  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
