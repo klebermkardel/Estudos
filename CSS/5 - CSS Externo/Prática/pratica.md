@@ -1,4 +1,4 @@
-# Desafio CSS Externo
+# Prática CSS Externo
 
 Se você estiver usando o VS Code (ou outro editor no computador), crie esses dois arquivos na mesma pasta e teste no navegador para ver o resultado. Se estiver usando o CodePen, ele já separa o HTML e o CSS em caixas separadas automaticamente (o que simula o CSS externo).
 
