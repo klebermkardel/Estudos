@@ -46,3 +46,5 @@ h1 {
     text-align: center;
 }
 ```
+
+**``Nota sobre organização**: Percebeu o código ```/* Dentro do arquivo... */```? Isso é um ```comentário em CSS```. Tudo o que estiver entre ```/*``` e ```*/``` é ignorado pelo navegador. Serve apenas para você deixar notas para si mesmo ou para outros programadores.
